@@ -1,0 +1,52 @@
+{
+  "name": "the-mattress-digest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "postbuild": "node scripts/sync-llms-site-url.mjs",
+    "preview": "npm run build && wrangler dev",
+    "clean": "rm -rf dist .wrangler",
+    "lint": "tsc --noEmit",
+    "qa:content": "node --import tsx scripts/verify-content-integrity.ts",
+    "qa:dist": "node scripts/verify-build-output.mjs",
+    "qa:external": "node --import tsx scripts/verify-external-product-links.mjs",
+    "qa:schema": "node scripts/verify-schema-parity.mjs",
+    "qa:release-config": "node scripts/verify-release-config.mjs",
+    "qa:live": "node scripts/verify-live-release.mjs",
+    "qa": "npm run lint && npm run qa:content && npm run build && npm run qa:dist && npm run qa:schema",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "12",
+    "@astrojs/react": "^4.2.0",
+    "@astrojs/sitemap": "^3.2.0",
+    "@astrojs/tailwind": "5.1.5",
+    "@tailwindcss/vite": "^4.0.0",
+    "astro": "5.18.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "4.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.2",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "wrangler": "^4.103.0"
+  },
+  "overrides": {
+    "@astrojs/tailwind": {
+      "tailwindcss": "$tailwindcss"
+    }
+  }
+}

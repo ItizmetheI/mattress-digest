@@ -1,0 +1,409 @@
+---
+import { comparisons } from '../../data/comparisons';
+import { allMattresses, warrantyPhrase, warrantyValue } from '../../data/mattresses';
+import { articleTable, toArticleBody } from '../../lib/schemaArticleBody';
+import { EDITORIAL_INDEPENDENCE_DISCLOSURE, LINK_DISCLOSURE } from '../../lib/disclosure';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComparisonScoreChart from '../../components/ComparisonScoreChart.astro';
+import TrustSignals from '../../components/TrustSignals.astro';
+
+export function getStaticPaths() {
+  return comparisons.map(c => ({
+    params: { slug: c.slug },
+    props: { comparison: c }
+  }));
+}
+
+const { comparison } = Astro.props;
+
+const mattressA = allMattresses.find(m => m.id === comparison.mattressAId);
+const mattressB = allMattresses.find(m => m.id === comparison.mattressBId);
+
+if (!mattressA || !mattressB) {
+  throw new Error(`Mattresses not found for comparison ${comparison.slug}`);
+}
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const canonicalUrl = `${SITE_URL}/comparison/${comparison.slug}/`;
+const reviewUrlA = `${SITE_URL}/reviews/${mattressA.id}/`;
+const reviewUrlB = `${SITE_URL}/reviews/${mattressB.id}/`;
+const productIdA = `${reviewUrlA}#product`;
+const productIdB = `${reviewUrlB}#product`;
+const absoluteImageA = mattressA.heroImage.startsWith('http') ? mattressA.heroImage : `${SITE_URL}${mattressA.heroImage}`;
+const absoluteImageB = mattressB.heroImage.startsWith('http') ? mattressB.heroImage : `${SITE_URL}${mattressB.heroImage}`;
+
+const constructionHeading = '1. Construction & Build Quality';
+const constructionText = `The build differences between the ${mattressA.name} and ${mattressB.name} are a good starting point for how each responds to movement. ${mattressA.name} is a ${mattressA.type} with a recorded ${mattressA.firmness} feel (${mattressA.firmnessScale}/10); ${mattressB.name} is a ${mattressB.type} at a recorded ${mattressB.firmness} feel (${mattressB.firmnessScale}/10). Construction shapes contouring, airflow, edge stability, and how easily you move on the surface — but comfort still comes down to the individual.`;
+const firmnessHeading = `2. Firmness, Feel & Overall Score (${mattressA.scores.overall}/10 vs ${mattressB.scores.overall}/10)`;
+const overallComparison = mattressA.scores.overall === mattressB.scores.overall
+  ? `The models tie on the published Overall field at ${mattressA.scores.overall}/10.`
+  : `${mattressA.scores.overall > mattressB.scores.overall ? mattressA.name : mattressB.name} leads on the published Overall field.`;
+const firmnessText = `Our dataset puts the ${mattressA.name} at ${mattressA.scores.overall}/10 Overall, ${mattressA.scores.edgeSupport}/10 on Edge Support, and ${mattressA.scores.responseTime}/10 on Response Time. The ${mattressB.name} comes in at ${mattressB.scores.overall}/10 Overall, ${mattressB.scores.edgeSupport}/10 on Edge Support, and ${mattressB.scores.responseTime}/10 on Response Time. ${overallComparison} These are editorial scores — not lab measurements, not customer ratings, not manufacturer scores.`;
+const motionHeading = '3. Motion Transfer & Cooling';
+const motionText = `${mattressA.name} scores ${mattressA.scores.motionTransfer}/10 on Motion Transfer and ${mattressA.scores.coolingBreathability}/10 on Cooling & Breathability. ${mattressB.name} scores ${mattressB.scores.motionTransfer}/10 and ${mattressB.scores.coolingBreathability}/10 on the same two fields. These are comparative editorial ratings, not sensor readings or temperature tests.`;
+const valueHeading = '4. Value & Trial Period';
+const valueText = `On our scorecard, ${mattressA.name} scores ${mattressA.scores.value}/10 for Value and ${mattressA.scores.trialPeriod}/10 for Trial Period, with a recorded ${mattressA.trialNights}-night trial. ${mattressB.name} scores ${mattressB.scores.value}/10 for Value and ${mattressB.scores.trialPeriod}/10 for Trial Period, with a recorded ${mattressB.trialNights}-night trial. Eligibility, exclusions, fees, and return terms are worth confirming directly with each manufacturer.`;
+const policyHeading = '5. Policies & Recorded Pricing';
+const policyText = `We have the ${mattressA.name} recorded at a ${mattressA.trialNights}-night trial and ${warrantyPhrase(mattressA.warrantyYears)}, and the ${mattressB.name} at a ${mattressB.trialNights}-night trial with ${warrantyPhrase(mattressB.warrantyYears)}. Both these terms and the pricing above can shift — confirm current price, shipping, return, trial, and warranty terms on each brand's own site before buying. ${comparison.verdict}`;
+
+const comparisonArticleBody = toArticleBody(
+  `${mattressA.name} vs ${mattressB.name} (2026): Which Is Better?`,
+  'Quick Verdict',
+  comparison.verdict,
+  `${EDITORIAL_INDEPENDENCE_DISCLOSURE} ${LINK_DISCLOSURE}`,
+  'Price note: Price fields are reference values captured in the source dataset, not live offers. Verify current pricing and policies on each brand site.',
+  articleTable('Specs at a Glance', ['Feature', mattressA.name, mattressB.name], [
+    ['Recorded Price Range', mattressA.priceRange, mattressB.priceRange],
+    ['Thickness', mattressA.thickness, mattressB.thickness],
+    ['Recorded Sale Price', mattressA.priceSale, mattressB.priceSale],
+    ['Type', mattressA.type, mattressB.type],
+    ['Firmness', mattressA.firmness, mattressB.firmness],
+    ['Trial', `${mattressA.trialNights} Nights`, `${mattressB.trialNights} Nights`],
+    ['Warranty', warrantyValue(mattressA.warrantyYears), warrantyValue(mattressB.warrantyYears)],
+    ['Certifications', mattressA.certifications.join(', '), mattressB.certifications.join(', ')],
+  ]),
+  articleTable('Performance Scores', ['Metric', mattressA.name, mattressB.name], [
+    ['Overall', `${mattressA.scores.overall}/10`, `${mattressB.scores.overall}/10`],
+    ['Value', `${mattressA.scores.value}/10`, `${mattressB.scores.value}/10`],
+    ['Edge Support', `${mattressA.scores.edgeSupport}/10`, `${mattressB.scores.edgeSupport}/10`],
+    ['Trial Period', `${mattressA.scores.trialPeriod}/10`, `${mattressB.scores.trialPeriod}/10`],
+    ['Response Time', `${mattressA.scores.responseTime}/10`, `${mattressB.scores.responseTime}/10`],
+    ['Motion Transfer', `${mattressA.scores.motionTransfer}/10`, `${mattressB.scores.motionTransfer}/10`],
+    ['Cooling & Breathability', `${mattressA.scores.coolingBreathability}/10`, `${mattressB.scores.coolingBreathability}/10`],
+  ]),
+  'The Winner By Category',
+  comparison.winnerFor.map((winner: any) => {
+    const winningMattress = winner.winnerId === mattressA.id ? mattressA : mattressB;
+    return `Best for ${winner.category}: ${winningMattress.name}. ${winner.reason}`;
+  }),
+  'Detailed Head-to-Head Comparison',
+  constructionHeading,
+  constructionText,
+  firmnessHeading,
+  firmnessText,
+  motionHeading,
+  motionText,
+  valueHeading,
+  valueText,
+  policyHeading,
+  policyText,
+  'Our Verdict',
+  comparison.verdict,
+  comparison.faqs?.length
+    ? ['Frequently Asked Questions', comparison.faqs.map((faq: any) => [`Question: ${faq.question}`, `Answer: ${faq.answer}`])]
+    : null
+);
+
+const jsonLd: any[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${canonicalUrl}#article`,
+    "headline": `${mattressA.name} vs ${mattressB.name} (2026): Which Is Better?`,
+    "description": comparison.description,
+    "articleBody": comparisonArticleBody,
+    "image": [absoluteImageA, absoluteImageB],
+    "author": {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/about/#editorial-team`,
+      "name": "The Mattress Digest Editorial Team",
+      "url": `${SITE_URL}/about/#editorial-team`
+    },
+    "dateModified": comparison.dateModified,
+    "datePublished": comparison.dateModified,
+    "publisher": {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      "name": "The Mattress Digest",
+      "url": SITE_URL
+    },
+    "mainEntityOfPage": canonicalUrl,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@id": productIdA } },
+        { "@type": "ListItem", "position": 2, "item": { "@id": productIdB } }
+      ]
+    },
+    "isPartOf": { "@type": "CollectionPage", "name": "The Mattress Digest Comparisons", "url": `${SITE_URL}/comparison/` },
+    "about": [
+      { "@id": productIdA },
+      { "@id": productIdB },
+      { "@type": "Article", "name": "The Mattress Digest Scoring Methodology", "url": `${SITE_URL}/methodology/` }
+    ],
+    "citation": [mattressA.productUrl, mattressB.productUrl, `${SITE_URL}/methodology/`]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": productIdA,
+    "url": reviewUrlA,
+    "name": mattressA.name,
+    "brand": { "@type": "Brand", "name": mattressA.brand },
+    "description": mattressA.summary,
+    "image": absoluteImageA,
+    "sameAs": mattressA.productUrl,
+    "review": {
+      "@type": "Review",
+      "@id": `${reviewUrlA}#review`,
+      "name": `${mattressA.name} Editorial Review`,
+      "url": reviewUrlA,
+      "reviewBody": mattressA.verdict,
+      "reviewRating": { "@type": "Rating", "ratingValue": mattressA.scores.overall, "bestRating": "10" },
+      "author": { "@type": "Organization", "name": "The Mattress Digest Editorial Team", "url": `${SITE_URL}/about/#editorial-team` },
+      "publisher": { "@type": "Organization", "name": "The Mattress Digest", "url": SITE_URL },
+      "datePublished": mattressA.dateReviewed,
+      "dateModified": mattressA.dateModified
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": productIdB,
+    "url": reviewUrlB,
+    "name": mattressB.name,
+    "brand": { "@type": "Brand", "name": mattressB.brand },
+    "description": mattressB.summary,
+    "image": absoluteImageB,
+    "sameAs": mattressB.productUrl,
+    "review": {
+      "@type": "Review",
+      "@id": `${reviewUrlB}#review`,
+      "name": `${mattressB.name} Editorial Review`,
+      "url": reviewUrlB,
+      "reviewBody": mattressB.verdict,
+      "reviewRating": { "@type": "Rating", "ratingValue": mattressB.scores.overall, "bestRating": "10" },
+      "author": { "@type": "Organization", "name": "The Mattress Digest Editorial Team", "url": `${SITE_URL}/about/#editorial-team` },
+      "publisher": { "@type": "Organization", "name": "The Mattress Digest", "url": SITE_URL },
+      "datePublished": mattressB.dateReviewed,
+      "dateModified": mattressB.dateModified
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
+      { "@type": "ListItem", "position": 2, "name": "Comparisons", "item": `${SITE_URL}/comparison/` },
+      { "@type": "ListItem", "position": 3, "name": `${mattressA.name} vs ${mattressB.name}`, "item": canonicalUrl }
+    ]
+  }
+];
+
+if (comparison.faqs && comparison.faqs.length > 0) {
+  jsonLd.push({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": comparison.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  });
+}
+---
+
+<BaseLayout
+  title={`${mattressA.name} vs ${mattressB.name} (2026): Which Is Better? | The Mattress Digest`}
+  description={comparison.description}
+  canonicalUrl={canonicalUrl}
+  machineReadableUrl={`${SITE_URL}/llms/comparison-${comparison.slug}.md`}
+  lastUpdated={comparison.dateModified}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg  text-primary font-bold">
+        {mattressA.name} vs {mattressB.name} (2026): Which Is Better?
+      </h1>
+      <TrustSignals dateModified={comparison.dateModified} />
+    </header>
+
+    <div class="flex flex-col lg:flex-row gap-12 items-start">
+      <article class="flex-1 flex flex-col gap-12 w-full">
+        
+        <!-- Quick Verdict -->
+        <section class="glass-panel-heavy p-8 rounded-lg border border-secondary/20 shadow-lg">
+          <h2 class="text-title-lg font-title-lg text-primary mb-4 italic">Quick Verdict</h2>
+          <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+            {comparison.verdict}
+          </p>
+        </section>
+
+        <ComparisonScoreChart mattressA={mattressA} mattressB={mattressB} />
+
+        <!-- Product Images Side by Side -->
+         <section class="grid grid-cols-2 gap-8 items-center">
+            <div class="flex flex-col gap-4 text-center">
+                <div class="w-full h-[250px] rounded-lg overflow-hidden border border-outline-variant">
+                    <img src={mattressA.image} alt={mattressA.name} class="w-full h-full object-contain bg-white p-3" />
+                </div>
+                <h3 class="font-title-lg text-primary font-bold">{mattressA.name}</h3>
+                <a href={mattressA.productUrl} target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 rounded-lg text-on-primary font-bold font-label-md uppercase shadow-md">Official Product Page</a>
+            </div>
+            <div class="flex flex-col gap-4 text-center">
+                 <div class="w-full h-[250px] rounded-lg overflow-hidden border border-outline-variant">
+                    <img src={mattressB.image} alt={mattressB.name} class="w-full h-full object-contain bg-white p-3" />
+                </div>
+                <h3 class="font-title-lg text-primary font-bold">{mattressB.name}</h3>
+                <a href={mattressB.productUrl} target="_blank" rel="noopener noreferrer" class="btn-gradient px-6 py-3 rounded-lg text-on-primary font-bold font-label-md uppercase shadow-md">Official Product Page</a>
+            </div>
+         </section>
+         <p class="text-xs text-on-surface-variant text-center">{LINK_DISCLOSURE}</p>
+
+        <!-- Stats Comparison Table -->
+        <section class="overflow-x-auto glass-panel rounded-lg">
+            <table class="w-full min-w-[680px] text-left border-collapse">
+                <thead>
+                    <tr class="bg-surface/50 border-b border-outline-variant/30 text-title-md text-primary font-bold">
+                        <th class="p-6">Feature</th>
+                        <th class="p-6 border-l border-outline-variant/30">{mattressA.name}</th>
+                        <th class="p-6 border-l border-outline-variant/30">{mattressB.name}</th>
+                    </tr>
+                </thead>
+                <tbody class="text-body-md text-on-surface-variant">
+                    <tr class="bg-primary/5 border-y-2 border-primary/20"><td colspan="3" class="p-6 text-center text-label-lg font-bold text-primary uppercase tracking-normal">Specs at a Glance</td></tr>
+
+                    <tr><td colspan="3" class="px-6 pt-5 pb-3 text-xs text-on-surface-variant">Prices are recorded dataset values, not live offers. Verify current prices and policies on each brand site.</td></tr>
+
+                    {/* Basic Stats */}
+                    {[
+                        { label: 'Recorded Price Range', a: mattressA.priceRange, b: mattressB.priceRange },
+                       { label: 'Thickness', a: mattressA.thickness, b: mattressB.thickness },
+                       { label: 'Recorded Sale Price', a: mattressA.priceSale, b: mattressB.priceSale },
+                        { label: 'Type', a: mattressA.type, b: mattressB.type },
+                        { label: 'Firmness', a: mattressA.firmness, b: mattressB.firmness },
+                        { label: 'Trial', a: `${mattressA.trialNights} Nights`, b: `${mattressB.trialNights} Nights` },
+                        { label: 'Warranty', a: warrantyValue(mattressA.warrantyYears), b: warrantyValue(mattressB.warrantyYears) },
+                        { label: 'Certifications', a: mattressA.certifications.join(', '), b: mattressB.certifications.join(', ') },
+                    ].map((row, i) => (
+                        <tr class={`border-b border-outline-variant/20 ${i % 2 === 0 ? 'bg-transparent' : 'bg-white/30'}`}>
+                            <td class="p-6 font-bold text-on-surface">{row.label}</td>
+                            <td class="p-6 border-l border-outline-variant/30">{row.a}</td>
+                            <td class="p-6 border-l border-outline-variant/30">{row.b}</td>
+                        </tr>
+                    ))}
+
+                    {(mattressA.certifications.length > 0 || mattressB.certifications.length > 0) && (
+                        <tr class="border-b border-outline-variant/20 bg-transparent">
+                            <td colspan="3" class="p-6 text-xs text-on-surface-variant italic">
+                                Certifications are self-reported by the manufacturer. Verify current certification status on the brand's official site or the certifying body's database before purchasing.
+                            </td>
+                        </tr>
+                    )}
+
+                    <tr class="bg-primary/5 border-y-2 border-primary/20"><td colspan="3" class="p-6 text-center text-label-lg font-bold text-primary uppercase tracking-normal">Performance Scores</td></tr>
+
+                    {/* Scores */}
+                    {[
+                        { label: 'Overall', key: 'overall' },
+                        { label: 'Value', key: 'value' },
+                        { label: 'Edge Support', key: 'edgeSupport' },
+                        { label: 'Trial Period', key: 'trialPeriod' },
+                        { label: 'Response Time', key: 'responseTime' },
+                        { label: 'Motion Transfer', key: 'motionTransfer' },
+                        { label: 'Cooling & Breathability', key: 'coolingBreathability' },
+                    ].map((row, i) => {
+                        const scoreA = mattressA.scores[row.key as keyof typeof mattressA.scores];
+                        const scoreB = mattressB.scores[row.key as keyof typeof mattressB.scores];
+                        const winnerA = scoreA > scoreB;
+                        const winnerB = scoreB > scoreA;
+                        
+                        return (
+                            <tr class={`border-b border-outline-variant/20 ${i % 2 === 0 ? 'bg-transparent' : 'bg-white/30'}`}>
+                                <td class="p-6 font-bold text-on-surface">{row.label}</td>
+                                <td class={`p-6 border-l border-outline-variant/30 ${winnerA ? 'text-secondary font-bold text-title-md' : ''}`}>{scoreA}/10</td>
+                                <td class={`p-6 border-l border-outline-variant/30 ${winnerB ? 'text-secondary font-bold text-title-md' : ''}`}>{scoreB}/10</td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Who Wins For... -->
+        <section class="flex flex-col gap-6">
+            <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">The Winner By Category</h2>
+            <div class="grid grid-cols-1 gap-6">
+                {comparison.winnerFor.map(winner => {
+                    const winningMattress = winner.winnerId === mattressA.id ? mattressA : mattressB;
+                    return (
+                        <div class="glass-panel p-6 rounded-lg flex flex-col md:flex-row gap-6 items-start border border-white/50 border-l-4 border-l-secondary">
+                            <div class="flex flex-col gap-2 flex-1">
+                                <span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-normal border-b border-outline-variant/30 pb-2 mb-2">Best For {winner.category}</span>
+                                <h3 class="text-title-lg font-title-lg text-primary">{winningMattress.name}</h3>
+                                <p class="text-on-surface-variant leading-relaxed mt-1">{winner.reason}</p>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+
+        <!-- Detailed Body -->
+        <section class="flex flex-col gap-6 text-on-surface-variant leading-relaxed text-body-lg">
+             <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Detailed Head-to-Head Comparison</h2>
+             
+             <h3 class="text-title-lg font-title-lg text-primary mt-4">{constructionHeading}</h3>
+             <p>{constructionText}</p>
+             
+             <h3 class="text-title-lg font-title-lg text-primary mt-4">{firmnessHeading}</h3>
+             <p>{firmnessText}</p>
+
+             <h3 class="text-title-lg font-title-lg text-primary mt-4">{motionHeading}</h3>
+             <p>{motionText}</p>
+
+             <h3 class="text-title-lg font-title-lg text-primary mt-4">{valueHeading}</h3>
+             <p>{valueText}</p>
+             
+             <h3 class="text-title-lg font-title-lg text-primary mt-4">{policyHeading}</h3>
+             <p>{policyText}</p>
+        </section>
+
+        <!-- Our Verdict -->
+        <section class="glass-panel-heavy p-8 rounded-lg border border-secondary/20">
+          <h2 class="text-headline-md font-headline-md text-primary italic mb-4">Our Verdict</h2>
+          <p class="text-body-lg text-on-surface-variant leading-relaxed mb-6">{comparison.verdict}</p>
+          <div class="flex gap-3 flex-wrap">
+            <a href={mattressA.productUrl} target="_blank" rel="noopener noreferrer"
+              class="btn-gradient inline-flex items-center text-white px-6 py-3 rounded-full font-bold text-label-sm uppercase tracking-normal">
+              Check {mattressA.name} Price →
+            </a>
+            <a href={mattressB.productUrl} target="_blank" rel="noopener noreferrer"
+              class="btn-gradient inline-flex items-center text-white px-6 py-3 rounded-full font-bold text-label-sm uppercase tracking-normal">
+              Check {mattressB.name} Price →
+            </a>
+          </div>
+          <p class="text-xs text-on-surface-variant mt-3">{LINK_DISCLOSURE}</p>
+        </section>
+
+        <!-- FAQs -->
+        {comparison.faqs && comparison.faqs.length > 0 && (
+          <section class="flex flex-col gap-6 mt-8">
+              <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Frequently Asked Questions</h2>
+              <div class="flex flex-col gap-4">
+                  {comparison.faqs.map(faq => (
+                      <details class="group glass-panel rounded-lg border border-white/50 overflow-hidden shadow-sm">
+                          <summary class="flex justify-between items-center cursor-pointer p-6 font-title-md text-primary font-bold list-none">
+                              {faq.question}
+                              <span class="transition group-open:rotate-180 text-primary">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                              </span>
+                          </summary>
+                          <div class="px-6 pb-6 text-body-md text-on-surface-variant leading-relaxed border-t border-outline-variant/10 pt-4">
+                              {faq.answer}
+                          </div>
+                      </details>
+                  ))}
+              </div>
+          </section>
+        )}
+
+      </article>
+    </div>
+  </main>
+</BaseLayout>

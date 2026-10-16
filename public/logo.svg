@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80">
+  <rect x="4" y="12" width="56" height="56" rx="10" fill="#0F172A"/>
+  <text x="32" y="52" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="600" fill="#ffffff">M</text>
+  <text x="76" y="53" font-family="Inter,Arial,sans-serif" font-size="34" font-weight="700" fill="#0F172A">Mattress <tspan fill="#334155">Digest</tspan></text>
+</svg>

@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { EDITORIAL_INDEPENDENCE_DISCLOSURE, LINK_DISCLOSURE } from '../../lib/disclosure';
+import { FIRDOUS_FARHAD } from '../../lib/editorialPeople';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const lastUpdated = "2026-07-14";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Editorial Policy",
+    "url": `${SITE_URL}/editorial-policy/`,
+    "description": "The Mattress Digest's editorial standards: independence, scoring, evidence, corrections, and brand coverage.",
+    "publisher": { "@type": "Organization", "name": "The Mattress Digest", "url": SITE_URL }
+  }
+];
+---
+
+<BaseLayout
+  title="Editorial Policy — The Mattress Digest"
+  description="The Mattress Digest's editorial standards: independence, scoring, evidence, corrections, and brand coverage."
+  canonicalUrl={`${SITE_URL}/editorial-policy/`}
+  lastUpdated={lastUpdated}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-[760px] mx-auto px-margin-mobile md:px-0 py-16 relative z-10 flex flex-col gap-16">
+
+    <header class="flex flex-col gap-6">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">Editorial Policy</h1>
+      <p class="text-body-lg text-on-surface-variant leading-relaxed">
+        {EDITORIAL_INDEPENDENCE_DISCLOSURE} This page walks through how we handle sources, scores, updates, and outbound links for every brand we cover.
+      </p>
+    </header>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Our Standards</h2>
+      <div class="glass-panel p-8 rounded-lg">
+        <ul class="flex flex-col gap-3 text-body-md text-on-surface-variant">
+          <li class="flex gap-3"><span class="text-secondary font-bold">—</span> No medical claims. A mattress is about sleep comfort and support, not treating a health condition.</li>
+          <li class="flex gap-3"><span class="text-secondary font-bold">—</span> {LINK_DISCLOSURE}</li>
+          <li class="flex gap-3"><span class="text-secondary font-bold">—</span> Scores are editorial comparisons pulled from our published dataset — not lab findings, not manufacturer ratings, not a customer-review average.</li>
+          <li class="flex gap-3"><span class="text-secondary font-bold">—</span> A review gets revised once a documented source change or correction is confirmed, and the page's last-modified date reflects it.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Reviewer Assignment and Attribution</h2>
+      <div class="flex flex-col gap-4 text-body-md text-on-surface-variant leading-relaxed">
+        <p><a href={FIRDOUS_FARHAD.path} class="text-primary underline underline-offset-4 font-bold">{FIRDOUS_FARHAD.name}</a> serves as The Mattress Digest's {FIRDOUS_FARHAD.role.toLowerCase()}. {FIRDOUS_FARHAD.credentials}</p>
+        <p>Her profile page spells out her editorial scope. A "Reviewed by" credit only shows up on a page after she's actually reviewed and approved its final copy — being assigned to a topic isn't the same as having reviewed it.</p>
+        <p>Anything touching health topics stays out of search results until it has article-specific sourcing and that final review in place.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">How Brand Coverage Is Decided</h2>
+      <div class="flex flex-col gap-4 text-body-md text-on-surface-variant leading-relaxed">
+        <p>The same seven-metric system — overall, value, edge support, trial period, response time, motion transfer, cooling &amp; breathability — runs across all 59 models we cover. That consistency is what makes a cross-brand comparison meaningful.</p>
+        <p>Scores get locked in before we touch category order or product-link placement. Rankings follow the published score data and stated criteria, and every brand uses the same fields.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Corrections and Updates</h2>
+      <div class="flex flex-col gap-4 text-body-md text-on-surface-variant leading-relaxed">
+        <p>Product facts and policy terms get corrected the moment an official source changes. A material revision updates both the page's visible dateModified value and the matching machine-readable document.</p>
+        <p>We don't move a score to manufacture a promotion, keep a manufacturer happy, or bump a brand's placement. When a fact isn't supported, we pull it rather than guess.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <div class="glass-panel p-8 rounded-lg flex flex-wrap gap-3">
+        <a href="/methodology/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors">Read our full scoring methodology →</a>
+        <span class="text-outline-variant hidden md:inline self-center">·</span>
+        <a href="/disclosure/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors">Read our disclosure →</a>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

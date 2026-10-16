@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { EDITORIAL_INDEPENDENCE_DISCLOSURE, LINK_DISCLOSURE } from '../../lib/disclosure';
+import { FIRDOUS_FARHAD, firdousFarhadSchemaId } from '../../lib/editorialPeople';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const CONTACT_EMAIL = import.meta.env.PUBLIC_CONTACT_EMAIL;
+const lastUpdated = "2026-07-14";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About The Mattress Digest",
+    "url": `${SITE_URL}/about/`,
+    "description": `${EDITORIAL_INDEPENDENCE_DISCLOSURE} Covers 59 models across 24 brands.`,
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Mattress Digest",
+      "url": SITE_URL
+    },
+    "mainEntity": { "@id": firdousFarhadSchemaId(SITE_URL) }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": firdousFarhadSchemaId(SITE_URL),
+    "name": FIRDOUS_FARHAD.name,
+    "url": `${SITE_URL}${FIRDOUS_FARHAD.path}`,
+    "jobTitle": FIRDOUS_FARHAD.role,
+    "description": FIRDOUS_FARHAD.credentials
+  }
+];
+---
+
+<BaseLayout
+  title="About The Mattress Digest — Mattress Reviews Across 24 Brands"
+  description={`${EDITORIAL_INDEPENDENCE_DISCLOSURE} Covers 59 models across 24 brands using one published 7-metric rubric.`}
+  canonicalUrl={`${SITE_URL}/about/`}
+  lastUpdated={lastUpdated}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-[760px] mx-auto px-margin-mobile md:px-0 py-16 relative z-10 flex flex-col gap-16">
+
+    <header class="flex flex-col gap-6">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">About The Mattress Digest</h1>
+      <p class="text-body-lg text-on-surface-variant leading-relaxed">
+        We run 59 mattresses from 24 brands through one published 7-metric rubric, so a score means the same thing no matter which brand it's attached to.
+      </p>
+    </header>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">What We Do</h2>
+      <div class="glass-panel p-8 rounded-lg flex flex-col gap-4">
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          We publish scorecards for 24 mattress brands on one locked seven-metric system. Every model gets the same fields, so a comparison across brands is actually apples-to-apples.
+        </p>
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          {EDITORIAL_INDEPENDENCE_DISCLOSURE} {LINK_DISCLOSURE} Scores and rankings use the same published rubric for every covered brand.
+        </p>
+        <a href="/methodology/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors w-fit">Read our full scoring methodology →</a>
+      </div>
+    </section>
+
+    <section id="editorial-team" class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Our Editorial Team</h2>
+      <div class="glass-panel p-8 rounded-lg flex flex-col gap-4">
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          "The Mattress Digest Editorial Team" is a shared byline, not one person — it covers everyone who touches source review, scorecard upkeep, corrections, and publishing on a given article. We won't invent a named tester or a lab result to make a piece sound more rigorous than it is.
+        </p>
+        <div class="flex gap-4 items-start border-t border-outline-variant/30 pt-5 mt-2">
+          <div class="w-12 h-12 rounded-lg bg-primary text-white flex items-center justify-center font-bold shrink-0" aria-hidden="true">FF</div>
+          <div class="flex flex-col gap-1">
+            <a href={FIRDOUS_FARHAD.path} class="text-headline-sm font-bold text-primary hover:text-secondary">{FIRDOUS_FARHAD.name}</a>
+            <p class="text-label-sm uppercase text-secondary font-bold">{FIRDOUS_FARHAD.role}</p>
+            <p class="text-body-md text-on-surface-variant">{FIRDOUS_FARHAD.credentials}</p>
+            <p class="text-body-sm text-on-surface-variant leading-relaxed mt-1">A "Reviewed by" credit only shows up on a page once Firdous has actually read and signed off on the final copy.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href={FIRDOUS_FARHAD.path} class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors w-fit">Reviewer profile →</a>
+          <a href="/methodology/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors w-fit">How we score →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">How We Cover 24 Brands</h2>
+      <div class="flex flex-col gap-4 text-body-md text-on-surface-variant leading-relaxed">
+        <p>The same seven fields — overall, value, edge support, trial period, response time, motion transfer, cooling &amp; breathability — apply to all 59 models without exception. That's what makes a comparison across brands mean anything.</p>
+        <p>Scores get locked before we decide category order or where a product link sits on the page. Ordering follows the published score data and stated criteria, nothing else.</p>
+        <p>How deep we go on any one brand depends on what information is available and how relevant the comparison is, but the seven-field, 0–10 scale never changes.</p>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Why and How We Publish</h2>
+      <div class="glass-panel p-8 rounded-lg border border-outline-variant/40 flex flex-col gap-4">
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          Mattress comparisons are hard to verify on your own, so we try to make that easier: direct answers, complete score tables, clearly marked evidence limits, source links, and update dates — enough for a reader (or a search engine) to trace any recommendation back to the record behind it.
+        </p>
+        <p class="text-body-md text-on-surface-variant leading-relaxed">{EDITORIAL_INDEPENDENCE_DISCLOSURE} No brand gets its own scoring formula. {LINK_DISCLOSURE}</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/methodology/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold">Scoring methodology</a>
+          <a href="/model-coverage.json" class="text-primary hover:text-secondary underline underline-offset-4 font-bold">Published model manifest</a>
+          <a href="/editorial-policy/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold">Editorial policy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Editorial Contact</h2>
+      <div class="text-body-md text-on-surface-variant leading-relaxed">
+        {CONTACT_EMAIL ? (
+          <p>Send source corrections, product updates, and editorial questions to <a href={`mailto:${CONTACT_EMAIL}`} class="text-primary underline underline-offset-4 font-bold">{CONTACT_EMAIL}</a>.</p>
+        ) : (
+          <p>A public editorial contact must be added with the final production domain before launch.</p>
+        )}
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

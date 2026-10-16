@@ -1,0 +1,47 @@
+---
+// Draft-stage category listing. noindex + sitemap-excluded (see
+// astro.config.mjs) until this carries real catalog depth and licensed
+// photography — see TAXONOMY.md rollout gate. Not linked from navigation.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import { allFoundations } from '../../data/foundations';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+---
+
+<BaseLayout
+  title="Bed Foundation Reviews — The Mattress Digest"
+  description="Box spring, bed base, bunkie board, and slatted base reviews, scored on the same published rubric."
+  canonicalUrl={`${SITE_URL}/foundations/`}
+  noindex={true}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">Bed Foundation Reviews</h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        Box springs, bed bases, bunkie boards, and slatted bases, scored on one published rubric: Support Quality, Stability & Noise, Ease of Assembly, Value, and Durability.
+      </p>
+      <p class="text-label-sm text-on-surface-variant bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/30">
+        Preview catalog — {allFoundations.length} models scored so far
+      </p>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {allFoundations.map(f => (
+        <CategoryCard
+          href={`/foundations/${f.id}/`}
+          image={f.image}
+          title={f.name}
+          subtitle={`by ${f.brand} · ${f.foundationType.replaceAll('-', ' ')}`}
+          overallScore={f.scores.overall}
+          scoreBars={[
+            { label: 'Support Quality', value: f.scores.supportQuality },
+            { label: 'Value', value: f.scores.value },
+          ]}
+          specLine={`${f.heightInches}" tall · ${f.weightCapacityLbs} lb capacity`}
+          productUrl={f.productUrl}
+        />
+      ))}
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { comparisons } from '../../data/comparisons';
+import { allMattresses as mattresses } from '../../data/mattresses';
+import { formatDateOnly } from '../../lib/dateFormat';
+
+const lastUpdated = "2026-07-14";
+const formattedDateModified = formatDateOnly(lastUpdated);
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const orderedComparisons = [...comparisons].sort((a, b) => {
+  const aInternal = mattresses.find(item => item.id === a.mattressAId)?.brand === mattresses.find(item => item.id === a.mattressBId)?.brand;
+  const bInternal = mattresses.find(item => item.id === b.mattressAId)?.brand === mattresses.find(item => item.id === b.mattressBId)?.brand;
+  return Number(aInternal) - Number(bInternal) || a.slug.localeCompare(b.slug);
+});
+const comparisonBrands = new Set(comparisons.flatMap((comparison) => [
+  mattresses.find((mattress) => mattress.id === comparison.mattressAId)?.brand,
+  mattresses.find((mattress) => mattress.id === comparison.mattressBId)?.brand,
+]).filter(Boolean));
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Mattress Comparisons 2026 — The Mattress Digest",
+  "description": `${comparisons.length} side-by-side mattress comparisons across ${comparisonBrands.size} brands using one seven-metric editorial scoring system.`,
+  "url": `${SITE_URL}/comparison/`,
+  "dateModified": lastUpdated,
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": orderedComparisons.map((c, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `${SITE_URL}/comparison/${c.slug}/`,
+      "name": `${mattresses.find(m => m.id === c.mattressAId)?.name ?? ''} vs ${mattresses.find(m => m.id === c.mattressBId)?.name ?? ''}`
+    }))
+  }
+};
+---
+
+<BaseLayout 
+  title={`Mattress Comparisons 2026: ${comparisons.length} Head-to-Head Reviews | The Mattress Digest`}
+  description={`${comparisons.length} side-by-side mattress comparisons across ${comparisonBrands.size} brands with seven-metric scores, specifications, verdicts, and visual score charts.`}
+  canonicalUrl={`${SITE_URL}/comparison/`}
+  machineReadableUrl={`${SITE_URL}/llms/comparisons.md`}
+  lastUpdated={lastUpdated}
+  ogImage="/og-default.jpg"
+  jsonLd={jsonLd}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg  text-primary font-bold">
+        Mattress Comparisons 2026
+      </h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        Browse {comparisons.length} head-to-head comparisons across {comparisonBrands.size} brands. Every matchup uses the same seven-metric scoring system, specifications, visual score chart, and direct verdict.
+      </p>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {orderedComparisons.map(comparison => {
+        const m1 = mattresses.find(m => m.id === comparison.mattressAId);
+        const m2 = mattresses.find(m => m.id === comparison.mattressBId);
+        if (!m1 || !m2) return null;
+        
+        return (
+          <a href={`/comparison/${comparison.slug}/`} class="card-editorial flex flex-col overflow-hidden p-8 gap-6 group">
+            <h2 class="text-title-lg font-title-lg text-primary mb-1 group-hover:text-secondary transition-colors">
+              {m1.name} vs {m2.name}
+            </h2>
+            <div class="flex gap-4 items-center">
+              <div class="flex-1 h-32 rounded-xl overflow-hidden border border-outline-variant/30">
+                 <img src={m1.image} alt={m1.name} class="w-full h-full object-contain bg-white p-2" />
+              </div>
+              <span class="text-label-lg font-bold text-on-surface-variant italic font-headline-lg">VS</span>
+              <div class="flex-1 h-32 rounded-xl overflow-hidden border border-outline-variant/30">
+                 <img src={m2.image} alt={m2.name} class="w-full h-full object-contain bg-white p-2" />
+              </div>
+            </div>
+            <p class="text-body-md text-on-surface-variant">{comparison.summary}</p>
+            <span class="text-primary font-label-sm uppercase tracking-normal font-bold mt-auto pt-4 border-t border-outline-variant/20">Read Comparison →</span>
+          </a>
+        );
+      })}
+    </section>
+
+  </main>
+</BaseLayout>

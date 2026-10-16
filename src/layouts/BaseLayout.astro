@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+
+import TopNavBar from '../components/TopNavBar';
+import Footer from '../components/Footer';
+import { isPreviewMode } from '../lib/releaseMode';
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogType?: string;
+  canonicalUrl?: string;
+  machineReadableUrl?: string;
+  jsonLd?: object;
+  lastUpdated?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = "The Mattress Digest: multi-brand mattress reviews, scorecards, comparisons, and sleep guides.",
+  ogTitle,
+  ogDescription,
+  ogImage,
+  ogType,
+  canonicalUrl,
+  machineReadableUrl,
+  jsonLd,
+  lastUpdated,
+  noindex,
+} = Astro.props;
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const absoluteOgImage = ogImage
+  ? (ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`)
+  : `${SITE_URL}/og-default.jpg`;
+
+// Preview builds are noindex sitewide; a per-page noindex still wins in production.
+const robotsContent = isPreviewMode()
+  ? 'noindex, nofollow, noarchive'
+  : (noindex ? 'noindex, follow' : null);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {robotsContent && <meta name="robots" content={robotsContent} />}
+    
+    <meta property="og:title" content={ogTitle ?? title} />
+    <meta property="og:description" content={ogDescription ?? description} />
+    <meta property="og:image" content={absoluteOgImage} />
+    <meta property="og:type" content={ogType ?? "website"} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle ?? title} />
+    <meta name="twitter:description" content={ogDescription ?? description} />
+    <meta name="twitter:image" content={absoluteOgImage} />
+    
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    {machineReadableUrl && <link rel="alternate" type="text/markdown" href={machineReadableUrl} title="Machine-readable page summary" />}
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <div class="bg-background text-on-background font-body-md text-body-md antialiased pt-[60px] min-h-screen flex flex-col selection:bg-secondary/20 selection:text-secondary relative overflow-x-clip">
+      <TopNavBar client:idle currentPath={Astro.url.pathname} />
+
+      <div id="main-content">
+        <slot />
+      </div>
+
+      <Footer client:visible />
+    </div>
+  </body>
+</html>

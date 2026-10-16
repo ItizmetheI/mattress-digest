@@ -1,0 +1,6 @@
+{
+  "name": "The Mattress Digest",
+  "description": "Multi-brand mattress reviews, comparisons, ranked guides, and editorial scorecards covering 59 models across 24 brands.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

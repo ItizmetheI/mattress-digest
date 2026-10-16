@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { EDITORIAL_INDEPENDENCE_DISCLOSURE, LINK_DISCLOSURE } from '../../lib/disclosure';
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Terms of Service — The Mattress Digest",
+  "url": `${SITE_URL}/terms-of-service/`,
+  "description": "The Mattress Digest terms of service for editorial content and outbound product links.",
+  "dateModified": "2026-07-14"
+};
+---
+
+<BaseLayout
+  title="Terms of Service — The Mattress Digest"
+  description="The Mattress Digest terms of service for editorial content and outbound product links."
+  canonicalUrl={`${SITE_URL}/terms-of-service/`}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-[760px] mx-auto px-margin-mobile md:px-0 py-16 relative z-10 flex flex-col gap-10">
+
+    <header>
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold mb-4">Terms of Service</h1>
+      <p class="text-body-md text-on-surface-variant">Last updated: July 14, 2026</p>
+    </header>
+
+    <div class="flex flex-col gap-8 text-body-md text-on-surface-variant leading-relaxed">
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">1. Acceptance of Terms</h2>
+        <p>Using this site means you accept these terms. If that's not something you agree to, please don't use the site.</p>
+      </section>
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">2. Content & Editorial Purpose</h2>
+        <p>{EDITORIAL_INDEPENDENCE_DISCLOSURE} Everything here — reviews, guides, comparisons — is for general information, not professional medical advice. Our recommendations are general by design; for a mattress decision tied to a specific medical condition, talk to a healthcare professional instead.</p>
+      </section>
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">3. Outbound Product Links</h2>
+        <p>{LINK_DISCLOSURE} Any link off this site goes to a third-party manufacturer or retailer page, and whatever you do there is governed by that site's own terms and policies, not ours.</p>
+      </section>
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">4. Accuracy of Information</h2>
+        <p>We work to keep pricing, availability, and specs current, but manufacturers change these details on their own schedule, not ours. Check the brand's official site for the current numbers before you buy.</p>
+      </section>
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">5. Intellectual Property</h2>
+        <p>Reviews, scores, comparison data, and guides on this site belong to The Mattress Digest unless we've said otherwise. Reproducing, republishing, or distributing this content requires our written permission.</p>
+      </section>
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">6. Limitation of Liability</h2>
+        <p>We're not liable for damages that come from relying on what's published here, or from anything that happens once you're transacting with a third-party retailer we've linked to.</p>
+      </section>
+
+      <section>
+        <h2 class="text-title-lg font-title-lg text-primary mb-3 font-bold">7. Changes to Terms</h2>
+        <p>These terms can change at any time. Keep using the site after a change goes up, and that counts as accepting it.</p>
+      </section>
+
+    </div>
+  </main>
+</BaseLayout>

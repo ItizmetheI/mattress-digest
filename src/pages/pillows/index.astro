@@ -1,0 +1,47 @@
+---
+// Draft-stage category listing. noindex + sitemap-excluded (see
+// astro.config.mjs) until this carries real catalog depth and licensed
+// photography — see TAXONOMY.md rollout gate. Not linked from navigation.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import { allPillows } from '../../data/pillows';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+---
+
+<BaseLayout
+  title="Pillow Reviews — The Mattress Digest"
+  description="Standard, body, neck, and lumbar pillow reviews, scored on the same published rubric."
+  canonicalUrl={`${SITE_URL}/pillows/`}
+  noindex={true}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">Pillow Reviews</h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        Standard, body, neck, and lumbar pillows, scored on one published rubric: Support & Alignment, Pressure Relief, Cooling & Breathability, Loft Retention, and Value.
+      </p>
+      <p class="text-label-sm text-on-surface-variant bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/30">
+        Preview catalog — {allPillows.length} models scored so far
+      </p>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {allPillows.map(p => (
+        <CategoryCard
+          href={`/pillows/${p.id}/`}
+          image={p.image}
+          title={p.name}
+          subtitle={`by ${p.brand} · ${p.fill.replaceAll('-', ' ')}`}
+          overallScore={p.scores.overall}
+          scoreBars={[
+            { label: 'Support & Alignment', value: p.scores.supportAlignment },
+            { label: 'Value', value: p.scores.value },
+          ]}
+          specLine={`${p.loft} loft · ${p.trialNights}-night trial`}
+          productUrl={p.productUrl}
+        />
+      ))}
+    </section>
+  </main>
+</BaseLayout>

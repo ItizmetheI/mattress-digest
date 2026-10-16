@@ -1,0 +1,357 @@
+---
+import { allMattresses, warrantyValue } from '../../data/mattresses';
+import { articleList, articleTable, toArticleBody } from '../../lib/schemaArticleBody';
+import { RANKING_DISCLOSURE } from '../../lib/disclosure';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+
+const BRAND_META: Record<string, { displayName: string; description: string; officialUrl: string; blurb: string }> = {
+  'amerisleep': {
+    displayName: 'Amerisleep',
+    officialUrl: 'https://amerisleep.com',
+    description: 'Every Amerisleep model we\'ve scored — 8 mattresses across the AS series, hybrid, and organic lineup.',
+    blurb: 'Amerisleep sells direct-to-consumer across foam, hybrid, and latex-hybrid lines. We record Bio-Pur® foam and HIVE® zoning where applicable — confirm current materials and terms on the official product page.'
+  },
+  'zoma': {
+    displayName: 'Zoma',
+    officialUrl: 'https://zomasleep.com',
+    description: 'Every Zoma model we\'ve scored — performance-built foam and hybrid mattresses including the Boost, Hybrid, and Start.',
+    blurb: 'Zoma builds foam and hybrid mattresses around responsive comfort. We record Triangulex™ and Reactiv™ materials where applicable — check current construction on the official product page.'
+  },
+  'vaya': {
+    displayName: 'Vaya',
+    officialUrl: 'https://vayasleep.com',
+    description: 'Every Vaya model we\'ve scored — foam and hybrid builds on the same seven-metric scorecard.',
+    blurb: 'Vaya sits at the lower end of our recorded price points, with foam and hybrid models. We note CertiPUR-US labels and trial terms where they apply — confirm current scope with the official sources.'
+  },
+  'form': {
+    displayName: 'FORM',
+    officialUrl: 'https://formsleep.com',
+    description: 'Every FORM model we\'ve scored — Core, Core Hybrid, Prime, and Prime X.',
+    blurb: 'FORM Sleep runs a foam and hybrid lineup. We score Core, Core Hybrid, Prime, and Prime X on the same seven fields we use for every brand.'
+  },
+  'plushbeds': {
+    displayName: 'PlushBeds',
+    officialUrl: 'https://plushbeds.com',
+    description: 'Every PlushBeds model we\'ve scored — organic, latex, and hybrid builds with deep certification coverage.',
+    blurb: 'PlushBeds focuses on certified organic and natural latex, carrying GOLS, GOTS, OEKO-TEX, and eco-INSTITUT certifications. Known for 25-year warranties and strong motion isolation.'
+  },
+  'saatva': {
+    displayName: 'Saatva',
+    officialUrl: 'https://saatva.com',
+    description: 'Every Saatva model we\'ve scored — Classic, Loom & Leaf, and RX.',
+    blurb: 'Saatva positions itself as a luxury brand — innerspring, foam, and hybrid builds with white-glove delivery. Most models carry 365-night trials and 20-year warranties.'
+  },
+  'nolah': {
+    displayName: 'Nolah',
+    officialUrl: 'https://nolahmattress.com',
+    description: 'Every Nolah model we\'ve scored — Evolution 15, Natural 11, and Original Hybrid.',
+    blurb: 'Nolah built its name on AirFoam™ technology and organic latex, with the Evolution 15 as the flagship. Every model uses CertiPUR-US certified foam or GOLS organic latex.'
+  },
+  'nest-bedding': {
+    displayName: 'Nest Bedding',
+    officialUrl: 'https://nestbedding.com',
+    description: 'Every Nest Bedding model we\'ve scored — Owl, Raven, Puffin Kids, and Sparrow.',
+    blurb: "Nest Bedding stands out for its 365-night trial and a lifetime warranty on select models, across foam, hybrid, and kids' lines built with OEKO-TEX certified materials."
+  },
+  'naturepedic': {
+    displayName: 'Naturepedic',
+    officialUrl: 'https://naturepedic.com',
+    description: 'Every Naturepedic model we\'ve scored — EOS Classic and Concerto Plush, both organic certified.',
+    blurb: 'Naturepedic carries one of the deepest certification stacks we track — GOLS, GOTS, OEKO-TEX, Made Safe — built around family-focused organic construction. Happsy, also reviewed here, is its budget-focused sister brand.'
+  },
+  'eco-terra': {
+    displayName: 'Eco Terra',
+    officialUrl: 'https://ecoterrabeds.com',
+    description: 'The Eco Terra Hybrid Latex review — GOLS-certified organic latex at a budget price.',
+    blurb: "Eco Terra sells GOLS-certified organic latex hybrids at some of the lowest prices we've recorded in the organic category — a value standout in the natural-mattress space."
+  },
+  'latex-for-less': {
+    displayName: 'Latex For Less',
+    officialUrl: 'https://latexforless.com',
+    description: 'The Latex For Less Hybrid Latex review — GOLS-certified organic latex.',
+    blurb: 'Latex For Less sells GOLS-certified organic natural latex at budget prices with 20-year warranties — its whole pitch is making certified latex affordable.'
+  },
+  'purple': {
+    displayName: 'Purple',
+    officialUrl: 'https://purple.com',
+    description: 'Purple mattress reviews — Hybrid Premier and other models.',
+    blurb: 'Purple built its reputation on the proprietary GelFlex Grid — the Hybrid Premier uses thousands of gel columns for pressure relief, and it scores well on cooling and trial period.'
+  },
+  'casper': {
+    displayName: 'Casper',
+    officialUrl: 'https://casper.com',
+    description: 'Casper mattress reviews — The Original and Wave Hybrid.',
+    blurb: "Casper is one of the original DTC mattress brands. The Wave Hybrid's zoned ergonomic support is its standout feature, built with CertiPUR-US certified foam and a 100-night trial."
+  },
+  'leesa': {
+    displayName: 'Leesa',
+    officialUrl: 'https://leesa.com',
+    description: 'Leesa mattress reviews — Original and Legend Hybrid.',
+    blurb: 'Leesa is a certified B-Corp with a social-impact focus. The Legend Hybrid is its top overall performer, backed by a 100-night trial and 10-year warranty.'
+  },
+  'brooklyn-bedding': {
+    displayName: 'Brooklyn Bedding',
+    officialUrl: 'https://brooklynbedding.com',
+    description: 'Brooklyn Bedding mattress reviews — Signature, Aurora Luxe, and other models.',
+    blurb: 'Brooklyn Bedding manufactures in-house out of Phoenix, AZ. The Aurora Luxe Cooling is the standout pick for hot sleepers, and comes with a 120-night trial.'
+  },
+  'bear': {
+    displayName: 'Bear',
+    officialUrl: 'https://bearmattress.com',
+    description: 'Bear mattress reviews — Elite Hybrid and other models.',
+    blurb: 'Bear targets active and athletic sleepers with Celliant® graphite fabric and zoned coil support. The Elite Hybrid scores 9/10 overall with strong cooling numbers.'
+  },
+  'ghostbed': {
+    displayName: 'GhostBed',
+    officialUrl: 'https://ghostbed.com',
+    description: 'GhostBed mattress reviews — Luxe and 3D Matrix models.',
+    blurb: 'GhostBed leans into cooling with its Ghost Ice cover and gel memory foam. The Luxe and 3D Matrix models post strong marks on cooling and motion transfer.'
+  },
+  'helix': {
+    displayName: 'Helix',
+    officialUrl: 'https://helixsleep.com',
+    description: 'Helix mattress reviews — Midnight, Dawn, and other models.',
+    blurb: 'Helix builds around firmness customization to match different sleep positions. Midnight and Dusk are its most popular models, both on a 100-night trial.'
+  },
+  'avocado': {
+    displayName: 'Avocado',
+    officialUrl: 'https://avocadogreenmattress.com',
+    description: 'Avocado Green mattress reviews — organic certified latex hybrid models.',
+    blurb: 'Avocado Green Mattress runs on GOLS-certified organic latex and GOTS-certified organic cotton, with sustainability as its core pitch and a 1-year sleep trial.'
+  },
+  'happsy': {
+    displayName: 'Happsy',
+    officialUrl: 'https://happsy.com',
+    description: 'The Happsy Organic Mattress review — GOLS/GOTS-certified organic latex hybrid.',
+    blurb: "Happsy is Naturepedic's budget-focused sister brand: GOLS-certified organic latex and GOTS-certified organic cotton/wool, glueless individually-wrapped coils, no fiberglass fire barrier. Its certification stack — GOLS, GOTS, OCS, FSC®, MADE SAFE®, EWG Verified®, GREENGUARD Gold — is unusually deep for the price point."
+  },
+  'birch': {
+    displayName: 'Birch',
+    officialUrl: 'https://birchliving.com',
+    description: 'Birch mattress reviews — Natural and Luxe Organic models.',
+    blurb: 'Birch, a Helix brand, builds around natural and organic materials. The Luxe Organic carries GOLS and GOTS certification, and select models add GREENGUARD Gold.'
+  },
+  'sweetnight': {
+    displayName: 'SweetNight',
+    officialUrl: 'https://sweetnight.com',
+    description: 'SweetNight mattress reviews — CoolNest and Prime models.',
+    blurb: 'SweetNight sells budget memory foam with gel infusion for cooling — it posts some of the highest Value scores in our dataset at the lowest price points.'
+  },
+  'glacier': {
+    displayName: 'Glacier',
+    officialUrl: 'https://glaciermattress.com',
+    description: 'Glacier mattress reviews — Original Hybrid and Summit Hybrid models.',
+    blurb: "Glacier's hybrids pair a 365-night trial with strong cooling scores, and post 10/10 Value marks at accessible prices."
+  },
+  'westin': {
+    displayName: 'Westin',
+    officialUrl: 'https://shopwestin.com',
+    description: 'The Westin Heavenly Bed review — the mattress from Westin hotels, sold for home use.',
+    blurb: 'The Westin Heavenly Bed is the actual mattress Westin hotels use, sold direct through the official Westin Shop. Euro pillow-top over coil-on-coil construction, scoring 10/10 overall.'
+  },
+};
+
+export function getStaticPaths() {
+  const brandSlugs = [...new Set(allMattresses.map(m => {
+    const brand = m.brand as string;
+    return brand.toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^a-z0-9-]/g, '');
+  }))];
+
+  return brandSlugs.map(brand => ({
+    params: { brand },
+    props: { brand }
+  }));
+}
+
+const { brand } = Astro.params;
+
+const brandModels = allMattresses.filter(m => {
+  const slug = (m.brand as string).toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '');
+  return slug === brand;
+});
+
+const meta = BRAND_META[brand] || {
+  displayName: brandModels[0]?.brand || brand,
+  officialUrl: '#',
+  description: `Every ${brandModels[0]?.brand || brand} mattress we've scored, in one place.`,
+  blurb: `${brandModels[0]?.brand || brand} mattresses, scored on The Mattress Digest's seven-metric rubric.`
+};
+
+const lastUpdated = "2026-07-14";
+
+const topModel = [...brandModels].sort((a, b) => (b.scores?.overall || 0) - (a.scores?.overall || 0))[0];
+
+const brandArticleBody = toArticleBody(
+  `${meta.displayName} Mattress Reviews 2026`,
+  meta.description,
+  meta.blurb,
+  `${brandModels.length} model${brandModels.length !== 1 ? 's' : ''} scored by The Mattress Digest Editorial Team. Updated: July 14, 2026.`,
+  topModel
+    ? [
+      `Top Rated ${meta.displayName} Model`,
+      `${topModel.name}. Overall Score: ${topModel.scores.overall}/10.`,
+      topModel.verdict,
+    ]
+    : null,
+  articleTable(
+    'Reviewed Models',
+    ['Mattress', 'Overall', 'Firmness', 'Price', 'Trial', 'Warranty'],
+    brandModels.map((model: any) => [
+      model.name,
+      `${model.scores.overall}/10`,
+      `${model.firmness} (${model.firmnessScale}/10)`,
+      model.priceSale,
+      `${model.trialNights} nights`,
+      warrantyValue(model.warrantyYears),
+    ])
+  ),
+  articleList('Brand Review Notes', [
+    'Scores are editorial comparisons pulled from our published seven-metric dataset.',
+    RANKING_DISCLOSURE,
+    'Certification and material labels should be verified on the brand official site or certifying body database before purchase.',
+  ])
+);
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": `${meta.displayName} Mattress Reviews 2026`,
+    "description": meta.description,
+    "articleBody": brandArticleBody,
+    "author": { "@type": "Organization", "@id": `${SITE_URL}/about/#editorial-team`, "name": "The Mattress Digest Editorial Team", "url": `${SITE_URL}/about/#editorial-team` },
+    "publisher": { "@type": "Organization", "@id": `${SITE_URL}/#organization`, "name": "The Mattress Digest", "url": SITE_URL },
+    "datePublished": "2026-01-01",
+    "dateModified": lastUpdated,
+    "mainEntityOfPage": `${SITE_URL}/brands/${brand}/`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL },
+      { "@type": "ListItem", "position": 2, "name": "Brands", "item": `${SITE_URL}/brands/` },
+      { "@type": "ListItem", "position": 3, "name": meta.displayName, "item": `${SITE_URL}/brands/${brand}/` },
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={`${meta.displayName} Mattress Reviews 2026 | The Mattress Digest`}
+  description={meta.description}
+  canonicalUrl={`${SITE_URL}/brands/${brand}/`}
+  machineReadableUrl={`${SITE_URL}/llms/brand-${brand}.md`}
+  lastUpdated={lastUpdated}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+
+    <nav class="text-body-sm text-on-surface-variant flex items-center gap-2 flex-wrap">
+      <a href="/" class="hover:text-primary transition-colors">Home</a>
+      <span>›</span>
+      <a href="/reviews/" class="hover:text-primary transition-colors">Reviews</a>
+      <span>›</span>
+      <span class="text-on-surface font-medium">{meta.displayName}</span>
+    </nav>
+
+    <header class="flex flex-col gap-6 max-w-4xl">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">{meta.displayName} Mattress Reviews</h1>
+      <div class="glass-panel p-6 rounded-lg">
+        <p class="text-body-lg text-on-surface-variant leading-relaxed">{meta.blurb}</p>
+        <a href={meta.officialUrl} target="_blank" rel="noopener noreferrer" class="text-body-sm text-primary hover:text-secondary underline underline-offset-4 font-medium mt-3 inline-block transition-colors">
+          Official site: {meta.officialUrl.replace('https://', '')} →
+        </a>
+      </div>
+      <div class="flex gap-4 items-center text-body-sm text-on-surface-variant">
+        <span><strong class="text-on-surface">{brandModels.length} model{brandModels.length !== 1 ? 's' : ''}</strong> covered</span>
+        <span>·</span>
+        <span>By: The Mattress Digest Editorial Team</span>
+        <span>·</span>
+        <span>Updated: July 14, 2026</span>
+      </div>
+    </header>
+
+    {topModel && (
+      <section class="glass-panel p-8 rounded-lg flex flex-col gap-4">
+        <span class="bg-primary text-on-primary text-label-sm font-bold uppercase tracking-normal px-4 py-1.5 rounded-full w-fit">Top Rated {meta.displayName} Model</span>
+        <div class="flex flex-col md:flex-row gap-6 items-start">
+          <img src={topModel.heroImage} alt={`${topModel.name}`} class="w-full md:w-52 h-40 object-contain bg-white p-2 rounded-lg flex-shrink-0" />
+          <div class="flex flex-col gap-3">
+            <div>
+              <h2 class="text-headline-md font-headline-md text-primary font-bold">{topModel.name}</h2>
+              <div class="flex items-center gap-3 mt-1">
+                <span class="text-display-sm font-bold text-secondary">{topModel.scores?.overall}</span>
+                <span class="text-on-surface-variant text-body-sm">/ 10 Overall Score</span>
+              </div>
+            </div>
+            <p class="text-body-md text-on-surface-variant">{topModel.verdict}</p>
+            <div class="flex gap-3 flex-wrap">
+              <a href={`/reviews/${topModel.id}/`} class="px-5 py-2.5 rounded-lg border-2 border-primary text-primary font-bold text-label-sm uppercase tracking-normal hover:bg-primary/5 transition-colors">Full Review</a>
+              <a href={topModel.productUrl} target="_blank" rel="noopener noreferrer" class="btn-gradient px-5 py-2.5 rounded-lg text-on-primary font-bold text-label-sm uppercase tracking-normal">Official Product Page →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="flex flex-col gap-8">
+      <h2 class="text-headline-md font-headline-md text-primary font-bold border-b border-outline-variant/30 pb-4">All {meta.displayName} Models Reviewed</h2>
+      <div class="flex flex-col gap-4">
+        {brandModels.sort((a, b) => (b.scores?.overall || 0) - (a.scores?.overall || 0)).map(m => (
+          <article class="glass-panel flex flex-col sm:flex-row gap-6 p-6 rounded-lg transition-all">
+            <img src={m.image} alt={`${m.name}`} class="w-full sm:w-32 h-28 object-contain bg-white p-2 rounded-lg flex-shrink-0" />
+            <div class="flex flex-col gap-3 flex-1">
+              <div class="flex justify-between items-start gap-4">
+                <div>
+                  <h3 class="text-title-lg font-title-lg text-primary font-bold">{m.name}</h3>
+                  <span class="text-body-sm text-on-surface-variant">{m.type} · {m.firmness} · {m.thickness}</span>
+                </div>
+                <div class="text-right flex-shrink-0">
+                  <div class="text-headline-sm font-bold text-secondary">{m.scores?.overall}<span class="text-body-sm text-on-surface-variant font-normal">/10</span></div>
+                  <div class="text-xs text-on-surface-variant">Overall</div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                {[
+                  ['Value', m.scores?.value],
+                  ['Edge', m.scores?.edgeSupport],
+                  ['Trial', m.scores?.trialPeriod],
+                  ['Response', m.scores?.responseTime],
+                  ['Motion', m.scores?.motionTransfer],
+                  ['Cooling', m.scores?.coolingBreathability],
+                ].map(([label, score]) => (
+                  <div class="bg-surface rounded-lg p-2 border border-outline-variant/20 text-center">
+                    <div class="text-xs text-on-surface-variant font-bold uppercase tracking-normal">{label}</div>
+                    <div class="font-bold text-primary text-sm">{score}</div>
+                  </div>
+                ))}
+              </div>
+              <div class="flex gap-2 mt-1">
+                <a href={`/reviews/${m.id}/`} class="px-4 py-2 rounded-lg border border-primary text-primary font-bold text-xs uppercase tracking-normal hover:bg-primary/5 transition-colors">Review</a>
+                <a href={m.productUrl} target="_blank" rel="noopener noreferrer" class="btn-gradient px-4 py-2 rounded-lg text-on-primary font-bold text-xs uppercase tracking-normal">Price →</a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="glass-panel p-8 rounded-lg flex flex-col gap-4">
+      <h2 class="text-headline-sm font-headline-sm text-primary font-bold">About These Scores</h2>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">
+        Every {meta.displayName} mattress above is scored on the same seven fields — Overall, Value, Edge Support, Trial Period, Response Time, Motion Transfer, Cooling &amp; Breathability, all 0–10. These are editorial comparisons, not lab findings, manufacturer ratings, or customer-review averages.
+      </p>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">
+        {RANKING_DISCLOSURE}
+      </p>
+    </section>
+
+  </main>
+</BaseLayout>

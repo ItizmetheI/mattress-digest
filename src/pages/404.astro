@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const popularLinks = [
+  { href: '/reviews/', label: 'All 59 mattress reviews' },
+  { href: '/best/overall/', label: 'Best mattress rankings' },
+  { href: '/comparison/', label: 'Head-to-head comparisons' },
+  { href: '/blog/', label: 'Sleep guides' },
+];
+---
+
+<BaseLayout
+  title="Page Not Found | The Mattress Digest"
+  description="This page could not be found. Browse mattress reviews, rankings, and comparisons on The Mattress Digest."
+  noindex={true}
+>
+  <main class="flex-1 flex items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg w-full">
+    <div class="max-w-2xl">
+      <p class="text-label-sm font-label-sm uppercase tracking-normal text-secondary font-bold mb-3">404 error</p>
+      <h1 class="text-display-lg font-display-lg text-primary mb-4">We couldn't find that page.</h1>
+      <p class="text-body-lg text-on-surface-variant leading-relaxed mb-10">
+        The page you're looking for may have moved or no longer exists. Try one of the sections below, or head back to the homepage.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 mb-10">
+        <a href="/" class="btn-gradient inline-flex min-h-12 items-center justify-center gap-2 text-on-primary px-6 py-3 rounded-lg text-label-sm font-label-sm uppercase font-bold w-fit">
+          Back to homepage
+        </a>
+      </div>
+      <div class="border-t border-outline-variant pt-6">
+        <p class="text-label-sm font-label-sm uppercase tracking-normal text-on-surface-variant font-bold mb-4">Popular sections</p>
+        <ul class="flex flex-col gap-3">
+          {popularLinks.map(link => (
+            <li>
+              <a href={link.href} class="text-body-lg text-secondary font-bold hover:text-primary transition-colors">{link.label} →</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

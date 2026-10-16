@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { EDITORIAL_INDEPENDENCE_DISCLOSURE, LINK_DISCLOSURE } from '../../lib/disclosure';
+import { FIRDOUS_FARHAD } from '../../lib/editorialPeople';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const lastUpdated = "2026-07-14";
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Disclosure",
+    "url": `${SITE_URL}/disclosure/`,
+    "description": "The Mattress Digest's editorial-independence, outbound-link, and ranking disclosure.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Mattress Digest",
+      "url": SITE_URL
+    }
+  }
+];
+---
+
+<BaseLayout
+  title="Disclosure — The Mattress Digest"
+  description="The Mattress Digest's editorial-independence, outbound-link, and ranking disclosure."
+  canonicalUrl={`${SITE_URL}/disclosure/`}
+  lastUpdated={lastUpdated}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-[760px] mx-auto px-margin-mobile md:px-0 py-16 relative z-10 flex flex-col gap-16">
+
+    <header class="flex flex-col gap-6">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">Disclosure</h1>
+      <p class="text-body-lg text-on-surface-variant leading-relaxed">
+        {EDITORIAL_INDEPENDENCE_DISCLOSURE} {LINK_DISCLOSURE}
+      </p>
+    </header>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">How Links Work On This Site</h2>
+      <div class="glass-panel p-8 rounded-lg flex flex-col gap-4">
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          Every product link exists so you can check current specs, availability, policies, and pricing straight from the source. {LINK_DISCLOSURE}
+        </p>
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          Rankings follow the published score data and stated category criteria, nothing else — the same seven fields and 0-10 scale apply no matter which brand is being ranked.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-6">
+      <h2 class="text-headline-md font-headline-md text-primary italic border-b border-outline-variant/30 pb-4">Who Writes and Reviews Our Content</h2>
+      <div class="glass-panel p-8 rounded-lg flex flex-col gap-4">
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          Reviews carry the <a href="/about/#editorial-team" class="text-secondary hover:text-primary underline underline-offset-4 font-bold transition-colors">The Mattress Digest Editorial Team</a> byline and follow our standardized 7-metric system from start to finish.
+        </p>
+        <p class="text-body-md text-on-surface-variant leading-relaxed">
+          <a href={FIRDOUS_FARHAD.path} class="text-secondary hover:text-primary underline underline-offset-4 font-bold transition-colors">{FIRDOUS_FARHAD.name}</a> is The Mattress Digest's {FIRDOUS_FARHAD.role.toLowerCase()}. {FIRDOUS_FARHAD.credentials} Her name only shows up as a review credit once she's actually reviewed and signed off on that copy — it's not a claim that she's personally tested every mattress or made a clinical diagnosis.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <div class="flex flex-wrap gap-3">
+        <a href="/methodology/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors">Read our full scoring methodology →</a>
+        <span class="text-outline-variant hidden md:inline self-center">·</span>
+        <a href="/editorial-policy/" class="text-primary hover:text-secondary underline underline-offset-4 font-bold transition-colors">Read our editorial policy →</a>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>

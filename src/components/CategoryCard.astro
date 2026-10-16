@@ -1,0 +1,64 @@
+---
+// Shared listing-grid card for the new product categories (Beds,
+// Foundations, Pillows, Bedding & Accessories). Generic on purpose: each
+// category's score rubric has different field names and counts (5-6 metrics,
+// see TAXONOMY.md), so this takes pre-resolved {label, value} pairs rather
+// than a typed score object. Mirrors the visual language already established
+// for mattress reviews (rounded-2xl, gradient hover, gradient CTA button) —
+// see src/pages/reviews/index.astro for the pattern this was pulled from.
+
+export interface Props {
+  href: string;
+  image: string;
+  title: string;
+  subtitle: string;
+  overallScore: number;
+  scoreBars: { label: string; value: number }[];
+  specLine: string;
+  productUrl: string;
+}
+
+const { href, image, title, subtitle, overallScore, scoreBars, specLine, productUrl } = Astro.props;
+---
+
+<article class="card-editorial flex flex-col overflow-hidden">
+  <div class="w-full h-52 overflow-hidden relative">
+    <img src={image} alt={title} class="w-full h-full object-contain bg-white p-3" />
+    <div class="absolute top-4 right-4 bg-white px-4 py-2 rounded-full border border-outline-variant flex items-center gap-2">
+      <span class="text-label-sm font-label-sm uppercase tracking-normal text-on-surface font-bold">Score</span>
+      <span class="text-title-lg font-title-lg italic text-secondary font-bold leading-none">{overallScore}</span>
+    </div>
+  </div>
+
+  <div class="p-6 flex flex-col flex-1 gap-4">
+    <header>
+      <h2 class="text-title-lg font-title-lg text-primary mb-1">{title}</h2>
+      <span class="text-label-sm font-label-sm uppercase tracking-normal text-on-surface-variant">{subtitle}</span>
+    </header>
+
+    <div class="flex flex-col gap-2.5">
+      {scoreBars.map(({ label, value }) => (
+        <div class="flex flex-col gap-1.5">
+          <div class="flex justify-between items-center text-[13px] font-bold">
+            <span class="text-on-surface-variant">{label}</span>
+            <span class="text-primary">{value}/10</span>
+          </div>
+          <div class="w-full bg-outline-variant/20 h-1.5 rounded-full overflow-hidden">
+            <div class="bg-secondary h-full rounded-full" style={`width: ${value * 10}%`}></div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="text-label-sm text-on-surface-variant">{specLine}</p>
+
+    <div class="mt-auto flex gap-3 pt-2">
+      <a href={href} class="flex-1 text-center py-3 rounded-lg border-2 border-primary text-primary font-label-md uppercase tracking-normal font-bold hover:bg-primary/5 transition-colors">
+        Read Review
+      </a>
+      <a href={productUrl} target="_blank" rel="noopener noreferrer" class="btn-gradient flex-1 text-center py-3 rounded-lg text-on-primary font-label-md uppercase tracking-normal font-bold shadow-sm">
+        Price →
+      </a>
+    </div>
+  </div>
+</article>

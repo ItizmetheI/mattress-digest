@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+/* Visible keyboard-focus ring sitewide — mouse/touch users never see it (:focus-visible). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 6px 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.skip-to-content:focus {
+  top: 0;
+}
+
+@layer components {
+  /* Flat paper panel — no translucency, no blur */
+  .glass-panel {
+    background: var(--color-surface);
+    border: 1px solid var(--color-outline-variant);
+  }
+  .glass-panel-heavy {
+    background: var(--color-white);
+    border: 1px solid var(--color-outline);
+    box-shadow: 0 1px 3px rgba(43, 35, 24, 0.08);
+  }
+  /* Solid ink overlay (mobile nav) — no backdrop-filter */
+  .glass-dark {
+    background: var(--color-inverse-surface);
+    border: 1px solid rgba(251, 247, 236, 0.12);
+  }
+  /* ponytail: flat ink fill, kept as a named class so every existing call site repaints without edits */
+  .gradient-brand {
+    background-image: none;
+    background-color: var(--color-primary);
+  }
+  .btn-gradient {
+    background-image: none;
+    background-color: var(--color-secondary);
+    transition: background-color 0.2s ease;
+  }
+  .btn-gradient:hover {
+    background-color: var(--color-secondary-strong);
+    filter: none;
+  }
+  /* Shared card language: clear border + soft shadow at rest, indigo lift on hover */
+  .card-editorial {
+    background: var(--color-surface);
+    border: 1px solid var(--color-outline-variant);
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(11, 15, 25, 0.04);
+    transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-editorial:hover {
+    border-color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(11, 15, 25, 0.14);
+  }
+}
+
+@theme {
+  /* White surface, all-slate palette — contrast comes from using more of the scale, not a bright accent */
+  --color-background: #FFFFFF;
+  --color-white: #FFFFFF;
+  --color-surface: #FFFFFF;
+  --color-surface-container: #E2E8F0;
+  --color-surface-container-high: #CBD5E1;
+  --color-surface-container-highest: #94A3B8;
+  --color-surface-container-low: #F1F5F9;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-inverse-surface: #0B0F19;
+  --color-inverse-on-surface: #F1F5F9;
+  --color-surface-variant: #E2E8F0;
+  --color-on-surface-variant: #475569;
+  --color-outline: #94A3B8;
+  --color-outline-variant: #CBD5E1;
+
+  /* Near-black ink foundation — higher contrast than slate-900 */
+  --color-primary: #0B0F19;
+  --color-primary-container: #E2E8F0;
+  --color-on-primary: #FFFFFF;
+  --color-on-primary-container: #0B0F19;
+  --color-inverse-primary: #CBD5E1;
+
+  /* Deep charcoal-slate action color — same family as the ink, one shade lighter, used boldly */
+  --color-secondary: #1E293B;
+  --color-secondary-container: #E2E8F0;
+  --color-on-secondary: #FFFFFF;
+  --color-on-secondary-container: #0B0F19;
+  --color-secondary-fixed: #94A3B8;
+  --color-secondary-strong: #0B0F19;
+
+  /* Mid slate — used sparingly, icons only */
+  --color-tertiary: #64748B;
+  --color-tertiary-container: #F1F5F9;
+  --color-on-tertiary: #FFFFFF;
+  --color-on-tertiary-container: #1E293B;
+
+  --color-on-background: #0B0F19;
+
+  --font-display-lg: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-body-md: "Plus Jakarta Sans", Arial, sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", Arial, sans-serif;
+
+  --text-display-lg: 48px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--font-weight: 800;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.15;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-lg--letter-spacing: -0.01em;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 1.15;
+  --text-headline-lg-mobile--font-weight: 700;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 1.2;
+  --text-headline-md--font-weight: 700;
+  --text-headline-md--letter-spacing: -0.01em;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 1;
+  --text-label-sm--font-weight: 700;
+  --text-label-sm--letter-spacing: 0.02em;
+
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 20px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1200px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 24px;
+  --spacing-stack-lg: 64px;
+}

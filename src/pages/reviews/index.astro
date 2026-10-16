@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { allMattresses, warrantyPhrase } from '../../data/mattresses';
+import { formatDateOnly } from '../../lib/dateFormat';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+const brandQueues = [...new Set(allMattresses.map(mattress => mattress.brand))]
+  .sort((a, b) => a.localeCompare(b))
+  .map(brand => allMattresses.filter(mattress => mattress.brand === brand));
+const reviewMattresses = Array.from(
+  { length: Math.max(...brandQueues.map(queue => queue.length)) },
+  (_, index) => brandQueues.map(queue => queue[index]).filter(Boolean),
+).flat();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Mattress Reviews 2026 — 59 Models, 24 Brands | The Mattress Digest",
+  "description": "Multi-brand mattress reviews across 24 brands. 59 models evaluated using one published 7-metric scoring system.",
+  "url": `${SITE_URL}/reviews/`,
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": reviewMattresses.map((m, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": m.name,
+      "url": `${SITE_URL}/reviews/${m.id}/`
+    }))
+  }
+};
+
+const lastUpdated = "2026-07-14";
+const formattedDateModified = formatDateOnly(lastUpdated);
+---
+
+<BaseLayout
+  title="Mattress Reviews 2026 — 59 Models, 24 Brands | The Mattress Digest"
+  description="Multi-brand mattress reviews across 24 brands. 59 models evaluated using one published 7-metric scoring system."
+  canonicalUrl={`${SITE_URL}/reviews/`}
+  machineReadableUrl={`${SITE_URL}/llms/reviews.md`}
+  lastUpdated={lastUpdated}
+  ogImage="/og-default.jpg"
+  jsonLd={jsonLd}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+
+    <!-- Top Section -->
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg  text-primary font-bold">
+        Mattress Reviews 2026
+      </h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        Multi-brand mattress reviews across 24 brands and 59 models using one published seven-metric editorial scorecard.
+      </p>
+      <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-body-md text-on-surface-variant bg-surface px-6 py-3 rounded-full shadow-sm border border-outline-variant/30">
+        <span><strong class="text-on-background">Editorial Team:</strong> The Mattress Digest Editorial Team</span>
+        <span class="hidden md:inline-block w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+        <span><strong class="text-on-background">Last Updated:</strong> {formattedDateModified}</span>
+      </div>
+    </header>
+
+    <!-- Filter Bar -->
+    <section class="flex flex-col gap-4 items-center">
+      <div class="flex flex-wrap justify-center gap-2">
+        <a href="#all" class="btn-gradient px-5 py-2 rounded-full text-on-primary font-bold text-label-sm uppercase tracking-normal">All</a>
+        <a href="#memory-foam" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-primary font-bold text-label-sm uppercase tracking-normal hover:border-primary/30 transition-colors">Memory Foam</a>
+        <a href="#hybrid" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-primary font-bold text-label-sm uppercase tracking-normal hover:border-primary/30 transition-colors">Hybrid</a>
+        <a href="#innerspring" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-primary font-bold text-label-sm uppercase tracking-normal hover:border-primary/30 transition-colors">Innerspring</a>
+        <a href="#latex" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-primary font-bold text-label-sm uppercase tracking-normal hover:border-primary/30 transition-colors">Latex</a>
+      </div>
+      <div class="flex flex-wrap justify-center gap-2 mt-2">
+        <a href="#side-sleepers" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-secondary font-bold text-label-sm uppercase tracking-normal hover:border-secondary/30 transition-colors">Best for Side Sleepers</a>
+        <a href="#back-pain" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-secondary font-bold text-label-sm uppercase tracking-normal hover:border-secondary/30 transition-colors">Back Comfort</a>
+        <a href="#hot-sleepers" class="px-5 py-2 rounded-full bg-surface border border-outline-variant/30 text-secondary font-bold text-label-sm uppercase tracking-normal hover:border-secondary/30 transition-colors">Best for Hot Sleepers</a>
+      </div>
+    </section>
+
+    <!-- Mattress Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {reviewMattresses.map(mattress => (
+        <article class="card-editorial flex flex-col overflow-hidden">
+
+          <!-- Image -->
+          <div class="w-full h-52 overflow-hidden relative">
+            <img src={mattress.image} alt={`${mattress.name} mattress`} class="w-full h-full object-contain bg-white p-3" />
+            <div class="absolute top-4 right-4 bg-white px-4 py-2 rounded-full border border-outline-variant flex items-center gap-2">
+              <span class="text-label-sm font-label-sm uppercase tracking-normal text-on-surface font-bold">Score</span>
+              <span class="text-title-lg font-title-lg italic text-secondary font-bold leading-none">{mattress.scores.overall}</span>
+            </div>
+          </div>
+
+          <!-- Content Base -->
+          <div class="p-6 flex flex-col flex-1 gap-4">
+
+            <header>
+              <h2 class="text-title-lg font-title-lg text-primary mb-1">{mattress.name}</h2>
+              <span class="text-label-sm font-label-sm uppercase tracking-normal text-on-surface-variant">by {mattress.brand} · {mattress.firmness} ({mattress.firmnessScale}/10)</span>
+            </header>
+
+            <!-- Top 2 Score Bars -->
+            <div class="flex flex-col gap-2.5">
+              {Object.entries({
+                'Value': mattress.scores.value,
+                'Cooling & Breathability': mattress.scores.coolingBreathability,
+              }).map(([label, score]) => (
+                <div class="flex flex-col gap-1.5">
+                  <div class="flex justify-between items-center text-[13px] font-bold">
+                    <span class="text-on-surface-variant">{label}</span>
+                    <span class="text-primary">{score}/10</span>
+                  </div>
+                  <div class="w-full bg-outline-variant/20 h-1.5 rounded-full overflow-hidden">
+                    <div class="bg-secondary h-full rounded-full" style={`width: ${score * 10}%`}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p class="text-label-sm text-on-surface-variant">
+              <span class="text-primary font-bold">{mattress.trialNights}-night trial</span> · <span class="text-primary font-bold">{warrantyPhrase(mattress.warrantyYears)}</span>
+            </p>
+
+            <!-- Actions -->
+            <div class="mt-auto flex gap-3 pt-2">
+              <a href={`/reviews/${mattress.id}/`} class="flex-1 text-center py-3 rounded-lg border-2 border-primary text-primary font-label-md uppercase tracking-normal font-bold hover:bg-primary/5 transition-colors">
+                Read Review
+              </a>
+              <a href={mattress.productUrl} target="_blank" rel="noopener noreferrer" class="btn-gradient flex-1 text-center py-3 rounded-lg text-on-primary font-label-md uppercase tracking-normal font-bold shadow-sm">
+                Price →
+              </a>
+            </div>
+
+          </div>
+        </article>
+      ))}
+    </section>
+
+    <section class="max-w-2xl mx-auto mt-8 glass-panel p-6 rounded-2xl">
+      <h3 class="text-title-md font-title-md text-primary font-bold mb-3">How we cover 24 brands</h3>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">
+        Every model above is scored using the same 7-metric system: Overall, Value, Edge Support, Trial Period, Response Time, Motion Transfer, and Cooling &amp; Breathability. Scores are editorial comparisons from the published The Mattress Digest score dataset, not laboratory findings, manufacturer ratings, or collected customer ratings. <a href="/methodology/" class="text-primary hover:underline font-bold">Read our full methodology →</a>
+      </p>
+    </section>
+  </main>
+</BaseLayout>

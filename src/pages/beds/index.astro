@@ -1,0 +1,47 @@
+---
+// Draft-stage category listing. noindex + sitemap-excluded (see
+// astro.config.mjs) until this carries real catalog depth and licensed
+// photography — see TAXONOMY.md rollout gate. Not linked from navigation.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import { allBeds } from '../../data/beds';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+---
+
+<BaseLayout
+  title="Bed Frame Reviews — The Mattress Digest"
+  description="Bed frame reviews across bunk, loft, platform, trundle, murphy, and kids beds, scored on the same published rubric."
+  canonicalUrl={`${SITE_URL}/beds/`}
+  noindex={true}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">Bed Frame Reviews</h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        Bunk, loft, platform, trundle, murphy, and kids bed frames, scored on one published rubric: Build Quality, Stability & Noise, Ease of Assembly, Value, and Versatility.
+      </p>
+      <p class="text-label-sm text-on-surface-variant bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/30">
+        Preview catalog — {allBeds.length} models scored so far
+      </p>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {allBeds.map(bed => (
+        <CategoryCard
+          href={`/beds/${bed.id}/`}
+          image={bed.image}
+          title={bed.name}
+          subtitle={`by ${bed.brand} · ${bed.bedType} bed`}
+          overallScore={bed.scores.overall}
+          scoreBars={[
+            { label: 'Build Quality', value: bed.scores.buildQuality },
+            { label: 'Value', value: bed.scores.value },
+          ]}
+          specLine={`${bed.weightCapacityLbs} lb capacity · ${bed.assemblyTimeMinutes} min assembly`}
+          productUrl={bed.productUrl}
+        />
+      ))}
+    </section>
+  </main>
+</BaseLayout>

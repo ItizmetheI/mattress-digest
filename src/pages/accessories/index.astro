@@ -1,0 +1,47 @@
+---
+// Draft-stage category listing. noindex + sitemap-excluded (see
+// astro.config.mjs) until this carries real catalog depth and licensed
+// photography — see TAXONOMY.md rollout gate. Not linked from navigation.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryCard from '../../components/CategoryCard.astro';
+import { allAccessories } from '../../data/accessories';
+
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+---
+
+<BaseLayout
+  title="Bedding & Accessory Reviews — The Mattress Digest"
+  description="Mattress topper, mattress protector, blanket, and headboard reviews, scored on the same published rubric."
+  canonicalUrl={`${SITE_URL}/accessories/`}
+  noindex={true}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">Bedding & Accessory Reviews</h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        Mattress toppers, protectors, blankets, and headboards, scored on one published rubric: Material Quality, Comfort & Function, Ease of Use, Durability, and Value.
+      </p>
+      <p class="text-label-sm text-on-surface-variant bg-surface-container-low px-4 py-2 rounded-full border border-outline-variant/30">
+        Preview catalog — {allAccessories.length} products scored so far
+      </p>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {allAccessories.map(a => (
+        <CategoryCard
+          href={`/accessories/${a.id}/`}
+          image={a.image}
+          title={a.name}
+          subtitle={`by ${a.brand} · ${a.accessoryType.replaceAll('-', ' ')}`}
+          overallScore={a.scores.overall}
+          scoreBars={[
+            { label: 'Comfort & Function', value: a.scores.comfortFunction },
+            { label: 'Value', value: a.scores.value },
+          ]}
+          specLine={a.material}
+          productUrl={a.productUrl}
+        />
+      ))}
+    </section>
+  </main>
+</BaseLayout>

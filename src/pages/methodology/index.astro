@@ -1,0 +1,155 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { articleList, toArticleBody } from '../../lib/schemaArticleBody';
+import { EDITORIAL_INDEPENDENCE_DISCLOSURE, LINK_DISCLOSURE } from '../../lib/disclosure';
+import { formatDateOnly } from '../../lib/dateFormat';
+import { FIRDOUS_FARHAD, firdousFarhadSchemaId } from '../../lib/editorialPeople';
+
+const lastUpdated = "2026-07-14";
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+
+const methodologyArticleBody = toArticleBody(
+  'How The Mattress Digest Scores Mattresses',
+  `We score 59 mattresses across 24 brands on one fixed seven-metric system. ${EDITORIAL_INDEPENDENCE_DISCLOSURE} ${LINK_DISCLOSURE}`,
+  'Our Scoring Process',
+  articleList('Process Steps', [
+    'Every review starts from one record in our published score dataset per covered model — never from a lab reading or a pile of customer reviews.',
+    'Construction, recorded firmness, policy fields, and sleep-position fit are all read against the same published definitions, review after review.',
+    'Each mattress gets scored on Overall, Value, Edge Support, Trial Period, Response Time, Motion Transfer, and Cooling & Breathability, all on a 0-10 scale.',
+    "The Overall number is our editorial summary judgment on the dataset — not something a formula spits out, and not a manufacturer's own rating.",
+    `${EDITORIAL_INDEPENDENCE_DISCLOSURE} The same rubric runs across every brand we cover, no exceptions.`,
+  ]),
+  'The 7 Scoring Criteria',
+  articleList('Scoring Criteria', [
+    "Overall: our editorial summary judgment on the complete mattress, drawn from the dataset.",
+    'Value: how the mattress stacks up against its price once warranty and trial terms are factored in.',
+    'Edge Support: how firm and usable the mattress is right at the perimeter.',
+    'Trial Period: how generous the home-trial policy actually is, in length and terms.',
+    'Response Time: how fast the surface reacts when you move or change position.',
+    'Motion Transfer: how much a shift on one side of the bed reaches the other side.',
+    'Cooling & Breathability: how well the surface manages airflow and heat.',
+  ]),
+  'Editorial Standards',
+  articleList('Standards', [
+    'No medical claims, ever. A mattress affects comfort and support, not health conditions.',
+    `${EDITORIAL_INDEPENDENCE_DISCLOSURE} ${LINK_DISCLOSURE}`,
+    'Scores are editorial comparisons, full stop — not clinical findings, not lab measurements, not manufacturer ratings, not a roundup of customer reviews.',
+    'A review gets revised when a documented source changes or a correction is confirmed; the last-modified date on the page reflects that.',
+  ]),
+  'Health and Sleep Content Review',
+  `${FIRDOUS_FARHAD.name} serves as The Mattress Digest's ${FIRDOUS_FARHAD.role.toLowerCase()}. ${FIRDOUS_FARHAD.credentials} A "reviewed by" credit lands on an article only once she's actually read and approved the final draft — being assigned to a topic doesn't mean she's tested every mattress in it herself.`,
+  'Evidence Boundaries',
+  articleList('What the scorecard can and cannot show', [
+    'Construction, firmness, pricing, trial, warranty, and certification fields are checked against the sources we can find, and you should re-check them yourself before buying.',
+    'We haven\'t run pressure-map, thermal-camera, motion-sensor, durability-lab, or long-term sleep tests on this dataset — none of that evidence exists here.',
+    'The model manifest publishes the complete score field so the same numbers can be cross-checked across the HTML, the schema, the comparisons, and the machine-readable documents.',
+  ])
+);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How The Mattress Digest Scores Mattresses",
+  "description": "The Mattress Digest's seven-metric editorial scoring methodology, evidence limits, editorial independence, and cross-brand coverage.",
+  "articleBody": methodologyArticleBody,
+  "author": { "@type": "Organization", "@id": `${SITE_URL}/about/#editorial-team`, "name": "The Mattress Digest Editorial Team", "url": `${SITE_URL}/about/#editorial-team` },
+  "publisher": { "@type": "Organization", "@id": `${SITE_URL}/#organization`, "name": "The Mattress Digest", "url": SITE_URL },
+  "datePublished": "2024-01-01",
+  "dateModified": lastUpdated,
+  "mainEntityOfPage": `${SITE_URL}/methodology/`,
+  "citation": [`${SITE_URL}/model-coverage.json`],
+  "mentions": { "@id": firdousFarhadSchemaId(SITE_URL) }
+};
+
+const formattedDate = formatDateOnly(lastUpdated);
+---
+
+<BaseLayout
+  title="How The Mattress Digest Scores Mattresses | Methodology"
+  description="The Mattress Digest's seven-metric editorial scoring methodology, evidence limits, editorial independence, and 59-model cross-brand coverage."
+  canonicalUrl={`${SITE_URL}/methodology/`}
+  machineReadableUrl={`${SITE_URL}/llms/methodology.md`}
+  lastUpdated={lastUpdated}
+  jsonLd={jsonLd}
+>
+  <main class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop py-16 relative z-10 w-full flex flex-col gap-16">
+
+    <header class="flex flex-col gap-6 text-center">
+      <h1 class="text-headline-lg font-headline-lg text-primary font-bold">How The Mattress Digest Scores Mattresses</h1>
+      <div class="flex justify-center">
+        <span class="text-body-md text-on-surface-variant bg-surface px-6 py-2 rounded-full shadow-sm border border-outline-variant/30">
+          <strong>Last Updated:</strong> {formattedDate}
+        </span>
+      </div>
+      <p class="text-body-lg text-on-surface-variant leading-relaxed text-left mt-4 glass-panel p-8 rounded-lg border border-outline-variant">
+        We score 59 mattresses across 24 brands on one fixed seven-metric system, and we run every brand through it the same way. {EDITORIAL_INDEPENDENCE_DISCLOSURE} {LINK_DISCLOSURE}
+      </p>
+    </header>
+
+    <section class="flex flex-col gap-8">
+      <h2 class="text-headline-md font-headline-md text-primary border-b border-outline-variant/30 pb-4 italic">Our Scoring Process</h2>
+      <div class="grid grid-cols-1 gap-6">
+        {[
+          { n: "1", title: "One Score Dataset", desc: "Every review starts from one record in our published dataset per covered model. We never dress up an editorial score as a lab measurement or a pile of customer reviews." },
+          { n: "2", title: "Same Fit Rules Every Time", desc: "Construction, recorded firmness, policy fields, and sleep-position fit all get read against the same published definitions. Body-weight guidance is a fit note, not a clinical measurement." },
+          { n: "3", title: "Seven Fields, 0–10 Each", desc: "Overall, Value, Edge Support, Trial Period, Response Time, Motion Transfer, Cooling & Breathability — every mattress gets all seven, scored 0–10." },
+          { n: "4", title: "Where the Evidence Stops", desc: "The Overall field is our editorial summary judgment, not a formula's output, not a manufacturer rating, and not a customer-review average." },
+          { n: "5", title: "One Rubric, No Exceptions", desc: `${EDITORIAL_INDEPENDENCE_DISCLOSURE} The same rubric applies to every brand.` }
+        ].map(step => (
+          <div class="flex gap-6 items-start">
+            <div class="bg-primary/10 text-primary font-bold text-xl rounded-full w-12 h-12 flex items-center justify-center shrink-0 border border-primary/20">{step.n}</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-on-surface mb-2">{step.title}</h3>
+              <p class="text-body-md text-on-surface-variant leading-relaxed">{step.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="flex flex-col gap-8">
+      <h2 class="text-headline-md font-headline-md text-primary border-b border-outline-variant/30 pb-4 italic">The 7 Scoring Criteria</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {[
+          { metric: "Overall", desc: "Our editorial summary judgment on the mattress as a whole." },
+          { metric: "Value", desc: "What you get for the price, factoring in warranty length and trial terms." },
+          { metric: "Edge Support", desc: "How stable and usable the mattress feels right at its perimeter." },
+          { metric: "Trial Period", desc: "How long and how favorable the recorded home-trial terms actually are." },
+          { metric: "Response Time", desc: "How quickly the surface bounces back when you shift position." },
+          { metric: "Motion Transfer", desc: "How well the mattress keeps movement on one side from reaching the other." },
+          { metric: "Cooling & Breathability", desc: "How the surface handles airflow and heat buildup overnight." }
+        ].map(item => (
+          <div class="glass-panel p-6 rounded-lg border border-outline-variant/30">
+            <h4 class="text-label-sm font-label-sm uppercase tracking-normal text-secondary font-bold mb-2">{item.metric}</h4>
+            <p class="text-body-md text-on-surface-variant">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="glass-panel p-8 rounded-lg border border-outline-variant/30 flex flex-col gap-4">
+      <h2 class="text-headline-md font-headline-md text-primary mb-2">Editorial Standards</h2>
+      <ul class="flex flex-col gap-3 text-body-md text-on-surface-variant">
+        <li class="flex gap-3"><span class="text-secondary font-bold">—</span> No medical claims. A mattress is about comfort and support, not treating a health condition.</li>
+        <li class="flex gap-3"><span class="text-secondary font-bold">—</span> {EDITORIAL_INDEPENDENCE_DISCLOSURE} {LINK_DISCLOSURE}</li>
+        <li class="flex gap-3"><span class="text-secondary font-bold">—</span> Scores are editorial comparisons — not clinical findings, not lab measurements, not manufacturer ratings, not customer-review averages.</li>
+        <li class="flex gap-3"><span class="text-secondary font-bold">—</span> Reviews get updated when specs change, or on our regular re-check cycle.</li>
+      </ul>
+    </section>
+
+    <section class="flex flex-col gap-6 border-t border-outline-variant/40 pt-10">
+      <h2 class="text-headline-md font-headline-md text-primary">Health and Sleep Content Review</h2>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">
+        <a href={FIRDOUS_FARHAD.path} class="text-primary underline underline-offset-4 font-bold">{FIRDOUS_FARHAD.name}</a> serves as The Mattress Digest's {FIRDOUS_FARHAD.role.toLowerCase()}. {FIRDOUS_FARHAD.credentials}
+      </p>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">A "reviewed by" credit only appears once she's read and signed off on the final draft — being assigned to a topic isn't the same as clinical testing or having personally tried every mattress in it.</p>
+    </section>
+
+    <section class="flex flex-col gap-6 border-t border-outline-variant/40 pt-10">
+      <h2 class="text-headline-md font-headline-md text-primary">Evidence Boundaries</h2>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">We're upfront about what the scorecard doesn't prove: there's no pressure-map, thermal-camera, motion-sensor, durability-lab, or long-term sleep-test evidence behind this dataset.</p>
+      <p class="text-body-md text-on-surface-variant leading-relaxed">Product and policy fields are checked against whatever official sources exist, and you should re-verify them before buying. The <a href="/model-coverage.json" class="text-primary underline underline-offset-4 font-bold">published model manifest</a> lists every score so the numbers can be cross-checked across the HTML, the schema, the comparisons, and the machine-readable documents.</p>
+    </section>
+
+  </main>
+</BaseLayout>

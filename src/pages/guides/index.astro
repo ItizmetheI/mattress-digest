@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { topics } from '../../data/topics';
+import { Layers, Snowflake, CircleDot, Activity, Waves, ShieldCheck, BadgeCheck, Moon, BookOpen } from 'lucide-react';
+
+const lastUpdated = "2026-05-01";
+const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
+
+const topicIcons: Record<string, typeof BookOpen> = {
+  'memory-foam': Layers,
+  'cooling-technology': Snowflake,
+  'pocketed-coils': CircleDot,
+  'spinal-alignment': Activity,
+  'motion-isolation': Waves,
+  'edge-support': ShieldCheck,
+  'certipur-us': BadgeCheck,
+  'sleep-cycles': Moon,
+};
+const getTopicIcon = (id: string) => topicIcons[id] ?? BookOpen;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Mattress Buying Guides — The Mattress Digest",
+  "description": "Deep-dive mattress guides covering memory foam, cooling technology, spinal alignment, hybrid coils, and buying decisions.",
+  "url": `${SITE_URL}/guides/`,
+  "dateModified": lastUpdated,
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": topics.map((topic, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `${SITE_URL}/topics/${topic.id}`,
+      "name": topic.title
+    }))
+  }
+};
+---
+
+<BaseLayout 
+  title="Mattress Buying Guides — The Mattress Digest" 
+  description="From understanding memory foam densities to navigating hybrid coils, our deep-dive guides equip you with the knowledge to make the right mattress investment."
+  canonicalUrl={`${SITE_URL}/guides/`}
+  lastUpdated={lastUpdated}
+  ogImage="/images/mattresses/amerisleep-as3.webp"
+  jsonLd={jsonLd}
+>
+  <main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 relative z-10 w-full flex flex-col gap-16">
+    <header class="flex flex-col gap-6 items-center text-center max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-4 items-center justify-center text-body-md text-on-surface-variant bg-surface px-6 py-3 rounded-full shadow-sm border border-outline-variant/30 mt-4">
+          <span><strong class="text-on-background">Editorial Team:</strong> The Mattress Digest Editorial Team</span>
+      </div>
+      <h1 class="text-headline-lg font-headline-lg  text-primary font-bold">
+        Comprehensive Guides
+      </h1>
+      <p class="text-body-lg font-body-lg text-on-surface-variant max-w-3xl">
+        From understanding memory foam densities to navigating hybrid coils, our deep-dive guides equip you with the knowledge to make the right mattress investment.
+      </p>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {topics.map(topic => {
+        const Icon = getTopicIcon(topic.id);
+        return (
+          <a href={`/topics/${topic.id}/`} class="card-editorial flex flex-col overflow-hidden group block">
+            <div class="h-40 overflow-hidden relative flex items-center justify-center gradient-brand">
+              <Icon class="w-14 h-14 text-white/90 group-hover:scale-110 transition-transform duration-500" strokeWidth={1.5} />
+            </div>
+            <div class="p-6 flex flex-col flex-1 gap-4">
+              <h2 class="text-title-lg font-title-lg text-primary font-bold">{topic.title}</h2>
+              <p class="text-body-md text-on-surface-variant line-clamp-3">
+                {topic.description}
+              </p>
+              <span class="text-primary font-label-sm uppercase tracking-normal font-bold mt-auto pt-4 border-t border-outline-variant/20 inline-flex items-center gap-2 group-hover:text-secondary transition-colors">
+                Read Guide <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+            </div>
+          </a>
+        );
+      })}
+    </section>
+
+  </main>
+</BaseLayout>
