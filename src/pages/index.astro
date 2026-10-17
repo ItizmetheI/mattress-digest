@@ -11,17 +11,20 @@ import { formatDateOnly } from '../lib/dateFormat';
 import { TRUST_BADGE_LABEL } from '../lib/disclosure';
 
 const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
-const featuredPicks = [
-  { id: 'amerisleep-as3', label: 'Best Overall', badge: '#1 Pick', desc: 'All-foam build, medium feel, and a perfect 10 Overall.' },
-  { id: 'plushbeds-signature-bliss', label: 'Best Organic', badge: '10/10 Overall', desc: 'A latex hybrid carrying the widest certification list we track; confirm current scope before buying.' },
-  { id: 'vaya-hybrid', label: 'Best Value', badge: '10/10 Value', desc: 'Lower-priced hybrid that still posts perfect Value and Response Time marks.' },
-  { id: 'nest-bedding-sparrow', label: 'Trial Flexibility', badge: '10/10 Trial', desc: 'Hybrid construction with the longest recorded trial window in the dataset.' },
-  { id: 'ghostbed-luxe', label: 'Cooling Foam', badge: '10/10 Cooling', desc: 'Foam-only build leading the field on Cooling and Motion Transfer.' },
-  { id: 'westin-heavenly-bed', label: 'Hotel-Style Feel', badge: '10/10 Overall', desc: 'Pillow-top innerspring pairing solid edge support with quick response.' },
-].map(config => {
+const METRIC_LABEL = { overall: 'Overall', value: 'Value', trialPeriod: 'Trial', coolingBreathability: 'Cooling', edgeSupport: 'Edge' } as const;
+const featuredPicks = ([
+  { id: 'amerisleep-as3', label: 'Best Overall', metric: 'overall', badge: '#1 Pick', desc: 'All-foam build, medium feel, and one of the highest Overall scores in the dataset.' },
+  { id: 'plushbeds-signature-bliss', label: 'Best Organic', metric: 'overall', desc: 'A latex hybrid carrying the widest certification list we track; confirm current scope before buying.' },
+  { id: 'vaya-hybrid', label: 'Best Value', metric: 'value', desc: 'Lower-priced hybrid that still posts perfect Value and Response Time marks.' },
+  { id: 'nest-bedding-sparrow', label: 'Trial Flexibility', metric: 'trialPeriod', desc: 'Hybrid construction with a top-scoring Trial Period.' },
+  { id: 'ghostbed-luxe', label: 'Cooling Foam', metric: 'coolingBreathability', desc: 'Foam-only build pairing a perfect Motion Transfer score with strong Cooling.' },
+  { id: 'westin-heavenly-bed', label: 'Hotel-Style Feel', metric: 'edgeSupport', desc: 'Pillow-top innerspring pairing perfect edge support with quick response.' },
+] as { id: string; label: string; metric: string; badge?: string; desc: string }[]).map(config => {
   const mattress = allMattresses.find(item => item.id === config.id);
   if (!mattress) throw new Error(`Missing homepage pick: ${config.id}`);
-  return { ...config, name: mattress.name, score: mattress.scores.overall, href: `/reviews/${mattress.id}/` };
+  const metric = config.metric as keyof typeof METRIC_LABEL;
+  const badge = config.badge ?? `${mattress.scores[metric]}/10 ${METRIC_LABEL[metric]}`;
+  return { ...config, badge, name: mattress.name, score: mattress.scores.overall, href: `/reviews/${mattress.id}/` };
 });
 const heroStats = [
   { value: '59', label: 'Mattress Models Scored' },

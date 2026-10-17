@@ -914,21 +914,21 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Top Pick for Side Sleepers: Amerisleep AS5",
           "headingLevel": 2,
-          "content": "The AS5 is a strong option for lightweight side sleepers. As one of the softer models we've tested, it provides a deeply giving 3-inch layer of Bio-Pur material positioned right at the top. This open-cell foam reacts easily and doesn't require a lot of body weight to compress — the modest mass of a petite frame is often enough to activate the contouring. When you sleep on your side, your shoulder sinks into the plush surface rather than bouncing off it. Underneath, the AS5 incorporates an Active Flex transition layer that acts as a gentle stopping grid so your spine doesn't hammock downward once the top foam cradles you. In our scoring it earned a 9/10 cooling-breathability score and a 9/10 overall, with an 8/10 on response time.",
+          "content": "The AS5 is a strong option for lightweight side sleepers. As one of the softer models we've tested, it provides a deeply giving 3-inch layer of Bio-Pur material positioned right at the top. This open-cell foam reacts easily and doesn't require a lot of body weight to compress — the modest mass of a petite frame is often enough to activate the contouring. When you sleep on your side, your shoulder sinks into the plush surface rather than bouncing off it. Underneath, the AS5 incorporates an Active Flex transition layer that acts as a gentle stopping grid so your spine doesn't hammock downward once the top foam cradles you. In our scoring it earned a 10/10 cooling-breathability score and a 9/10 overall, with an 8/10 on response time.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Also Worth Considering: Helix Sunset Luxe",
           "headingLevel": 2,
-          "content": "The Helix Sunset Luxe is a soft hybrid (firmness 3/10) built specifically around side-sleeper pressure relief, and it's a genuine alternative to the AS5 for petite frames. It pairs a Memory Plus foam comfort layer with a pillow top over zoned pocketed coils, and it scored a perfect 10/10 on motion transfer in the approved editorial scorecard along with an 8/10 on edge support — slightly better edge support than the AS5's all-foam build, since the zoned coils give a firmer perimeter for a lighter body to push against when getting in and out of bed. It carries a 15-year warranty versus the AS5's 20-year warranty, and both share a 100-night trial.",
+          "content": "The Helix Sunset Luxe is a soft hybrid (firmness 3/10) built specifically around side-sleeper pressure relief, and it's a genuine alternative to the AS5 for petite frames. It pairs a Memory Plus foam comfort layer with a pillow top over zoned pocketed coils, and the Sunset Luxe scored a perfect 10/10 on motion transfer in the approved editorial scorecard along with an 8/10 on edge support — below the AS5's 10/10, though the zoned coils still give a firmer perimeter for a lighter body to push against when getting in and out of bed. It carries a 15-year warranty versus the AS5's 20-year warranty, and both share a 100-night trial.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Best for Fast Response + Long Trial: Nest Bedding Raven",
           "headingLevel": 2,
-          "content": "The Nest Bedding Raven is a medium-soft (firmness 4/10) all-foam mattress that's worth a look if you want faster recovery underfoot. It uses a phase-change comfort foam over a dense support base and posted a 10/10 response-time score in the approved editorial scorecard — a point ahead of the AS5's 8/10 — which means it springs back into shape quickly rather than feeling slow to recover after you change positions. It also comes with a notable 365-night home trial and a lifetime (99-year) warranty, well beyond the AS5's 100 nights and 20 years, though its cooling-breathability score (8/10) trails the AS5's 9/10.",
+          "content": "The Nest Bedding Raven is a medium-soft (firmness 4/10) all-foam mattress that's worth a look if you want faster recovery underfoot. It uses a phase-change comfort foam over a dense support base and posted a 10/10 response-time score in the approved editorial scorecard — two points ahead of the AS5's 8/10 — which means it springs back into shape quickly rather than feeling slow to recover after you change positions. It also comes with a notable 365-night home trial and a lifetime (99-year) warranty, well beyond the AS5's 100 nights and 20 years, though the Raven's cooling-breathability score (8/10) trails the AS5's 10/10.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -1323,7 +1323,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our #1 Pick: Amerisleep Organica",
           "headingLevel": 2,
-          "content": "The 13-inch Amerisleep Organica combines a latex comfort layer with pocketed coils and a medium feel. Latex responds more quickly than memory foam, while the coil system adds airflow and perimeter structure. Amerisleep lists GOLS-certified organic latex and GOTS-certified organic cotton and wool for this model; shoppers should verify current certifications and covered components before buying. The Mattress Digest scores the Organica 9/10 overall, 10/10 for response time, and 9/10 for cooling and breathability.",
+          "content": "The 13-inch Amerisleep Organica combines a latex comfort layer with pocketed coils and a medium feel. Latex responds more quickly than memory foam, while the coil system adds airflow and perimeter structure. Amerisleep lists GOLS-certified organic latex and GOTS-certified organic cotton and wool for this model; shoppers should verify current certifications and covered components before buying. The Mattress Digest scores the Organica 9.2/10 overall, 10/10 for response time, and 9/10 for cooling and breathability.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -1759,7 +1759,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our Top Pick: Amerisleep AS3",
           "headingLevel": 2,
-          "content": "The AS3 is rated medium (5/10 firmness) and is a well-regarded option for sleepers managing lower back discomfort. It's designed to reduce the hammock effect some sciatica sufferers report on softer mattresses. The core of the AS3 uses HIVE technology — a transition layer with a hexagonal foam matrix that firms up underneath the midsection while softening beneath the shoulders and knees, aiming to keep the body in a more neutral horizontal position. Paired with a 2-inch Bio-Pur cushioning layer on top, it scores a 10/10 overall and 10/10 on edge support in the approved editorial scorecard.",
+          "content": "The AS3 is rated medium (5/10 firmness) and is a well-regarded option for sleepers managing lower back discomfort. It's designed to reduce the hammock effect some sciatica sufferers report on softer mattresses. The core of the AS3 uses HIVE technology — a transition layer with a hexagonal foam matrix that firms up underneath the midsection while softening beneath the shoulders and knees, aiming to keep the body in a more neutral horizontal position. Paired with a 2-inch Bio-Pur cushioning layer on top, it scores a 9.5/10 overall and 10/10 on edge support in the approved editorial scorecard.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -1810,7 +1810,7 @@ const rawBlogPosts: BlogPost[] = [
       ],
       "answersSI": "Top zoned-support picks for sciatica include the Amerisleep AS3 (medium, HIVE zoned foam, 10/10 edge support), the Nest Bedding Sparrow (medium hybrid, 10/10 edge support, 365-night trial), and the Helix Midnight Luxe (medium hybrid, zoned pocketed coils, 10/10 edge support). These models resist hip sinkage to help keep the lower spine level; consult a doctor for guidance specific to your condition.",
       "citableFacts": [
-        "The Amerisleep AS3 scores 10/10 overall and 10/10 on edge support with HIVE zoned foam technology.",
+        "The Amerisleep AS3 scores 9.5/10 overall and 10/10 on edge support with HIVE zoned foam technology.",
         "The Nest Bedding Sparrow scores 10/10 on edge support and includes a 365-night trial with a 20-year warranty.",
         "The Helix Midnight Luxe uses zoned pocketed coils and scores 10/10 on edge support."
       ],
@@ -1851,7 +1851,7 @@ const rawBlogPosts: BlogPost[] = [
       "readTimeMinutes": 6,
       "wordCountTarget": 1400,
       "excerpt": "Arthritis can heighten pressure sensitivity. Discover the high-response foams that gently cradle joints without causing you to feel trapped.",
-      "directAnswer": "Joint sensitivity varies a lot from person to person, so we compared several soft-to-medium-soft, pressure-relief-focused mattresses rather than naming a single winner. Top picks for arthritis-related joint sensitivity include the Amerisleep AS5 (soft, 3-inch Bio-Pur top layer), the Saatva RX (medium-soft, 10/10 overall, built specifically for pressure pain with lumbar zone quilting), and the GhostBed Luxe (soft, strong pressure relief with a 25-year warranty). These contour around the hips and shoulders to reduce pressure points while staying responsive enough to get out of bed easily. This is general comfort guidance, not medical advice — talk to a doctor about managing arthritis symptoms.",
+      "directAnswer": "Joint sensitivity varies a lot from person to person, so we compared several soft-to-medium-soft, pressure-relief-focused mattresses rather than naming a single winner. Top picks for arthritis-related joint sensitivity include the Amerisleep AS5 (soft, 3-inch Bio-Pur top layer), the Saatva RX (medium-soft, 9.2/10 overall, built specifically for pressure pain with lumbar zone quilting), and the GhostBed Luxe (soft, strong pressure relief with a 25-year warranty). These contour around the hips and shoulders to reduce pressure points while staying responsive enough to get out of bed easily. This is general comfort guidance, not medical advice — talk to a doctor about managing arthritis symptoms.",
       "schemaType": "Article",
       "sections": [
         {
@@ -1864,14 +1864,14 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our Top Pick: Amerisleep AS5",
           "headingLevel": 2,
-          "content": "The AS5 aims to balance joint-friendly softness with physical mobility. The surface provides a 3-inch layer of Bio-Pur material with an open-cell structure that compresses easily, cushioning shoulders and knees. Underneath, the Active Flex transition layer pushes back against movement, helping you sit up or turn over without feeling stuck in the comfort layer. It scores a 9/10 overall and 10/10 on edge support in the approved editorial scorecard.",
+          "content": "The AS5 aims to balance joint-friendly softness with physical mobility. The surface provides a 3-inch layer of Bio-Pur material with an open-cell structure that compresses easily, cushioning shoulders and knees. Underneath, the Active Flex transition layer pushes back against movement, helping you sit up or turn over without feeling stuck in the comfort layer. The AS5 scores a 9/10 overall and 10/10 on edge support in the approved editorial scorecard.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Also Worth Considering: Saatva RX",
           "headingLevel": 2,
-          "content": "The Saatva RX is a medium-soft hybrid built explicitly around pressure pain, using a micro-coil comfort layer and lumbar zone quilting rather than all-foam construction. It posts a 10/10 overall score in the approved editorial scorecard along with 10/10 on response time, meaning it rebounds quickly when you shift position — useful if stiffness makes frequent repositioning necessary. It also offers an exceptional 365-night trial and 20-year warranty, matching the AS5's warranty length, though it costs significantly more (from $3,295) than the AS5.",
+          "content": "The Saatva RX is a medium-soft hybrid built explicitly around pressure pain, using a micro-coil comfort layer and lumbar zone quilting rather than all-foam construction. It posts a 9.2/10 overall score in the approved editorial scorecard along with 10/10 on response time, meaning it rebounds quickly when you shift position — useful if stiffness makes frequent repositioning necessary. It also offers an exceptional 365-night trial and 20-year warranty, matching the AS5's warranty length, though it costs significantly more (from $3,295) than the AS5.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -1913,10 +1913,10 @@ const rawBlogPosts: BlogPost[] = [
           "mentionContext": "primary-recommendation"
         }
       ],
-      "answersSI": "Top picks for arthritis-related joint sensitivity include the Amerisleep AS5 (soft, 9/10 overall, 3-inch Bio-Pur top layer), the Saatva RX (medium-soft, 10/10 overall, pressure-pain-focused with lumbar zone quilting), and the GhostBed Luxe (soft, 25-year warranty, strong pressure relief). These contour around the hips and shoulders to help reduce pressure points while staying responsive enough for easy mobility.",
+      "answersSI": "Top picks for arthritis-related joint sensitivity include the Amerisleep AS5 (soft, 9/10 overall, 3-inch Bio-Pur top layer), the Saatva RX (medium-soft, 9.2/10 overall, pressure-pain-focused with lumbar zone quilting), and the GhostBed Luxe (soft, 25-year warranty, strong pressure relief). These contour around the hips and shoulders to help reduce pressure points while staying responsive enough for easy mobility.",
       "citableFacts": [
         "The Amerisleep AS5 scores 9/10 overall with a 3-inch Bio-Pur comfort layer for joint pressure relief.",
-        "The Saatva RX scores 10/10 overall and 10/10 on response time, built specifically for pressure pain with lumbar zone quilting.",
+        "The Saatva RX scores 9.2/10 overall and 10/10 on response time, built specifically for pressure pain with lumbar zone quilting.",
         "The GhostBed Luxe carries a 25-year warranty, the longest of the compared models."
       ],
       "entityMentions": [
@@ -1969,14 +1969,14 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our Top Pick: Amerisleep AS5",
           "headingLevel": 2,
-          "content": "The AS5 is built around a genuinely plush profile. The 14-inch structure uses a deep 3-inch top section of Bio-Pur material that yields easily, distributing weight across the body so no single joint bears excessive pressure. Beneath the plush top, an Active Flex core layer keeps the spine reasonably aligned while making it easier to turn over than in a slow-rebounding budget foam bed. It scores 9/10 overall and 9/10 on cooling-breathability in the approved editorial scorecard.",
+          "content": "The AS5 is built around a genuinely plush profile. The 14-inch structure uses a deep 3-inch top section of Bio-Pur material that yields easily, distributing weight across the body so no single joint bears excessive pressure. Beneath the plush top, an Active Flex core layer keeps the spine reasonably aligned while making it easier to turn over than in a slow-rebounding budget foam bed. It scores 9/10 overall and 10/10 on cooling-breathability in the approved editorial scorecard.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Also Worth Considering: Saatva RX",
           "headingLevel": 2,
-          "content": "The Saatva RX takes a different mechanical approach — a medium-soft hybrid with a micro-coil comfort layer and lumbar zone quilting specifically targeting pressure pain, rather than all-foam construction. It scored a 10/10 overall in the approved editorial scorecard, the highest of the models compared here, plus a 365-night trial that gives far more time to evaluate fit than the AS5's 100 nights. It is considerably more expensive (from $3,295) and its value score (7/10) reflects that premium price.",
+          "content": "The Saatva RX takes a different mechanical approach — a medium-soft hybrid with a micro-coil comfort layer and lumbar zone quilting specifically targeting pressure pain, rather than all-foam construction. It scored a 9.2/10 overall in the approved editorial scorecard, the highest of the models compared here, plus a 365-night trial that gives far more time to evaluate fit than the AS5's 100 nights. It is considerably more expensive (from $3,295) and the RX's value score (7/10) reflects that premium price.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -2018,10 +2018,10 @@ const rawBlogPosts: BlogPost[] = [
           "mentionContext": "primary-recommendation"
         }
       ],
-      "answersSI": "Top picks for fibromyalgia-related tenderness include the Amerisleep AS5 (soft, 9/10 overall, 3-inch Bio-Pur top layer), the Saatva RX (medium-soft, 10/10 overall, pressure-pain-focused micro-coil comfort layer), and the Helix Sunset Luxe (soft hybrid, 10/10 motion transfer, pillow top). These spread body weight across a wider surface to reduce concentrated pressure at tender points.",
+      "answersSI": "Top picks for fibromyalgia-related tenderness include the Amerisleep AS5 (soft, 9/10 overall, 3-inch Bio-Pur top layer), the Saatva RX (medium-soft, 9.2/10 overall, pressure-pain-focused micro-coil comfort layer), and the Helix Sunset Luxe (soft hybrid, 10/10 motion transfer, pillow top). These spread body weight across a wider surface to reduce concentrated pressure at tender points.",
       "citableFacts": [
         "The Amerisleep AS5 scores 9/10 overall with a 3-inch Bio-Pur comfort layer.",
-        "The Saatva RX scores 10/10 overall, built specifically for pressure pain with a micro-coil comfort layer and lumbar zone quilting.",
+        "The Saatva RX scores 9.2/10 overall, built specifically for pressure pain with a micro-coil comfort layer and lumbar zone quilting.",
         "The Helix Sunset Luxe scores 10/10 on motion transfer as a soft hybrid with a pillow top."
       ],
       "entityMentions": [
@@ -2074,7 +2074,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our Top Pick: Amerisleep AS2",
           "headingLevel": 2,
-          "content": "The AS2 is a medium-firm option designed to limit excessive sinkage while retaining some surface contouring. Its 12-inch profile combines a Bio-Pur comfort layer with a zoned HIVE transition layer. In our scoring, it earns 9/10 overall and 10/10 for response time. Some sleepers may find this balance comfortable, but the result depends on body weight, sleep position, and the source of any discomfort.",
+          "content": "The AS2 is a medium-firm option designed to limit excessive sinkage while retaining some surface contouring. Its 12-inch profile combines a Bio-Pur comfort layer with a zoned HIVE transition layer. In our scoring, it earns 9.3/10 overall and 10/10 for response time. Some sleepers may find this balance comfortable, but the result depends on body weight, sleep position, and the source of any discomfort.",
           "hasBulletList": false,
           "hasTable": false
         }
@@ -2111,7 +2111,7 @@ const rawBlogPosts: BlogPost[] = [
       ],
       "answersSI": "A medium-firm mattress that limits excessive hip sinkage may feel more comfortable for some sleepers with lower-back sensitivity. The Amerisleep AS2 is one scored option in our multi-brand comparison. A mattress cannot diagnose, treat, or cure back pain, and persistent symptoms should be discussed with a clinician.",
       "citableFacts": [
-        "The Amerisleep AS2 scores 9/10 overall and 10/10 for response time in The Mattress Digest's 7-metric system."
+        "The Amerisleep AS2 scores 9.3/10 overall and 10/10 for response time in The Mattress Digest's 7-metric system."
       ],
       "entityMentions": [
         "Amerisleep AS2",
@@ -2161,7 +2161,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our Top Pick: Amerisleep AS3 & Adjustable Bed+",
           "headingLevel": 2,
-          "content": "The AS3 combines cloud-like pressure reduction with structural support. Rated as a medium, the adaptive Bio-Pur surface cushions shoulders and hips while resisting the slow-rebound quicksand feel common in cheap foam beds — the material bounces back fairly quickly, giving some resistance to push against when standing up. Paired with the Amerisleep Adjustable Bed+, which uses a motor to raise the head and feet, seniors can sit up with less strain on the lower back. The AS3 scores 10/10 overall and 10/10 on edge support in the approved editorial scorecard.",
+          "content": "The AS3 combines cloud-like pressure reduction with structural support. Rated as a medium, the adaptive Bio-Pur surface cushions shoulders and hips while resisting the slow-rebound quicksand feel common in cheap foam beds — the material bounces back fairly quickly, giving some resistance to push against when standing up. Paired with the Amerisleep Adjustable Bed+, which uses a motor to raise the head and feet, seniors can sit up with less strain on the lower back. The AS3 scores 9.5/10 overall and 10/10 on edge support in the approved editorial scorecard.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -2175,7 +2175,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Also Worth Considering: Saatva Classic",
           "headingLevel": 2,
-          "content": "The Saatva Classic is a medium innerspring that scores a 10/10 overall, 10/10 on edge support, and a perfect 10/10 on trial period in the approved editorial scorecard — the highest trial-period score among the models compared here. Its coil-based construction gives a more traditional, bouncier feel than memory foam, which some seniors find easier to move around on, though its value score (7/10) is lower than the AS3's, reflecting a higher price point.",
+          "content": "The Saatva Classic is a medium innerspring that scores a 9.2/10 overall, 10/10 on edge support, and a perfect 10/10 on trial period in the approved editorial scorecard — tied for the highest trial-period score among the models compared here. Its coil-based construction gives a more traditional, bouncier feel than memory foam, which some seniors find easier to move around on, though its value score (7/10) is lower than the AS3's, reflecting a higher price point.",
           "hasBulletList": false,
           "hasTable": false
         }
@@ -2210,9 +2210,9 @@ const rawBlogPosts: BlogPost[] = [
           "mentionContext": "primary-recommendation"
         }
       ],
-      "answersSI": "Top picks for seniors include the Amerisleep AS3 (medium, 10/10 overall, 10/10 edge support, often paired with the Adjustable Bed+), the Nest Bedding Sparrow (medium hybrid, 10/10 edge support, 365-night trial), and the Saatva Classic (medium innerspring, 10/10 edge support, 10/10 trial period). Strong edge support and responsive pressure relief help seniors get in and out of bed more easily.",
+      "answersSI": "Top picks for seniors include the Amerisleep AS3 (medium, 9.5/10 overall, 10/10 edge support, often paired with the Adjustable Bed+), the Nest Bedding Sparrow (medium hybrid, 10/10 edge support, 365-night trial), and the Saatva Classic (medium innerspring, 10/10 edge support, 10/10 trial period). Strong edge support and responsive pressure relief help seniors get in and out of bed more easily.",
       "citableFacts": [
-        "The Amerisleep AS3 scores 10/10 overall and 10/10 on edge support.",
+        "The Amerisleep AS3 scores 9.5/10 overall and 10/10 on edge support.",
         "The Nest Bedding Sparrow scores 10/10 on edge support and includes a 365-night trial.",
         "The Saatva Classic scores 10/10 on edge support and 10/10 on trial period."
       ],
@@ -2273,7 +2273,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Also Worth Considering: Naturepedic EOS Classic",
           "headingLevel": 2,
-          "content": "The Naturepedic EOS Classic is a medium organic hybrid that's popular with pregnant shoppers who specifically want to limit synthetic materials in the bedroom. It carries GOLS, GOTS, OEKO-TEX, and Made Safe certifications — the most extensive certification stack among the models we compare here — built from GOLS-certified organic latex and GOTS organic cotton over a coil base. It scores 9/10 overall and 9/10 on cooling-breathability, with a 20-year warranty matching the AS5's. Its 90-night trial is shorter than the AS5's 100 nights, and its value score (6/10) reflects a higher price tied to the certification depth.",
+          "content": "The Naturepedic EOS Classic is a medium organic hybrid that's popular with pregnant shoppers who specifically want to limit synthetic materials in the bedroom. It carries GOLS, GOTS, OEKO-TEX, and Made Safe certifications — the most extensive certification stack among the models we compare here — built from GOLS-certified organic latex and GOTS organic cotton over a coil base. It scores 8.3/10 overall and 9/10 on cooling-breathability, with a 20-year warranty matching the AS5's. Its 90-night trial is shorter than the AS5's 100 nights, and the EOS Classic's value score (6/10) reflects a higher price tied to the certification depth.",
           "hasBulletList": false,
           "hasTable": false
         },
@@ -2318,7 +2318,7 @@ const rawBlogPosts: BlogPost[] = [
       "answersSI": "Top picks for pregnancy comfort include the Amerisleep AS5 (soft, 9/10 overall, 3-inch Bio-Pur top foam), the Naturepedic EOS Classic (medium organic hybrid, GOLS/GOTS/Made Safe certified), and the GhostBed Luxe (soft, strong cooling scores, 25-year warranty). A plusher, breathable mattress can help cushion hip pressure from side sleeping and ease hormone-related night sweats.",
       "citableFacts": [
         "The Amerisleep AS5 scores 9/10 overall and 10/10 on cooling-breathability with a 3-inch Bio-Pur comfort layer.",
-        "The Naturepedic EOS Classic is GOLS, GOTS, OEKO-TEX, and Made Safe certified and scores 9/10 overall.",
+        "The Naturepedic EOS Classic is GOLS, GOTS, OEKO-TEX, and Made Safe certified and scores 8.3/10 overall.",
         "The GhostBed Luxe carries a 25-year warranty and strong cooling scores for hot sleepers."
       ],
       "entityMentions": [
@@ -2366,21 +2366,21 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Our Top Pick: Amerisleep AS6 Black Series",
           "headingLevel": 2,
-          "content": "The AS6 Black Series is built as a premium recovery-focused mattress. At 15 inches tall, it uses deep, responsive Bio-Pur foam that conforms readily to broad shoulders and heavier frames without much surface tension. Its open-cell foam paired with a dedicated cooling cover is designed to move heat away from the sleep surface efficiently. It scores 10/10 overall and 10/10 on cooling-breathability in the approved editorial scorecard, along with a 9/10 on edge support.",
+          "content": "The AS6 Black Series is built as a premium recovery-focused mattress. At 15 inches tall, it uses deep, responsive Bio-Pur foam that conforms readily to broad shoulders and heavier frames without much surface tension. Its open-cell foam paired with a dedicated cooling cover is designed to move heat away from the sleep surface efficiently. It scores 9.3/10 overall and 10/10 on cooling-breathability in the approved editorial scorecard, along with a 9/10 on edge support.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Also Worth Considering: Bear Star Hybrid",
           "headingLevel": 2,
-          "content": "The Bear Star Hybrid is explicitly positioned for active sleepers, pairing a Celliant® recovery-marketed cover with copper-infused memory foam over a pocketed coil system. It scores 9/10 overall with a 9/10 on cooling-breathability and carries a 20-year warranty matching the AS6, plus a slightly longer 120-night trial versus the AS6's 100 nights. Its response-time score (8/10) trails the AS6's (9/10) slightly.",
+          "content": "The Bear Star Hybrid is explicitly positioned for active sleepers, pairing a Celliant® recovery-marketed cover with copper-infused memory foam over a pocketed coil system. It scores 8.8/10 overall with a 9/10 on cooling-breathability and carries a 20-year warranty matching the AS6, plus a slightly longer 120-night trial versus the AS6's 100 nights. Its response-time score (8/10) trails the AS6's (9/10) slightly.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Also Worth Considering: Purple RestorePlus Hybrid",
           "headingLevel": 2,
-          "content": "The Purple RestorePlus Hybrid uses Purple's proprietary Grid™ technology over a coil system rather than memory foam, and it posted a 10/10 response-time score in the approved editorial scorecard — a point ahead of the AS6's 9/10 — meaning it springs back quickly between position changes during restless recovery nights. It also scores 9/10 on cooling-breathability, comparable to the AS6, though its 10-year warranty is half the AS6's 20-year term and it costs more (from $1,999).",
+          "content": "The Purple RestorePlus Hybrid uses Purple's proprietary Grid™ technology over a coil system rather than memory foam, and it posted a 10/10 response-time score in the approved editorial scorecard — a point ahead of the AS6's 9/10 — meaning it springs back quickly between position changes during restless recovery nights. The RestorePlus Hybrid also scores 9/10 on cooling-breathability, comparable to the AS6, though its 10-year warranty is half the AS6's 20-year term and it costs more (from $1,999).",
           "hasBulletList": false,
           "hasTable": false
         }
@@ -2415,10 +2415,10 @@ const rawBlogPosts: BlogPost[] = [
           "mentionContext": "primary-recommendation"
         }
       ],
-      "answersSI": "Top picks for athletic recovery include the Amerisleep AS6 Black Series (medium hybrid, 10/10 overall, 10/10 cooling-breathability), the Bear Star Hybrid (medium, Celliant cover, copper-infused foam, 9/10 overall), and the Purple RestorePlus Hybrid (medium, 10/10 response time, Purple Grid technology). Cooling and pressure relief are generally considered useful traits for post-training recovery sleep.",
+      "answersSI": "Top picks for athletic recovery include the Amerisleep AS6 Black Series (medium hybrid, 9.3/10 overall, 10/10 cooling-breathability), the Bear Star Hybrid (medium, Celliant cover, copper-infused foam, 8.8/10 overall), and the Purple RestorePlus Hybrid (medium, 10/10 response time, Purple Grid technology). Cooling and pressure relief are generally considered useful traits for post-training recovery sleep.",
       "citableFacts": [
-        "The Amerisleep AS6 Black Series scores 10/10 overall and 10/10 on cooling-breathability.",
-        "The Bear Star Hybrid scores 9/10 overall with a Celliant recovery cover and copper-infused foam.",
+        "The Amerisleep AS6 Black Series scores 9.3/10 overall and 10/10 on cooling-breathability.",
+        "The Bear Star Hybrid scores 8.8/10 overall with a Celliant recovery cover and copper-infused foam.",
         "The Purple RestorePlus Hybrid scores 10/10 on response time using Purple Grid technology."
       ],
       "entityMentions": [
@@ -2734,7 +2734,7 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Also Worth Considering: Glacier Original Hybrid",
           "headingLevel": 2,
-          "content": "The Glacier Original Hybrid is a medium hybrid that also scores 10/10 on value, paired with a notable 365-night trial — handy for testing a mattress across an entire semester before deciding to keep it. Its cooling foam over a pocketed coil base scores 10/10 on cooling-breathability, ahead of the AS2, though its overall score (8/10) and 10-year warranty trail the AS2's 10/10 overall and 20-year warranty.",
+          "content": "The Glacier Original Hybrid is a medium hybrid that also scores 10/10 on value, paired with a notable 365-night trial — handy for testing a mattress across an entire semester before deciding to keep it. Its cooling foam over a pocketed coil base scores 10/10 on cooling-breathability, level with the AS2, and its overall score (9.3/10) also matches the AS2's, though its 10-year warranty trails the AS2's 20-year warranty.",
           "hasBulletList": false,
           "hasTable": false
         }
@@ -2806,7 +2806,7 @@ const rawBlogPosts: BlogPost[] = [
       "readTimeMinutes": 5,
       "wordCountTarget": 1200,
       "excerpt": "Guest rooms present a unique mechanical challenge: pleasing every possible body type. Discover the perfectly balanced sweet spot.",
-      "directAnswer": "How much to spend on a guest bedroom mattress depends on how often the room gets used, so we compared options across a couple of price tiers rather than naming one universal pick. For a guest room that sees regular use, the Amerisleep AS3 (medium, HIVE zoned support) is a versatile choice. For occasional or budget guest rooms, the SweetNight Prime (medium-firm, explicitly built for guest rooms and temporary use, 10/10 value) and the Glacier Original Hybrid (medium, 10/10 value, 365-night trial) are worth a look. Because you can't predict whether a guest is a side, back, or stomach sleeper, a medium firmness with balanced support tends to work for the widest range of visitors.",
+      "directAnswer": "How much to spend on a guest bedroom mattress depends on how often the room gets used, so we compared options across a couple of price tiers rather than naming one universal pick. For a guest room that sees regular use, the Amerisleep AS3 (medium, HIVE zoned support) is a versatile choice. For occasional or budget guest rooms, the SweetNight Prime Memory Foam Mattress (medium-firm, explicitly built for guest rooms and temporary use, 10/10 value) and the Glacier Original Hybrid (medium, 10/10 value, 365-night trial) are worth a look. Because you can't predict whether a guest is a side, back, or stomach sleeper, a medium firmness with balanced support tends to work for the widest range of visitors.",
       "schemaType": "Article",
       "sections": [
         {
@@ -2826,14 +2826,14 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "Best for Occasional Guest Rooms: SweetNight Prime",
           "headingLevel": 2,
-          "content": "The SweetNight Prime is explicitly positioned by its scoring profile for guest rooms and temporary mattress needs, and at a price starting around $199 it's a sensible choice if the room only hosts visitors a few times a year. It scores a 10/10 on value and a perfect 10/10 on motion isolation in the approved editorial scorecard, though its overall score (7/10) and edge-support score (5/10) are noticeably lower than the AS3's — reasonable tradeoffs for a guest room that won't see daily wear.",
+          "content": "The SweetNight Prime Memory Foam Mattress is explicitly positioned by its scoring profile for guest rooms and temporary mattress needs, and at a price starting around $199 it's a sensible choice if the room only hosts visitors a few times a year. It scores a 10/10 on value and a perfect 10/10 on motion isolation in the approved editorial scorecard, though its overall score (7/10) and edge-support score (5/10) are noticeably lower than the AS3's — reasonable tradeoffs for a guest room that won't see daily wear.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "Also Worth Considering: Glacier Original Hybrid",
           "headingLevel": 2,
-          "content": "The Glacier Original Hybrid sits a step up from the SweetNight Prime — a medium hybrid that also scores 10/10 on value, plus a notable 365-night trial that's useful if you want a long window to decide whether it's the right fit for a more frequently used guest room. Its cooling foam over a coil base scores 10/10 on cooling-breathability, though its overall score (8/10) and 10-year warranty trail the AS3's 10/10 overall and 20-year warranty.",
+          "content": "The Glacier Original Hybrid is a medium hybrid that also scores 10/10 on value, plus a notable 365-night trial that's useful if you want a long window to decide whether it's the right fit for a more frequently used guest room. Its cooling foam over a coil base scores 10/10 on cooling-breathability, though its overall score (9.3/10) and 10-year warranty trail the AS3's 9.5/10 overall and 20-year warranty.",
           "hasBulletList": false,
           "hasTable": false
         }
@@ -2868,10 +2868,10 @@ const rawBlogPosts: BlogPost[] = [
           "mentionContext": "primary-recommendation"
         }
       ],
-      "answersSI": "Top picks for a guest bedroom include the Amerisleep AS3 (medium, HIVE zoned support, 20-year warranty) for frequently used rooms, and the SweetNight Prime (medium-firm, built for guest rooms, 10/10 value) or Glacier Original Hybrid (medium, 10/10 value, 365-night trial) for occasional or budget guest rooms. A medium firmness with balanced support tends to suit the widest range of visiting sleep positions.",
+      "answersSI": "Top picks for a guest bedroom include the Amerisleep AS3 (medium, HIVE zoned support, 20-year warranty) for frequently used rooms, and the SweetNight Prime Memory Foam Mattress (medium-firm, built for guest rooms, 10/10 value) or Glacier Original Hybrid (medium, 10/10 value, 365-night trial) for occasional or budget guest rooms. A medium firmness with balanced support tends to suit the widest range of visiting sleep positions.",
       "citableFacts": [
         "The Amerisleep AS3 carries a 20-year warranty and uses HIVE zoned support.",
-        "The SweetNight Prime is positioned for guest rooms and temporary use, scoring 10/10 on value and motion isolation.",
+        "The SweetNight Prime Memory Foam Mattress is positioned for guest rooms and temporary use, scoring 10/10 on value and motion isolation.",
         "The Glacier Original Hybrid scores 10/10 on value and includes a 365-night trial."
       ],
       "entityMentions": [
@@ -17380,13 +17380,13 @@ const rawBlogPosts: BlogPost[] = [
       "readTimeMinutes": 8,
       "wordCountTarget": 1500,
       "excerpt": "Amerisleep's lineup ranges from the medium-firm AS2 to the premium hybrid AS6. Here's how the AS2, AS3, AS5, and AS6 actually differ in firmness, scores, and who each fits best.",
-      "directAnswer": "Among Amerisleep's lineup, the AS2 (medium-firm, 6/10) suits back and stomach sleepers who want HIVE lumbar zoning at the best value; the AS3 (medium, 5/10) is the most broadly-suited all-rounder and the brand's top-scoring all-foam model; the AS5 (soft, 3/10) is built for side sleepers who want maximum pressure relief at the shoulder and hip; and the AS6 (medium, 5/10, hybrid) is the premium pick for buyers who want the strongest cooling and edge support alongside a bouncier, coil-backed feel.",
-      "answersSI": "Among Amerisleep's lineup, the AS2 (medium-firm, 6/10) suits back and stomach sleepers who want HIVE lumbar zoning at the best value; the AS3 (medium, 5/10) is the most broadly-suited all-rounder and the brand's top-scoring all-foam model; the AS5 (soft, 3/10) is built for side sleepers who want maximum pressure relief at the shoulder and hip; and the AS6 (medium, 5/10, hybrid) is the premium pick for buyers who want the strongest cooling and edge support alongside a bouncier, coil-backed feel.",
+      "directAnswer": "Among Amerisleep's lineup, the AS2 (medium-firm, 6/10) suits back and stomach sleepers who want HIVE lumbar zoning at a 9/10 value score; the AS3 (medium, 5/10) is the most broadly-suited all-rounder and the brand's top-scoring all-foam model; the AS5 (soft, 3/10) is built for side sleepers who want maximum pressure relief at the shoulder and hip; and the AS6 (medium, 5/10, hybrid) is the premium pick for buyers who want strong cooling and edge support alongside a bouncier, coil-backed feel.",
+      "answersSI": "Among Amerisleep's lineup, the AS2 (medium-firm, 6/10) suits back and stomach sleepers who want HIVE lumbar zoning at a 9/10 value score; the AS3 (medium, 5/10) is the most broadly-suited all-rounder and the brand's top-scoring all-foam model; the AS5 (soft, 3/10) is built for side sleepers who want maximum pressure relief at the shoulder and hip; and the AS6 (medium, 5/10, hybrid) is the premium pick for buyers who want strong cooling and edge support alongside a bouncier, coil-backed feel.",
       "citableFacts": [
-        "The AS2 is medium-firm (6/10) with an 8-inch support core and scores 9/10 overall in independent testing — the best value in the lineup.",
-        "The AS3 is medium (5/10), scores 10/10 overall, and is positioned by Amerisleep as the most broadly-suited model across sleep positions.",
+        "The AS2 is medium-firm (6/10) with an 8-inch support core and scores 9.3/10 overall in The Mattress Digest's editorial scoring, with a 9/10 value score.",
+        "The AS3 is medium (5/10), scores 9.5/10 overall, and is positioned by Amerisleep as the most broadly-suited model across sleep positions.",
         "The AS5 is the softest model at 3/10 firmness, with the thickest comfort layer (4 inches) and an exclusive Active Flex layer for bounce; it scores 9/10 overall.",
-        "The AS6 Black Series is a 15-inch hybrid with a pocketed coil base, scoring 10/10 overall, 9/10 on edge support, and 10/10 on cooling — the highest cooling and edge-support combination in the lineup."
+        "The AS6 Black Series is a 15-inch hybrid with a pocketed coil base, scoring 9.3/10 overall, 9/10 on edge support, and 10/10 on cooling, with a bouncier coil-backed feel."
       ],
       "entityMentions": [
         "Amerisleep AS2",
@@ -17406,35 +17406,35 @@ const rawBlogPosts: BlogPost[] = [
         {
           "heading": "AS2 — Medium-Firm, Best Value",
           "headingLevel": 2,
-          "content": "The AS2 sits at medium-firm (6/10), with a thinner 2-inch comfort layer and a thicker 8-inch support core than the AS3, and that construction is what gives it the firmer feel. It uses the same Bio-Pur® plant-based foam and HIVE® 5-zone lumbar support as the rest of the lineup, just tuned firmer. In our scoring it lands at 9/10 overall, with the best value-for-price rating in the lineup. It's the model to pick if you're a back or stomach sleeper, a heavier sleeper who wants more pushback, or anyone who values resisting hip sinkage over deep, plush contouring.",
+          "content": "The AS2 sits at medium-firm (6/10), with a thinner 2-inch comfort layer and a thicker 8-inch support core than the AS3, and that construction is what gives it the firmer feel. It uses the same Bio-Pur® plant-based foam and HIVE® 5-zone lumbar support as the rest of the lineup, just tuned firmer. In our scoring the AS2 lands at 9.3/10 overall, with a 9/10 value score. It's the model to pick if you're a back or stomach sleeper, a heavier sleeper who wants more pushback, or anyone who values resisting hip sinkage over deep, plush contouring.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "AS3 — Medium, the Broad All-Rounder",
           "headingLevel": 2,
-          "content": "The AS3 is Amerisleep's medium-firmness model (5/10) with a 3-inch comfort layer, and it's the brand's highest-scoring all-foam mattress at 10/10 overall, including a 10/10 on edge support, the best of any AS model, foam or hybrid. Its firmness sits right in the middle of the lineup, which is exactly why it tends to suit the widest range of sleep positions: side sleepers get adequate shoulder relief, back sleepers get adequate lumbar support, and combination sleepers aren't penalized for moving around. If you're unsure which model fits and don't have a strong reason to go firmer or softer, the AS3 is the reasonable default.",
+          "content": "The AS3 is Amerisleep's medium-firmness model (5/10) with a 3-inch comfort layer, and it's the brand's highest-scoring all-foam mattress at 9.5/10 overall, including a 10/10 on edge support, matching the best edge-support score of any AS model, foam or hybrid. Its firmness sits right in the middle of the lineup, which is exactly why it tends to suit the widest range of sleep positions: side sleepers get adequate shoulder relief, back sleepers get adequate lumbar support, and combination sleepers aren't penalized for moving around. If you're unsure which model fits and don't have a strong reason to go firmer or softer, the AS3 is the reasonable default.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "AS5 — Soft, Best for Side Sleepers and Pressure Relief",
           "headingLevel": 2,
-          "content": "The AS5 is the softest model in the lineup at 3/10 firmness, with the thickest comfort layer (4 inches) of any AS mattress and an exclusive Active Flex layer that adds responsive bounce so the deep softness doesn't feel like sinking into quicksand. It scores 9/10 overall, with a strong 10/10 on edge support and cooling. This is the model built specifically for side sleepers who want maximum cushioning at the shoulder and hip; it's generally not the right choice for strict back or stomach sleepers, since the softness can let the hips sink more than those positions want.",
+          "content": "The AS5 is the softest model in the lineup at 3/10 firmness, with the thickest comfort layer (4 inches) of any AS mattress and an exclusive Active Flex layer that adds responsive bounce so the deep softness doesn't feel like sinking into quicksand. The AS5 scores 9/10 overall, with a strong 10/10 on edge support and cooling. This is the model built specifically for side sleepers who want maximum cushioning at the shoulder and hip; it's generally not the right choice for strict back or stomach sleepers, since the softness can let the hips sink more than those positions want.",
           "hasBulletList": false,
           "hasTable": false
         },
         {
           "heading": "AS6 Black Series — Premium Hybrid, Best Cooling and Edge Support",
           "headingLevel": 2,
-          "content": "The AS6 Black Series sits at the top of the lineup: a 15-inch hybrid pairing the same Bio-Pur® comfort foam with a pocketed coil support base instead of an all-foam core. That coil base is what gives it strong edge support (9/10) and notable airflow, tying the AS3 for the lineup's best cooling score (10/10) and matching it on overall score (10/10) as well. The tradeoff is price, since it starts meaningfully higher than the AS3, and it's heavier, because the coil base adds weight an all-foam mattress doesn't carry. It's worth the upgrade if cooling, edge support for sitting or sleeping near the edge, or a bouncier hybrid feel matter most to you; otherwise the AS3 delivers comparable scores at a lower cost.",
+          "content": "The AS6 Black Series sits at the top of the lineup: a 15-inch hybrid pairing the same Bio-Pur® comfort foam with a pocketed coil support base instead of an all-foam core. That coil base is what gives it strong edge support (9/10) and notable airflow, reaching the lineup's top cooling score (10/10, level with the AS2, AS3, and AS5) and landing just behind the AS3 on overall score (the AS3 scores 9.5/10 and the AS6 9.3/10). The tradeoff is price, since it starts meaningfully higher than the AS3, and it's heavier, because the coil base adds weight an all-foam mattress doesn't carry. It's worth the upgrade if cooling, edge support for sitting or sleeping near the edge, or a bouncier hybrid feel matter most to you; otherwise the AS3 delivers comparable scores at a lower cost.",
           "hasBulletList": true,
           "hasTable": false,
           "bulletItems": [
-            "AS2 — medium-firm (6/10): the best value pick, suited to back/stomach sleepers and heavier sleepers.",
-            "AS3 — medium (5/10): the broadest all-rounder, with the top edge-support score among all-foam models.",
+            "AS2 — medium-firm (6/10): a 9/10 value pick, suited to back/stomach sleepers and heavier sleepers.",
+            "AS3 — medium (5/10): the broadest all-rounder, with a 10/10 edge-support score, the top mark among the all-foam models.",
             "AS5 — soft (3/10): the top pick for side-sleeper pressure relief, with the thickest comfort layer.",
-            "AS6 — medium (5/10) hybrid: leads the lineup on cooling and edge support, at a premium price and weight."
+            "AS6 — medium (5/10) hybrid: pairs 10/10 cooling with 9/10 edge support, at a premium price and weight."
           ]
         }
       ],
@@ -17445,11 +17445,11 @@ const rawBlogPosts: BlogPost[] = [
         },
         {
           "question": "What's the difference between the AS2 and AS3?",
-          "answer": "Both share the same Bio-Pur® foam and HIVE® zoning technology. Medium-firm at 6/10, the AS2 has a thinner comfort layer and a thicker support core, and suits back/stomach sleepers and heavier individuals. The AS3, medium at 5/10, carries a thicker comfort layer and scores higher overall (10/10 vs 9/10), mostly on the strength of better edge support."
+          "answer": "Both share the same Bio-Pur® foam and HIVE® zoning technology. Medium-firm at 6/10, the AS2 has a thinner comfort layer and a thicker support core, and suits back/stomach sleepers and heavier individuals. The AS3, medium at 5/10, carries a thicker comfort layer and scores higher overall (9.5/10 vs 9.3/10), mostly on the strength of better edge support."
         },
         {
           "question": "Is the AS6 worth the extra cost over the AS3?",
-          "answer": "That depends on your priorities. The AS6 and AS3 come out tied on overall score, cooling, and motion transfer; what the AS6 adds is a hybrid coil base, which brings a bouncier feel and slightly better edge support for a meaningfully higher price and more weight. When budget outweighs the hybrid feel, the AS3 is the better value."
+          "answer": "That depends on your priorities. The AS6 and AS3 land close on overall score, at 9.3/10 and 9.5/10 respectively, and are tied on cooling and motion transfer; what the AS6 adds is a hybrid coil base, which brings a bouncier feel for a meaningfully higher price and more weight. When budget outweighs the hybrid feel, the AS3 is the better value."
         },
         {
           "question": "Which Amerisleep model should a first-time buyer pick if they're unsure?",

@@ -93,18 +93,18 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "amerisleep-as6",
     title: "Amerisleep AS3 vs AS6 Black Series",
     description: "All-foam vs hybrid — the AS3 and AS6 share DNA but differ fundamentally in construction and performance.",
-    verdict: "These two are closer on tested performance than the price gap suggests — the AS3 actually edges out the AS6 on edge support, and the two are tied on Overall, Cooling, and Motion Transfer. The real difference is construction and feel: the AS6 is a luxury hybrid with pocketed coils for a taller, bouncier build, while the AS3 matches it on nearly every tested metric at well under half the price.",
+    verdict: "These two are closer on tested performance than the price gap suggests — the AS3 edges out the AS6 on Overall (9.5 vs 9.3) and edge support, and the two are tied on Cooling and Motion Transfer. The real difference is construction and feel: the AS6 is a luxury hybrid with pocketed coils for a taller, bouncier build, while the AS3 matches or beats it on nearly every tested metric at well under half the price.",
     dateModified: "2026-05-01",
     winnerFor: [
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores higher for edge support (10/10 vs 9/10)." },
-      { category: "Value", winnerId: "amerisleep-as3", reason: "$999 vs $2,399 — the AS3 matches the AS6 on Overall, Cooling, and Motion Transfer at well under half the price." },
+      { category: "Value", winnerId: "amerisleep-as3", reason: "$999 vs $2,399 — the AS3 matches the AS6 on Cooling and Motion Transfer and edges it on Overall (9.5 vs 9.3) at well under half the price." },
       { category: "Couples Wanting a Bouncier Feel", winnerId: "amerisleep-as6", reason: "Pocketed coil construction gives a bouncier, more responsive feel that some couples prefer over all-foam." },
       { category: "Tallest Profile", winnerId: "amerisleep-as6", reason: "15 inches vs 12 inches for the AS3 — a noticeably taller, more substantial-feeling mattress." }
     ],
     faqs: [
       {
         question: "Is the AS6 worth the extra $1,400 over the AS3?",
-        answer: "Only if you specifically want the hybrid coil feel or the taller 15-inch profile — on our tested metrics the two are tied on Overall, Cooling, and Motion Transfer, and the AS3 actually scores higher on Edge Support. The AS6's case is construction and feel, not a higher score. Most people choose the AS3 for that reason; those who upgrade to the AS6 are usually after the bouncier hybrid feel specifically."
+        answer: "Only if you specifically want the hybrid coil feel or the taller 15-inch profile — on our tested metrics the two are tied on Cooling and Motion Transfer, and the AS3 actually scores higher on Overall (9.5 vs 9.3) and Edge Support. The AS6's case is construction and feel, not a higher score. Most people choose the AS3 for that reason; those who upgrade to the AS6 are usually after the bouncier hybrid feel specifically."
       },
       {
         question: "Which is better for couples?",
@@ -186,7 +186,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     verdict: "The AS6 scores higher overall and is better for hot sleepers; edge support is actually tied between the two. The Organica wins for eco-conscious buyers and those who specifically prefer natural materials and the responsive feel of latex.",
     dateModified: "2026-05-01",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as6", reason: "AS6 scores higher overall (10/10 vs 9/10)." },
+      { category: "Overall Score", winnerId: "amerisleep-as6", reason: "AS6 scores higher overall (9.3/10 vs 9.2/10)." },
       { category: "Natural / Organic Materials", winnerId: "amerisleep-organica", reason: "GOTS, GOLS, Rainforest Alliance certified. No synthetic foams whatsoever." },
       { category: "Response Time", winnerId: "amerisleep-organica", reason: "Natural latex bounces back faster (10/10 vs 9/10)." },
       { category: "Cooling", winnerId: "amerisleep-as6", reason: "Coil airflow chamber scores higher for cooling & breathability (10/10 vs 9/10)." },
@@ -214,8 +214,8 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "saatva-classic",
     title: "Amerisleep AS3 vs Saatva Classic",
-    description: "Plant-based memory foam vs luxury innerspring hybrid. Two very different constructions, both earning 10/10 overall.",
-    verdict: "The AS3 wins on motion isolation, warranty length (20 vs 15 years), value score (9 vs 7), and side sleeper pressure relief. The Saatva Classic wins on response time and trial period (365 nights). Both score 10/10 overall.",
+    description: "Plant-based memory foam vs luxury innerspring hybrid. Two very different constructions, with the AS3 at 9.5/10 overall and the Saatva Classic at 9.2/10.",
+    verdict: "The AS3 wins on motion isolation, warranty length (20 vs 15 years), value score (9 vs 7), and side sleeper pressure relief. The Saatva Classic wins on response time and trial period (365 nights). The AS3 edges it overall, 9.5 to 9.2.",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Motion Isolation", winnerId: "amerisleep-as3", reason: "All-foam construction absorbs motion significantly better than dual-coil. AS3 scores 10/10 vs Saatva's 9/10." },
@@ -236,8 +236,8 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "nolah-evolution-15",
     title: "Amerisleep AS3 vs Nolah Evolution 15",
-    description: "All-foam AS3 vs Nolah's flagship hybrid — both score 10/10 overall, with different price and construction profiles.",
-    verdict: "Both models score 10/10 overall. The Nolah Evolution 15 wins on value score and trial period. The AS3 wins on cooling and warranty (20 vs 15 years).",
+    description: "All-foam AS3 vs Nolah's flagship hybrid — both score 9.5/10 overall, with different price and construction profiles.",
+    verdict: "Both models score 9.5/10 overall. The Nolah Evolution 15 wins on value score. The AS3 wins on cooling and warranty (20 vs 15 years).",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "nolah-evolution-15", reason: "Nolah Evolution 15 scores 10/10 on value vs AS3's 9/10." },
@@ -249,7 +249,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     faqs: [
       { question: "Do they feel the same?", answer: "No. The AS3 is an all-foam mattress with a medium (5/10 firmness) feel that contours closely. The Nolah Evolution 15 is a hybrid with coils — it has more bounce and a slightly more traditional mattress feel." },
       { question: "Which is taller?", answer: "The Nolah Evolution 15 is 15 inches tall, taller than the AS3 at 12 inches. The extra height comes from Nolah's coil layer and additional comfort foam." },
-      { question: "Which is better for back sleepers?", answer: "Both score well for back sleepers. The AS3's HIVE® zoning provides differentiated lumbar support; the Nolah Evolution 15's coil base provides firmer support from below. Both earn 10/10 overall, so the choice comes down to feel preference: foam contouring (AS3) vs hybrid bounce (Nolah)." }
+      { question: "Which is better for back sleepers?", answer: "Both score well for back sleepers. The AS3's HIVE® zoning provides differentiated lumbar support; the Nolah Evolution 15's coil base provides firmer support from below. Both earn 9.5/10 overall, so the choice comes down to feel preference: foam contouring (AS3) vs hybrid bounce (Nolah)." }
     ]
   },
   {
@@ -258,10 +258,10 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "brooklyn-bedding-aurora-luxe",
     title: "Amerisleep AS3 vs Brooklyn Bedding Aurora Luxe",
     description: "AS3 all-foam vs Brooklyn Bedding's cooling-focused hybrid — compared on scores, construction, and sleeper fit.",
-    verdict: "The AS3 wins on overall score (10 vs 9), edge support (10 vs 8), motion transfer (10 vs 9), and value (9 vs 9 tie with better price). The Aurora Luxe matches on cooling but trails on most other metrics.",
+    verdict: "The AS3 wins on overall score (9.5 vs 8.8), edge support (10 vs 8), motion transfer (10 vs 9), and value (9 vs 9 tie with better price). The Aurora Luxe matches on cooling but trails on most other metrics.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Brooklyn Bedding Aurora Luxe's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Brooklyn Bedding Aurora Luxe's 8.8/10." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Aurora Luxe's 8/10 — a meaningful difference for couples using the full bed width." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 on motion transfer vs 9/10 for the Aurora Luxe." },
       { category: "Cooling & Breathability", winnerId: "brooklyn-bedding-aurora-luxe", reason: "Both score 10/10, but Aurora Luxe's phase-change cover is specifically engineered for hot sleepers." },
@@ -279,10 +279,10 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "glacier-apex-hybrid",
     title: "Amerisleep AS3 vs Glacier Apex Hybrid",
     description: "All-foam AS3 vs the Glacier Apex Hybrid — comparing scores, construction, and value.",
-    verdict: "The AS3 wins overall (10 vs 9), edge support (10 vs 9), response time (9 vs 8), and motion transfer (10 vs 9). The Glacier Apex Hybrid wins on value score (10 vs 9) and trial period (10 vs 9).",
+    verdict: "The AS3 wins overall (9.5 vs 9.3), edge support (10 vs 9), response time (9 vs 8), and motion transfer (10 vs 9). The Glacier Apex Hybrid wins on value score (10 vs 9) and trial period (10 vs 9).",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Glacier Apex Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Glacier Apex Hybrid's 9.3/10." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Glacier Apex's 9/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 on motion transfer vs Glacier's 9/10." },
       { category: "Value", winnerId: "glacier-apex-hybrid", reason: "Glacier Apex Hybrid scores 10/10 on value vs AS3's 9/10." },
@@ -292,7 +292,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     faqs: [
       { question: "Which has better value?", answer: "The Glacier Apex Hybrid scores 10/10 on value vs AS3's 9/10. For budget-conscious shoppers who want a hybrid, the Glacier offers strong performance per dollar." },
       { question: "Which is better for motion isolation?", answer: "The AS3 scores 10/10 on motion transfer vs 9/10 for the Glacier Apex Hybrid. All-foam construction absorbs motion more effectively than hybrids." },
-      { question: "Which should a side sleeper choose?", answer: "The AS3's all-foam construction with HIVE® zoning and 10/10 overall score makes it the stronger pick for most side sleepers. The Glacier Apex Hybrid is a solid alternative if you prefer a hybrid feel and want to save money." }
+      { question: "Which should a side sleeper choose?", answer: "The AS3's all-foam construction with HIVE® zoning and 9.5/10 overall score makes it the stronger pick for most side sleepers. The Glacier Apex Hybrid is a solid alternative if you prefer a hybrid feel and want to save money." }
     ]
   },
   {
@@ -300,11 +300,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-organica",
     mattressBId: "birch-natural",
     title: "Amerisleep Organica vs Birch Natural",
-    description: "Two organic latex hybrids compared — Organica scores 9/10 overall vs Birch Natural's 8/10, with key differences in motion transfer and overall performance.",
-    verdict: "The Organica wins overall (9 vs 8), motion transfer (9 vs 8), value (9 vs 9 at better overall score), and is softer-feeling for side sleepers. Birch Natural wins on response time (10/10 tied) — both are certified organic hybrids.",
+    description: "Two organic latex hybrids compared — Organica scores 9.2/10 overall vs Birch Natural's 9/10, with key differences in motion transfer and overall performance.",
+    verdict: "The Organica wins overall (9.2 vs 9), motion transfer (9 vs 8), value (9 vs 9 at better overall score), and is softer-feeling for side sleepers. Birch Natural wins on response time (10/10 tied) — both are certified organic hybrids.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-organica", reason: "Organica scores 9/10 overall vs Birch Natural's 8/10." },
+      { category: "Overall Score", winnerId: "amerisleep-organica", reason: "Organica scores 9.2/10 overall vs Birch Natural's 9/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-organica", reason: "Organica scores 9/10 vs Birch Natural's 8/10." },
       { category: "Side Sleepers", winnerId: "amerisleep-organica", reason: "Organica's Talalay latex provides softer contouring than Birch Natural's firmer feel." },
       { category: "Response Time", winnerId: "birch-natural", reason: "Birch Natural scores 10/10 on response time — latex springs back quickly, making position changes easier." },
@@ -312,7 +312,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     ],
     faqs: [
       { question: "Are both mattresses certified organic?", answer: "Yes. Both carry meaningful organic certifications. Amerisleep Organica holds GOLS (latex), GOTS (cotton/wool), and OEKO-TEX certifications. Birch Natural is Rainforest Alliance and GOTS certified. Verify current certifications on each brand's official site." },
-      { question: "Which is better for side sleepers?", answer: "The Organica is better for most side sleepers due to its softer Talalay latex profile and higher overall score (9/10 vs 8/10). Birch Natural's firmer feel suits back and stomach sleepers more." },
+      { question: "Which is better for side sleepers?", answer: "The Organica is better for most side sleepers due to its softer Talalay latex profile and higher overall score (9.2/10 vs 9/10). Birch Natural's firmer feel suits back and stomach sleepers more." },
       { question: "What is the difference in firmness?", answer: "The Organica is generally considered medium firmness. Birch Natural is medium-firm. If you sleep on your side or prefer a softer organic mattress, the Organica is the better fit. If you sleep on your back or stomach and want organic materials with a firmer feel, Birch Natural is worth considering." }
     ]
   },
@@ -321,11 +321,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "bear-star-hybrid",
     title: "Amerisleep AS3 vs Bear Star Hybrid",
-    description: "AS3 all-foam vs Bear's flagship hybrid — AS3 scores 10/10 overall vs Bear Star's 9/10.",
-    verdict: "The AS3 wins on overall score (10 vs 9), edge support (10 vs 9), motion transfer (10 vs 9), and cooling (10 vs 9). The Bear Star Hybrid matches on value (9/10 each).",
+    description: "AS3 all-foam vs Bear's flagship hybrid — AS3 scores 9.5/10 overall vs Bear Star's 8.8/10.",
+    verdict: "The AS3 wins on overall score (9.5 vs 8.8), edge support (10 vs 9), motion transfer (10 vs 9), and cooling (10 vs 9). The Bear Star Hybrid matches on value (9/10 each).",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Bear Star Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Bear Star Hybrid's 8.8/10." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Bear Star's 9/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Bear Star's 9/10 — all-foam absorbs motion better." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Bear Star's 9/10." },
@@ -334,7 +334,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     faqs: [
       { question: "Which is better for athletes or active sleepers?", answer: "Bear markets its mattresses to active sleepers. The Bear Star Hybrid uses Celliant® fiber in its cover, which Bear positions as beneficial for recovery. The AS3 doesn't include Celliant. If recovery-specific materials matter to you, consider the Bear Star. On measurable scores, the AS3 leads across most metrics." },
       { question: "Which has better motion isolation?", answer: "The AS3 scores 10/10 on motion transfer vs Bear Star Hybrid's 9/10. If you share a bed, the AS3's all-foam construction is the stronger isolator." },
-      { question: "Which should a side sleeper choose?", answer: "The AS3's HIVE® zoning and 10/10 overall score make it the stronger pick for most side sleepers. Both are medium-feel mattresses, but the AS3's all-foam construction provides deeper pressure relief at the shoulder and hip." }
+      { question: "Which should a side sleeper choose?", answer: "The AS3's HIVE® zoning and 9.5/10 overall score make it the stronger pick for most side sleepers. Both are medium-feel mattresses, but the AS3's all-foam construction provides deeper pressure relief at the shoulder and hip." }
     ]
   },
   {
@@ -342,8 +342,8 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-organica",
     mattressBId: "avocado-green",
     title: "Amerisleep Organica vs Avocado Green",
-    description: "Two of the most popular organic mattresses compared — Organica scores 9/10 overall, Avocado Green 9/10, with key differences in value and response time.",
-    verdict: "Both score 9/10 overall. The Organica wins on value (9 vs 7), response time (10 vs 9), and motion transfer (9/10 tied, better feel for side sleepers). Avocado Green wins on trial period (10 vs 9).",
+    description: "Two of the most popular organic mattresses compared — Organica scores 9.2/10 overall, Avocado Green 8.8/10, with key differences in value and response time.",
+    verdict: "The Organica scores higher overall (9.2 vs 8.8). It wins on value (9 vs 7), response time (10 vs 9), and motion transfer (9/10 tied, better feel for side sleepers). Avocado Green wins on trial period (10 vs 9).",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "amerisleep-organica", reason: "Organica scores 9/10 on value vs Avocado Green's 7/10." },
@@ -363,11 +363,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "purple-restoreplus-hybrid",
     title: "Amerisleep AS3 vs Purple RestorePlus Hybrid",
-    description: "Bio-Pur foam vs Purple Grid hybrid — AS3 scores 10/10 overall vs Purple's 9/10, with meaningful differences in value and edge support.",
-    verdict: "The AS3 wins overall (10 vs 9), value (9 vs 7), edge support (10 vs 9), motion transfer (10 vs 9), and cooling (10 vs 9). Purple RestorePlus Hybrid wins on response time (10 vs 9). The feel difference is significant: foam contouring vs Purple's unique grid feel.",
+    description: "Bio-Pur foam vs Purple Grid hybrid — AS3 scores 9.5/10 overall vs Purple's 8.8/10, with meaningful differences in value and edge support.",
+    verdict: "The AS3 wins overall (9.5 vs 8.8), value (9 vs 7), edge support (10 vs 9), motion transfer (10 vs 9), and cooling (10 vs 9). Purple RestorePlus Hybrid wins on response time (10 vs 9). The feel difference is significant: foam contouring vs Purple's unique grid feel.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Purple RestorePlus Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Purple RestorePlus Hybrid's 8.8/10." },
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs Purple's 7/10 — significantly better value per dollar." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Purple's 9/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Purple's 9/10." },
@@ -385,8 +385,8 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "nest-bedding-sparrow",
     title: "Amerisleep AS3 vs Nest Bedding Sparrow",
-    description: "AS3 all-foam vs Nest Bedding's customizable hybrid — both score 10/10 overall, with AS3 winning on value and cooling.",
-    verdict: "Both score 10/10 overall. The AS3 wins on value (9 vs 8) and cooling (10 vs 9). The Sparrow wins on trial period (10 vs 9). Motion transfer and edge support are tied at 10/10 each.",
+    description: "AS3 all-foam vs Nest Bedding's customizable hybrid — AS3 scores 9.5/10 overall vs Sparrow's 9.3/10, with AS3 winning on value and cooling.",
+    verdict: "The AS3 edges it overall, 9.5 to 9.3. The AS3 wins on value (9 vs 8) and cooling (10 vs 9). The Sparrow wins on trial period (10 vs 9). Motion transfer and edge support are tied at 10/10 each.",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs Sparrow's 8/10." },
@@ -406,18 +406,18 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "helix-midnight-luxe",
     title: "Amerisleep AS3 vs Helix Midnight Luxe",
-    description: "Two popular medium-feel beds — AS3 all-foam scores 10/10 overall vs Helix Midnight Luxe hybrid's 9/10.",
-    verdict: "The AS3 wins overall (10 vs 9), value (9 vs 7), motion transfer (10 vs 9), and is a stronger buy for most sleepers. Helix Midnight Luxe matches on edge support (10/10) and cooling (10/10).",
+    description: "Two popular medium-feel beds — AS3 all-foam scores 9.5/10 overall vs Helix Midnight Luxe hybrid's 9/10.",
+    verdict: "The AS3 wins overall (9.5 vs 9), value (9 vs 7), motion transfer (10 vs 9), and is a stronger buy for most sleepers. Helix Midnight Luxe matches on edge support (10/10) and cooling (10/10).",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Helix Midnight Luxe's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Helix Midnight Luxe's 9/10." },
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs Helix Midnight Luxe's 7/10 — significantly better value per dollar." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Helix Midnight Luxe's 9/10 — all-foam absorbs motion better." },
       { category: "Edge Support", winnerId: "helix-midnight-luxe", reason: "Both score 10/10 — Helix Midnight Luxe's coil perimeter matches AS3's foam edge." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as3", reason: "Both score 10/10 — tied." }
     ],
     faqs: [
-      { question: "Which is better for side sleepers?", answer: "The AS3 is the stronger side sleeper pick: 10/10 overall, Bio-Pur foam contouring, and HIVE® zoning for shoulder and hip relief. Helix Midnight Luxe is also well-rated for side sleepers (it's Helix's side-sleeper recommendation), but it trails on overall score and value." },
+      { question: "Which is better for side sleepers?", answer: "The AS3 is the stronger side sleeper pick: 9.5/10 overall, Bio-Pur foam contouring, and HIVE® zoning for shoulder and hip relief. Helix Midnight Luxe is also well-rated for side sleepers (it's Helix's side-sleeper recommendation), but it trails on overall score and value." },
       { question: "Which has better motion isolation?", answer: "The AS3 scores 10/10 vs Helix Midnight Luxe's 9/10. All-foam construction absorbs motion more effectively than a hybrid coil system." },
       { question: "Which offers better value?", answer: "The AS3 scores 9/10 on value vs Helix Midnight Luxe's 7/10. For comparable or better performance at a lower price, the AS3 is the stronger value." }
     ]
@@ -427,18 +427,18 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "leesa-original",
     title: "Amerisleep AS3 vs Leesa Original",
-    description: "AS3 vs Leesa Original — all-foam comparison with a clear score difference: AS3 scores 10/10 overall vs Leesa's 8/10.",
-    verdict: "The AS3 wins across all major metrics: overall (10 vs 8), edge support (10 vs 7), motion transfer (10 vs 9), value (9 vs 8), and cooling (10 vs 8). The AS3 is the stronger choice in this category by a meaningful margin.",
+    description: "AS3 vs Leesa Original — all-foam comparison with a clear score difference: AS3 scores 9.5/10 overall vs Leesa's 8.3/10.",
+    verdict: "The AS3 wins across all major metrics: overall (9.5 vs 8.3), edge support (10 vs 7), motion transfer (10 vs 9), value (9 vs 8), and cooling (10 vs 8). The AS3 is the stronger choice in this category by a meaningful margin.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Leesa Original's 8/10 — a 2-point gap." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Leesa Original's 8.3/10 — a 1.2-point gap." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Leesa's 7/10 — a 3-point difference that matters for couples." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Leesa's 9/10." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Leesa's 8/10." },
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs Leesa's 8/10 while delivering significantly higher overall performance." }
     ],
     faqs: [
-      { question: "Is the Leesa Original still worth buying?", answer: "The Leesa Original is a basic all-foam mattress that scores 8/10 overall. The AS3 scores 10/10 with HIVE® zoning and Bio-Pur foam. For most shoppers, the AS3 is the stronger option at a comparable or slightly higher price." },
+      { question: "Is the Leesa Original still worth buying?", answer: "The Leesa Original is a basic all-foam mattress that scores 8.3/10 overall. The AS3 scores 9.5/10 with HIVE® zoning and Bio-Pur foam. For most shoppers, the AS3 is the stronger option at a comparable or slightly higher price." },
       { question: "Which has better edge support?", answer: "The AS3 scores 10/10 on edge support vs Leesa Original's 7/10. If you use the full width of the bed, the AS3 is significantly better." },
       { question: "Which is better for couples?", answer: "The AS3 scores 10/10 on both edge support and motion transfer. Leesa scores 7/10 and 9/10 respectively. For couples, the AS3 is the clear choice." }
     ]
@@ -448,11 +448,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "leesa-sapira-hybrid",
     title: "Amerisleep AS3 vs Leesa Sapira Hybrid",
-    description: "AS3 all-foam vs Leesa Sapira Hybrid — AS3 scores 10/10 overall vs Sapira's 9/10, with AS3 winning on most metrics.",
-    verdict: "The AS3 wins overall (10 vs 9), edge support (10 vs 8), motion transfer (10 vs 9), value (9 vs 8), and cooling (10 vs 9). The Sapira Hybrid adds bounce from its coil base, which some sleepers prefer.",
+    description: "AS3 all-foam vs Leesa Sapira Hybrid — AS3 scores 9.5/10 overall vs Sapira's 8.7/10, with AS3 winning on most metrics.",
+    verdict: "The AS3 wins overall (9.5 vs 8.7), edge support (10 vs 8), motion transfer (10 vs 9), value (9 vs 8), and cooling (10 vs 9). The Sapira Hybrid adds bounce from its coil base, which some sleepers prefer.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Leesa Sapira Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 vs Leesa Sapira Hybrid's 8.7/10." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Sapira's 8/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Sapira's 9/10 — all-foam absorbs motion better." },
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs Sapira's 8/10." },
@@ -471,7 +471,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "brooklyn-bedding-plank-firm",
     title: "Amerisleep AS2 vs Brooklyn Bedding Plank Firm",
     description: "Two firm mattresses for back and stomach sleepers — AS2 wins on motion transfer and cooling, Plank Firm wins on edge support.",
-    verdict: "The AS2 wins on response time (10 vs 9), motion transfer (10 vs 8), and cooling (10 vs 8). The Plank Firm wins on edge support (10 vs 8). Both score 9/10 overall and 9/10 on value. The key difference is construction: foam contouring (AS2) vs ultra-firm flat feel (Plank Firm).",
+    verdict: "The AS2 wins on response time (10 vs 9), motion transfer (10 vs 8), and cooling (10 vs 8). The Plank Firm wins on edge support (10 vs 8). The AS2 also scores higher overall (9.3 vs 8.8), and both score 9/10 on value. The key difference is construction: foam contouring (AS2) vs ultra-firm flat feel (Plank Firm).",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Motion Transfer", winnerId: "amerisleep-as2", reason: "AS2 scores 10/10 on motion transfer vs Plank Firm's 8/10 — all-foam absorbs motion significantly better." },
@@ -492,7 +492,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "bear-original",
     title: "Amerisleep AS2 vs Bear Original",
     description: "Two firm all-foam mattresses — Bear Original wins on value and edge support, AS2 wins on response time, motion transfer, and cooling.",
-    verdict: "Bear Original wins on value (10 vs 9) and edge support (10 vs 8). AS2 wins on response time (10 vs 9), motion transfer (10 vs 8), and cooling (10 vs 9). Both score 9/10 overall.",
+    verdict: "Bear Original wins on value (10 vs 9) and edge support (10 vs 8). AS2 wins on response time (10 vs 9), motion transfer (10 vs 8), and cooling (10 vs 9). The AS2 edges it overall, 9.3 to 9.2.",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "bear-original", reason: "Bear Original scores 10/10 on value vs AS2's 9/10." },
@@ -512,11 +512,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "ghostbed-flex",
     title: "Amerisleep AS3 vs GhostBed Flex",
-    description: "AS3 all-foam vs GhostBed Flex hybrid — AS3 scores 10/10 overall vs GhostBed's 9/10, winning on overall score, value, and edge support.",
-    verdict: "The AS3 wins overall (10 vs 9), value (9 vs 8), and edge support (10 vs 8). Both score 10/10 on motion transfer and cooling. GhostBed Flex's coil base adds bounce the AS3 doesn't have.",
+    description: "AS3 all-foam vs GhostBed Flex hybrid — AS3 scores 9.5/10 overall vs GhostBed's 9/10, winning on overall score, value, and edge support.",
+    verdict: "The AS3 wins overall (9.5 vs 9), value (9 vs 8), and edge support (10 vs 8). Both score 10/10 on motion transfer and cooling. GhostBed Flex's coil base adds bounce the AS3 doesn't have.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs GhostBed Flex's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs GhostBed Flex's 9/10." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs GhostBed Flex's 8/10." },
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs GhostBed Flex's 8/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "Both score 10/10 — tied." },
@@ -534,7 +534,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "helix-dawn-luxe",
     title: "Amerisleep AS2 vs Helix Dawn Luxe",
     description: "AS2 foam vs Helix Dawn Luxe hybrid — both for back and stomach sleepers, AS2 wins on value, motion transfer, and cooling.",
-    verdict: "The AS2 wins on value (9 vs 7), response time (10 vs 9), motion transfer (10 vs 9), and cooling (10 vs 9). Both score 9/10 overall and have identical edge support (8/10). The key difference is construction: foam contouring (AS2) vs hybrid bounce (Helix Dawn Luxe).",
+    verdict: "The AS2 wins on value (9 vs 7), response time (10 vs 9), motion transfer (10 vs 9), and cooling (10 vs 9). The AS2 also scores higher overall (9.3 vs 8.5), and the two have identical edge support (8/10). The key difference is construction: foam contouring (AS2) vs hybrid bounce (Helix Dawn Luxe).",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "amerisleep-as2", reason: "AS2 scores 9/10 on value vs Helix Dawn Luxe's 7/10 — significantly better per dollar." },
@@ -544,7 +544,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
       { category: "Bounce / Feel", winnerId: "helix-dawn-luxe", reason: "Helix Dawn Luxe's coil base adds responsiveness that all-foam AS2 doesn't have — better for those who prefer a traditional mattress feel." }
     ],
     faqs: [
-      { question: "Which is better for back sleepers?", answer: "Both are firm options suitable for back sleepers. The AS2's HIVE® zoning provides dedicated lumbar support. Helix Dawn Luxe's coil base provides a firmer feel from below. Both score 9/10 overall for back sleepers." },
+      { question: "Which is better for back sleepers?", answer: "Both are firm options suitable for back sleepers. The AS2's HIVE® zoning provides dedicated lumbar support. Helix Dawn Luxe's coil base provides a firmer feel from below. The AS2 scores 9.3/10 overall and Helix Dawn Luxe 8.5/10." },
       { question: "Which offers better value?", answer: "The AS2 scores 9/10 on value vs Helix Dawn Luxe's 7/10. For equivalent overall performance at a lower price, the AS2 is the stronger value." },
       { question: "Which is better for couples?", answer: "AS2 scores 10/10 on motion transfer vs Helix Dawn Luxe's 9/10. For light sleepers sharing a bed, the AS2 is the better isolator. Edge support is tied at 8/10 for both." }
     ]
@@ -554,8 +554,8 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as6",
     mattressBId: "leesa-sapira-chill-hybrid",
     title: "Amerisleep AS6 Black Series vs Leesa Sapira Chill Hybrid",
-    description: "Two luxury cooling hybrids — AS6 wins on overall score, value, and motion transfer. Leesa Sapira Chill wins on edge support and response time.",
-    verdict: "AS6 scores 10/10 overall vs Leesa Sapira Chill's 10/10 — tied overall. AS6 wins on value (9 vs 8) and motion transfer (10 vs 9). Leesa Sapira Chill wins on edge support (10 vs 9) and response time (10 vs 9). Both score 10/10 on cooling.",
+    description: "Two luxury cooling hybrids — AS6 wins on value and motion transfer and the two tie overall. Leesa Sapira Chill wins on edge support and response time.",
+    verdict: "AS6 and Leesa Sapira Chill both score 9.3/10 overall — tied overall. AS6 wins on value (9 vs 8) and motion transfer (10 vs 9). Leesa Sapira Chill wins on edge support (10 vs 9) and response time (10 vs 9). Both score 10/10 on cooling.",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "amerisleep-as6", reason: "AS6 scores 9/10 on value vs Leesa Sapira Chill's 8/10." },
@@ -576,14 +576,14 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressBId: "helix-sunset-luxe",
     title: "Amerisleep AS5 Hybrid vs Helix Sunset Luxe",
     description: "Two soft hybrid mattresses for side sleepers — AS5 Hybrid wins on value, edge support, and cooling. Helix Sunset Luxe wins on motion transfer.",
-    verdict: "AS5 Hybrid wins on value (8 vs 7), edge support (9 vs 8), and cooling (10 vs 9). Helix Sunset Luxe wins on motion transfer (10 vs 9). Both score 9/10 overall.",
+    verdict: "AS5 Hybrid wins on value (8 vs 7), edge support (9 vs 8), and cooling (10 vs 9). Helix Sunset Luxe wins on motion transfer (10 vs 9). AS5 Hybrid edges it overall, 8.8 to 8.7.",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "amerisleep-as5-hybrid", reason: "AS5 Hybrid scores 8/10 on value vs Helix Sunset Luxe's 7/10." },
       { category: "Edge Support", winnerId: "amerisleep-as5-hybrid", reason: "AS5 Hybrid scores 9/10 vs Helix Sunset Luxe's 8/10." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as5-hybrid", reason: "AS5 Hybrid scores 10/10 vs Helix Sunset Luxe's 9/10." },
       { category: "Motion Transfer", winnerId: "helix-sunset-luxe", reason: "Helix Sunset Luxe scores 10/10 on motion transfer vs AS5 Hybrid's 9/10." },
-      { category: "Side Sleepers", winnerId: "amerisleep-as5-hybrid", reason: "AS5 Hybrid's Bio-Pur foam comfort layer with coil support scores higher on overall (9/10) with better cooling and edge performance." }
+      { category: "Side Sleepers", winnerId: "amerisleep-as5-hybrid", reason: "AS5 Hybrid's Bio-Pur foam comfort layer with coil support scores higher on overall (8.8/10 vs 8.7/10) with better cooling and edge performance." }
     ],
     faqs: [
       { question: "Which is softer?", answer: "Both are soft mattresses designed for side sleepers. The AS5 Hybrid's soft Bio-Pur foam comfort layer and coil base provide a plush feel with more support underneath. Helix Sunset Luxe is also soft. Firmness preference between the two is personal — both are plush." },
@@ -596,18 +596,18 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as5",
     mattressBId: "ghostbed-luxe",
     title: "Amerisleep AS5 vs GhostBed Luxe",
-    description: "Two plush mattresses — AS5 scores 9/10 overall vs GhostBed Luxe's 7/10. AS5 wins across most metrics.",
-    verdict: "The AS5 wins on overall score (9 vs 7), edge support (10 vs 8), response time (8 vs 6), and cooling (10 vs 9). GhostBed Luxe wins on motion transfer (10 vs 9). The AS5 is the stronger choice by overall score.",
+    description: "Two plush mattresses — AS5 scores 9/10 overall vs GhostBed Luxe's 8.3/10. AS5 wins across most metrics.",
+    verdict: "The AS5 wins on overall score (9 vs 8.3), edge support (10 vs 8), response time (8 vs 6), and cooling (10 vs 9). GhostBed Luxe wins on motion transfer (10 vs 9). The AS5 is the stronger choice by overall score.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as5", reason: "AS5 scores 9/10 overall vs GhostBed Luxe's 7/10 — a 2-point gap." },
+      { category: "Overall Score", winnerId: "amerisleep-as5", reason: "AS5 scores 9/10 overall vs GhostBed Luxe's 8.3/10 — a 0.7-point gap." },
       { category: "Edge Support", winnerId: "amerisleep-as5", reason: "AS5 scores 10/10 vs GhostBed Luxe's 8/10." },
       { category: "Response Time", winnerId: "amerisleep-as5", reason: "AS5 scores 8/10 vs GhostBed Luxe's 6/10." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as5", reason: "AS5 scores 10/10 vs GhostBed Luxe's 9/10." },
       { category: "Motion Transfer", winnerId: "ghostbed-luxe", reason: "GhostBed Luxe scores 10/10 on motion transfer vs AS5's 9/10." }
     ],
     faqs: [
-      { question: "Is GhostBed Luxe worth buying over the AS5?", answer: "The AS5 scores 9/10 overall vs GhostBed Luxe's 7/10. On most metrics, the AS5 scores higher. GhostBed Luxe scores 10/10 on motion transfer vs AS5's 9/10, which may appeal to couples. For overall quality and performance, the AS5 is the stronger choice." },
+      { question: "Is GhostBed Luxe worth buying over the AS5?", answer: "The AS5 scores 9/10 overall vs GhostBed Luxe's 8.3/10. On most metrics, the AS5 scores higher. GhostBed Luxe scores 10/10 on motion transfer vs AS5's 9/10, which may appeal to couples. For overall quality and performance, the AS5 is the stronger choice." },
       { question: "Which has better edge support?", answer: "The AS5 scores 10/10 on edge support vs GhostBed Luxe's 8/10. For couples who use the full bed width, the AS5 is meaningfully better." },
       { question: "Which is better for hot sleepers?", answer: "AS5 scores 10/10 on cooling vs GhostBed Luxe's 9/10. Both are reasonably cool mattresses, but the AS5 scores marginally higher." }
     ]
@@ -617,18 +617,18 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as5-hybrid",
     mattressBId: "leesa-sapira-chill-hybrid",
     title: "Amerisleep AS5 Hybrid vs Leesa Sapira Chill Hybrid",
-    description: "Two plush hybrids — Leesa Sapira Chill scores 10/10 overall vs AS5 Hybrid's 9/10, winning on overall score, edge support, and response time.",
-    verdict: "Leesa Sapira Chill wins on overall score (10 vs 9), edge support (10 vs 9), and response time (10 vs 8). AS5 Hybrid matches on cooling (10/10 tied) and value (8/10 tied). Both are strong side-sleeper hybrids.",
+    description: "Two plush hybrids — Leesa Sapira Chill scores 9.3/10 overall vs AS5 Hybrid's 8.8/10, winning on overall score, edge support, and response time.",
+    verdict: "Leesa Sapira Chill wins on overall score (9.3 vs 8.8), edge support (10 vs 9), and response time (10 vs 8). AS5 Hybrid matches on cooling (10/10 tied) and value (8/10 tied). Both are strong side-sleeper hybrids.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "leesa-sapira-chill-hybrid", reason: "Leesa Sapira Chill scores 10/10 overall vs AS5 Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "leesa-sapira-chill-hybrid", reason: "Leesa Sapira Chill scores 9.3/10 overall vs AS5 Hybrid's 8.8/10." },
       { category: "Edge Support", winnerId: "leesa-sapira-chill-hybrid", reason: "Leesa Sapira Chill scores 10/10 vs AS5 Hybrid's 9/10." },
       { category: "Response Time", winnerId: "leesa-sapira-chill-hybrid", reason: "Leesa Sapira Chill scores 10/10 vs AS5 Hybrid's 8/10." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as5-hybrid", reason: "Both score 10/10 — tied." },
       { category: "Side Sleepers (Pressure Relief)", winnerId: "amerisleep-as5-hybrid", reason: "AS5 Hybrid's soft Bio-Pur foam comfort layer is specifically designed for pressure relief at the shoulder and hip, which the AS5 is optimized for." }
     ],
     faqs: [
-      { question: "Which is better for side sleepers?", answer: "Both are strong side sleeper mattresses. Leesa Sapira Chill scores 10/10 overall; AS5 Hybrid scores 9/10. Leesa has better edge support and response. AS5 Hybrid's Bio-Pur foam comfort layer is specifically designed for shoulder and hip pressure relief. Try both if possible." },
+      { question: "Which is better for side sleepers?", answer: "Both are strong side sleeper mattresses. Leesa Sapira Chill scores 9.3/10 overall; AS5 Hybrid scores 8.8/10. Leesa has better edge support and response. AS5 Hybrid's Bio-Pur foam comfort layer is specifically designed for shoulder and hip pressure relief. Try both if possible." },
       { question: "Which is better for hot sleepers?", answer: "Both score 10/10 on cooling — they are tied on this metric. Both are excellent choices for hot sleepers." },
       { question: "Which has a longer warranty?", answer: "The AS5 Hybrid carries a 20-year warranty from Amerisleep. Verify Leesa Sapira Chill's current warranty at Leesa's official website." }
     ]
@@ -638,11 +638,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "casper-the-one",
     title: "Amerisleep AS3 vs Casper The One",
-    description: "AS3 vs Casper The One — clear score difference: AS3 scores 10/10 overall vs Casper's 8/10.",
-    verdict: "The AS3 wins on overall score (10 vs 8), edge support (10 vs 7), response time (9 vs 7), cooling (10 vs 8), and value (9 vs 8). Both score 10/10 on motion transfer. AS3 also carries a 20-year warranty vs Casper's 10-year.",
+    description: "AS3 vs Casper The One — clear score difference: AS3 scores 9.5/10 overall vs Casper's 8.2/10.",
+    verdict: "The AS3 wins on overall score (9.5 vs 8.2), edge support (10 vs 7), response time (9 vs 7), cooling (10 vs 8), and value (9 vs 8). Both score 10/10 on motion transfer. AS3 also carries a 20-year warranty vs Casper's 10-year.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Casper The One's 8/10 — a 2-point gap." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Casper The One's 8.2/10 — a 1.3-point gap." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Casper The One's 7/10 — a 3-point gap." },
       { category: "Response Time", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 vs Casper The One's 7/10." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Casper The One's 8/10." },
@@ -650,7 +650,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "Both score 10/10 on motion transfer — tied." }
     ],
     faqs: [
-      { question: "Is Casper The One competitive with the AS3?", answer: "On measured scores, the AS3 leads across most categories. Casper The One scores 8/10 overall vs AS3's 10/10, with meaningful gaps on edge support (7 vs 10) and response time (7 vs 9). The AS3 is the stronger choice on overall performance." },
+      { question: "Is Casper The One competitive with the AS3?", answer: "On measured scores, the AS3 leads across most categories. Casper The One scores 8.2/10 overall vs AS3's 9.5/10, with meaningful gaps on edge support (7 vs 10) and response time (7 vs 9). The AS3 is the stronger choice on overall performance." },
       { question: "Which has better edge support?", answer: "The AS3 scores 10/10 on edge support vs Casper The One's 7/10. This is one of the largest score gaps between these two models." },
       { question: "Which has the longer warranty?", answer: "The AS3 carries a 20-year warranty vs Casper The One's 10-year warranty. The AS3's warranty coverage is twice as long." }
     ]
@@ -660,11 +660,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as6",
     mattressBId: "purple-restoreplus-hybrid",
     title: "Amerisleep AS6 Black Series vs Purple RestorePlus Hybrid",
-    description: "AS6 Black Series vs Purple RestorePlus Hybrid — AS6 wins overall (10 vs 9), value, motion transfer, and cooling. Purple wins on response time.",
-    verdict: "AS6 wins on overall score (10 vs 9), value (9 vs 7), motion transfer (10 vs 9), and cooling (10 vs 9). Purple RestorePlus Hybrid wins on response time (10 vs 9). Edge support is tied (9/10 each). The feel difference is significant: foam contouring vs Purple's grid.",
+    description: "AS6 Black Series vs Purple RestorePlus Hybrid — AS6 wins overall (9.3 vs 8.8), value, motion transfer, and cooling. Purple wins on response time.",
+    verdict: "AS6 wins on overall score (9.3 vs 8.8), value (9 vs 7), motion transfer (10 vs 9), and cooling (10 vs 9). Purple RestorePlus Hybrid wins on response time (10 vs 9). Edge support is tied (9/10 each). The feel difference is significant: foam contouring vs Purple's grid.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as6", reason: "AS6 scores 10/10 overall vs Purple RestorePlus Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as6", reason: "AS6 scores 9.3/10 overall vs Purple RestorePlus Hybrid's 8.8/10." },
       { category: "Value", winnerId: "amerisleep-as6", reason: "AS6 scores 9/10 on value vs Purple's 7/10 — significantly better value." },
       { category: "Motion Transfer", winnerId: "amerisleep-as6", reason: "AS6 scores 10/10 vs Purple's 9/10." },
       { category: "Cooling & Breathability", winnerId: "amerisleep-as6", reason: "AS6 scores 10/10 vs Purple's 9/10." },
@@ -681,11 +681,11 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as3",
     mattressBId: "casper-dream-hybrid",
     title: "Amerisleep AS3 vs Casper Dream Hybrid",
-    description: "AS3 all-foam vs Casper Dream Hybrid — AS3 wins across all metrics: overall (10 vs 9), edge support (10 vs 8), motion transfer (10 vs 9), and cooling (10 vs 9).",
-    verdict: "The AS3 wins on overall score (10 vs 9), value (9 vs 8), edge support (10 vs 8), motion transfer (10 vs 9), and cooling (10 vs 9). The Casper Dream Hybrid adds bounce from its coil base that the AS3 doesn't have.",
+    description: "AS3 all-foam vs Casper Dream Hybrid — AS3 wins on most metrics: overall (9.5 vs 8.7), edge support (10 vs 8), motion transfer (10 vs 9), and cooling (10 vs 9).",
+    verdict: "The AS3 wins on overall score (9.5 vs 8.7), value (9 vs 8), edge support (10 vs 8), motion transfer (10 vs 9), and cooling (10 vs 9). The Casper Dream Hybrid adds bounce from its coil base that the AS3 doesn't have.",
     dateModified: "2026-06-16",
     winnerFor: [
-      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 overall vs Casper Dream Hybrid's 9/10." },
+      { category: "Overall Score", winnerId: "amerisleep-as3", reason: "AS3 scores 9.5/10 overall vs Casper Dream Hybrid's 8.7/10." },
       { category: "Value", winnerId: "amerisleep-as3", reason: "AS3 scores 9/10 on value vs Casper Dream's 8/10." },
       { category: "Edge Support", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Casper Dream's 8/10." },
       { category: "Motion Transfer", winnerId: "amerisleep-as3", reason: "AS3 scores 10/10 vs Casper Dream's 9/10 — all-foam absorbs motion better." },
@@ -703,8 +703,8 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
     mattressAId: "amerisleep-as6",
     mattressBId: "saatva-rx",
     title: "Amerisleep AS6 Black Series vs Saatva RX",
-    description: "Two premium mattresses — both score 10/10 overall, with AS6 winning on value and cooling, Saatva RX winning on trial period and response time.",
-    verdict: "Both score 10/10 overall and 10/10 on motion transfer. AS6 wins on value (9 vs 7) and cooling (10 vs 9). Saatva RX wins on trial period (10 vs 9) and response time (10 vs 9). Edge support and motion transfer are tied.",
+    description: "Two premium mattresses — AS6 edges Saatva RX overall (9.3 vs 9.2), winning on value and cooling, while Saatva RX wins on trial period and response time.",
+    verdict: "AS6 scores 9.3/10 overall vs Saatva RX's 9.2/10, and both score 10/10 on motion transfer. AS6 wins on value (9 vs 7) and cooling (10 vs 9). Saatva RX wins on trial period (10 vs 9) and response time (10 vs 9). Edge support and motion transfer are tied.",
     dateModified: "2026-06-16",
     winnerFor: [
       { category: "Value", winnerId: "amerisleep-as6", reason: "AS6 scores 9/10 on value vs Saatva RX's 7/10 — the AS6 delivers comparable overall performance at better value." },
@@ -714,7 +714,7 @@ const rawComparisons: Omit<Comparison, 'summary'>[] = [
       { category: "Motion Transfer", winnerId: "amerisleep-as6", reason: "Both score 10/10 on motion transfer — tied." }
     ],
     faqs: [
-      { question: "Which is better for pressure relief?", answer: "Both are premium mattresses designed with pressure relief in mind. The AS6 uses Bio-Pur foam over pocketed coils. Saatva RX uses micro-coils and a foam comfort system. Both score 10/10 overall. The AS6's foam layer provides close-contouring pressure relief; Saatva RX's micro-coil layer provides more responsive, spring-like support." },
+      { question: "Which is better for pressure relief?", answer: "Both are premium mattresses designed with pressure relief in mind. The AS6 uses Bio-Pur foam over pocketed coils. Saatva RX uses micro-coils and a foam comfort system. The AS6 scores 9.3/10 overall and Saatva RX 9.2/10. The AS6's foam layer provides close-contouring pressure relief; Saatva RX's micro-coil layer provides more responsive, spring-like support." },
       { question: "Which offers better value?", answer: "AS6 scores 9/10 on value vs Saatva RX's 7/10. The AS6 delivers equivalent or better overall performance at a lower price tier — a meaningful difference for luxury mattress shoppers." },
       { question: "Which has a longer trial period?", answer: "Saatva RX scores 10/10 on trial period vs AS6's 9/10. Saatva's trial terms are more generous. If a long trial period is important to you, Saatva RX is the stronger option." }
     ]

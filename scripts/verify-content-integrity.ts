@@ -65,7 +65,7 @@ const lockedScoreDataset = [...allMattresses]
   .map(mattress => [mattress.id, ...SCORE_METRICS.map(metric => mattress.scores[metric.key])].join('|'))
   .join('\n');
 const lockedScoreDatasetHash = createHash('sha256').update(lockedScoreDataset).digest('hex');
-const approvedScoreDatasetHash = '44dfcd275bb4b20a5b6001703ca9bebb8871d702f4a0cd0ccea0f84c17e3caf8';
+const approvedScoreDatasetHash = '794a407a51395e8fafab3606245506a08e4b0d29332f3ab077705fc40a48f87a';
 const siteUrl = 'https://mattressscore.ahmedbarkat1067.workers.dev';
 const reviewDocuments = buildReviewLlmDocuments(siteUrl);
 const generatedDocuments = buildGeneratedLlmDocuments(siteUrl);

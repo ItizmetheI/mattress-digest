@@ -20,14 +20,14 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     title: `Best Mattress 2026 — Top Overall Picks | The Mattress Digest`,
     h1: `Best Mattress of 2026`,
     description: `Best overall mattress picks for 2026, ranked with The Mattress Digest's seven-metric editorial scorecard.`,
-    intro: `This ranking sorts first by the published Overall field. When models tie at 10/10 Overall, we break the tie using Value, recorded warranty length, and how many fit categories a model is listed under.`,
+    intro: `Six models tie at 9.5/10 on the published Overall field, so one number can't pick a winner on its own. The six picks below are our editorial selection from the top of the field, chosen to span brands and builds, with the AS3 featured first. The full score table further down ranks every model by Overall.`,
     winner: 'amerisleep-as3',
-    winnerNote: `The AS3 posts a 10/10 on the published Overall field. Confirm its medium firmness, construction, trial, warranty, and certifications on Amerisleep's current product and policy pages before buying.`,
+    winnerNote: `The AS3 posts a 9.5/10 on the published Overall field. Confirm its medium firmness, construction, trial, warranty, and certifications on Amerisleep's current product and policy pages before buying.`,
     picks: ['amerisleep-as3', 'amerisleep-as6', 'nest-bedding-sparrow', 'leesa-sapira-chill-hybrid', 'plushbeds-signature-bliss', 'nest-bedding-owl'],
     faqs: [
       {
         question: `What is the best mattress overall for 2026?`,
-        answer: `The Amerisleep AS3 takes the top spot in our Overall category once we sort by the published Overall field and apply our documented tie-break sequence. It posts 10/10 on Overall, Edge Support, Motion Transfer, and Cooling & Breathability — editorial scores, not lab measurements.`
+        answer: `The Amerisleep AS3 is our featured pick. Six models tie at 9.5/10 Overall, so choosing among them is an editorial call; the AS3 also posts 10/10 on Edge Support, Motion Transfer, and Cooling & Breathability. These are editorial scores, not lab measurements, and the full score table ranks every model.`
       },
       {
         question: `How does The Mattress Digest score mattresses?`,
@@ -43,18 +43,18 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     title: `Best Luxury Mattress 2026 | The Mattress Digest`,
     h1: `Best Luxury Mattress of 2026`,
     description: `Best luxury mattress picks for 2026, ranked with the same seven-metric editorial scorecard.`,
-    intro: `We define luxury picks by premium materials, advanced construction, and scores above 9.0 overall — every model below lands 9–10/10.`,
+    intro: `We define luxury picks by premium materials, advanced construction, and strong overall scores — four of the six models below score 9.0 or higher overall.`,
     winner: 'amerisleep-as6',
-    winnerNote: `The Amerisleep AS6 Black Series tops our luxury list: 10/10 overall, Bio-Pur® plant-based foam, HIVE® 5-zone support, a pocketed coil base, a Refresh Cooling Cover, and a 20-year warranty. The performance backs up the price.`,
+    winnerNote: `The Amerisleep AS6 Black Series tops our luxury list: 9.3/10 overall, Bio-Pur® plant-based foam, HIVE® 5-zone support, a pocketed coil base, a Refresh Cooling Cover, and a 20-year warranty. The performance backs up the price.`,
     picks: ['amerisleep-as6', 'amerisleep-as3-hybrid', 'plushbeds-signature-bliss', 'naturepedic-eos-classic', 'westin-heavenly-bed', 'nest-bedding-owl'],
     faqs: [
       {
         question: `What makes a mattress "luxury"?`,
-        answer: `In our system, a luxury mattress pairs premium comfort materials — high-density Bio-Pur® foam, organic latex, or micro-coils — with advanced construction (zoned support, hybrid coil bases) and generous ownership terms (long trials, 15+ year warranties). To earn a luxury slot in our ranking, a model needs 9–10/10 overall and a queen starting price above $1,500.`
+        answer: `In our system, a luxury mattress pairs premium comfort materials — high-density Bio-Pur® foam, organic latex, or micro-coils — with advanced construction (zoned support, hybrid coil bases) and generous ownership terms (long trials, 15+ year warranties). To earn a luxury slot in our ranking, a model combines strong overall scores with a premium price tier and construction.`
       },
       {
         question: `Is the AS6 Black Series worth the price?`,
-        answer: `It posts 10/10 overall and 9/10 on value, meaning it delivers strong performance per dollar even at this price point. Bio-Pur® plant-based foam, HIVE® zoning, a pocketed coil support system, and a 20-year warranty are all included. Among luxury-tier competitors, it out-scores most rivals at similar or higher prices.`
+        answer: `It posts 9.3/10 overall and 9/10 on value, meaning it delivers strong performance per dollar even at this price point. Bio-Pur® plant-based foam, HIVE® zoning, a pocketed coil support system, and a 20-year warranty are all included. Among luxury-tier competitors, it out-scores most rivals at similar or higher prices.`
       },
       {
         question: `What is the difference between a luxury and a standard mattress?`,
@@ -68,7 +68,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best cooling mattress picks for 2026, ranked by the Cooling & Breathability field in The Mattress Digest's editorial scorecard.`,
     intro: `This ranking runs on the Cooling & Breathability metric from our 7-metric system. Hybrids with coil bases tend to score higher here, since air moves through the coil layer as well as the comfort foam.`,
     winner: 'amerisleep-as6',
-    winnerNote: `The AS6 Black Series posts 10/10 on Cooling & Breathability. Its Refresh Cooling Cover works with a pocketed coil base that lets air move through the mattress, not just across the top. At 10/10 overall, it's also the strongest all-around pick for hot sleepers.`,
+    winnerNote: `The AS6 Black Series posts 10/10 on Cooling & Breathability. Its Refresh Cooling Cover works with a pocketed coil base that lets air move through the mattress, not just across the top. At 9.3/10 overall, it's also a strong all-around pick for hot sleepers.`,
     picks: ['amerisleep-as6', 'amerisleep-as3', 'leesa-sapira-chill-hybrid', 'brooklyn-bedding-aurora-luxe', 'glacier-original-hybrid', 'glacier-summit-hybrid'],
     faqs: [
       {
@@ -104,7 +104,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
       },
       {
         question: `Is foam or hybrid better for side sleepers?`,
-        answer: `Both work well. All-foam models like the AS5 give the deepest contouring and the highest motion isolation. Hybrid models like the AS5 Hybrid add a coil layer that improves edge support and cooling while keeping the soft comfort layer side sleepers need. It comes down to whether you'd rather prioritize contouring (foam) or bounce and edge support (hybrid).`
+        answer: `Both work well. All-foam models like the AS5 give the deepest contouring and the highest motion isolation. Hybrid models like the AS5 Hybrid add a coil layer for bounce and airflow while keeping the soft comfort layer side sleepers need. It comes down to whether you'd rather prioritize contouring (foam) or bounce (hybrid).`
       }
     ]
   },
@@ -114,9 +114,9 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best mattress for back discomfort in 2026: medium-firm models ranked for general sleep support and fit. Not medical advice.`,
     intro: `This category covers mattresses built with medium-firm to firm support aimed at neutral spinal alignment during sleep. It's a general comfort category, not medical guidance — talk to a healthcare provider about mattress choices tied to a specific condition.`,
     winner: 'amerisleep-as2',
-    winnerNote: `The AS2 sits at medium-firm (6/10) and lands 9/10 overall. Its HIVE® lumbar-zone technology delivers differentiated support across 7 zones, with a firmer response right where the lumbar region needs it. 10/10 on both Response Time and Motion Transfer suits sleepers who shift position through the night.`,
+    winnerNote: `The AS2 sits at medium-firm (6/10) and lands 9.3/10 overall. Its HIVE® lumbar-zone technology delivers differentiated support across 7 zones, with a firmer response right where the lumbar region needs it. 10/10 on both Response Time and Motion Transfer suits sleepers who shift position through the night.`,
     picks: ['amerisleep-as2', 'amerisleep-as3', 'glacier-summit-hybrid', 'saatva-classic', 'helix-dawn-luxe', 'brooklyn-bedding-plank-firm'],
-    filterNote: `Saatva Classic posts 10/10 overall and is a strong innerspring choice for back sleepers. Brooklyn Bedding Plank Firm is flippable between firm and extra-firm for sleepers who want more support than medium-firm gives. We picked the AS2 as our category lead for its purpose-built HIVE® lumbar zone and medium-firm profile.`,
+    filterNote: `Saatva Classic posts 9.2/10 overall and is a strong innerspring choice for back sleepers. Brooklyn Bedding Plank Firm is flippable between firm and extra-firm for sleepers who want more support than medium-firm gives. We picked the AS2 as our category lead for its purpose-built HIVE® lumbar zone and medium-firm profile.`,
     faqs: [
       {
         question: `What mattress firmness is recommended for back pain?`,
@@ -138,7 +138,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best memory foam mattress picks for 2026, ranked by overall score in The Mattress Digest's editorial dataset.`,
     intro: `Our memory foam picks are all-foam builds with no coil base. They score highest on motion isolation and pressure distribution, trading off a bit of edge support and responsiveness compared to hybrids.`,
     winner: 'amerisleep-as3',
-    winnerNote: `The AS3 tops our foam picks: 10/10 overall built on Bio-Pur® plant-based memory foam, a real step up from standard petroleum-based foam. HIVE® zoning spreads differentiated lumbar and shoulder support across 7 zones, and a 20-year warranty makes it the most durable buy in the foam category.`,
+    winnerNote: `The AS3 tops our foam picks: 9.5/10 overall built on Bio-Pur® plant-based memory foam, a real step up from standard petroleum-based foam. HIVE® zoning spreads differentiated lumbar and shoulder support across 7 zones, and a 20-year warranty makes it the most durable buy in the foam category.`,
     picks: ['amerisleep-as3', 'amerisleep-as2', 'nest-bedding-raven', 'plushbeds-organic-bliss', 'leesa-original', 'casper-the-one'],
     faqs: [
       {
@@ -161,7 +161,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best hybrid mattress picks for 2026. Foam-over-coil models ranked by the same seven score fields.`,
     intro: `Hybrid picks pair foam comfort layers with pocketed coil support systems. They tend to score higher than all-foam models on edge support and cooling, at the cost of a somewhat higher price.`,
     winner: 'amerisleep-as6',
-    winnerNote: `The AS6 Black Series leads our hybrid picks: 10/10 overall, Bio-Pur® foam, HIVE® zoning, pocketed coil support, and a Refresh Cooling Cover. A 20-year warranty plus 10/10 scores on Motion Transfer and Cooling put it ahead on both comfort and longevity.`,
+    winnerNote: `The AS6 Black Series leads our hybrid picks: 9.3/10 overall, Bio-Pur® foam, HIVE® zoning, pocketed coil support, and a Refresh Cooling Cover. A 20-year warranty plus 10/10 scores on Motion Transfer and Cooling put it ahead on both comfort and longevity.`,
     picks: ['amerisleep-as6', 'nest-bedding-sparrow', 'leesa-sapira-chill-hybrid', 'plushbeds-signature-bliss', 'nest-bedding-owl', 'naturepedic-eos-classic'],
     faqs: [
       {
@@ -184,9 +184,9 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best organic mattress picks for 2026, ranked by score and recorded certification fields. Verify current certification scope.`,
     intro: `Our organic picks carry real third-party certifications — GOLS (organic latex), GOTS (organic cotton/wool), OEKO-TEX, and/or eco-INSTITUT. The list below is ranked by overall score; confirm current certifications directly on each brand's site before buying.`,
     winner: 'plushbeds-signature-bliss',
-    winnerNote: `The PlushBeds Signature Bliss lands 10/10 overall and carries four certifications — GOLS, GOTS, OEKO-TEX, and eco-INSTITUT — making it the strongest-certified, highest-scoring organic hybrid we track. For a foam-forward organic build, Amerisleep Organica (GOLS + GOTS + OEKO-TEX) is our top pick instead.`,
+    winnerNote: `The PlushBeds Signature Bliss lands 9.5/10 overall and carries four certifications — GOLS, GOTS, OEKO-TEX, and eco-INSTITUT — making it the strongest-certified, highest-scoring organic hybrid we track. For a foam-forward organic build, Amerisleep Organica (GOLS + GOTS + OEKO-TEX) is our top pick instead.`,
     picks: ['plushbeds-signature-bliss', 'amerisleep-organica', 'amerisleep-organica-plush', 'naturepedic-eos-classic', 'eco-terra-hybrid-latex', 'nolah-natural-11'],
-    filterNote: `Sub-category picks: Best Organic with Bio-Pur® Technology goes to Amerisleep Organica (9/10 overall). Best Organic for Side Sleepers goes to Amerisleep Organica Plush (9/10 overall, softer firmness). Best Budget Organic goes to Eco Terra Hybrid Latex (9/10 overall, 10/10 value).`,
+    filterNote: `Sub-category picks: Best Organic with Bio-Pur® Technology goes to Amerisleep Organica (9.2/10 overall). Best Organic for Side Sleepers goes to Amerisleep Organica Plush (9/10 overall, softer firmness). Best Budget Organic goes to Eco Terra Hybrid Latex (9/10 overall, 10/10 value).`,
     faqs: [
       {
         question: `What certifications should an organic mattress have?`,
@@ -208,13 +208,13 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best value mattress picks for 2026, ranked by the Value field with overall score and recorded price considered.`,
     intro: `Our value rankings run on the Value metric from our 7-metric system, weighted against overall score — a 10/10 value score at 7/10 overall isn't the same win as a 10/10 value score at 10/10 overall.`,
     winner: 'vaya-hybrid',
-    winnerNote: `The Vaya Hybrid is our value-category pick. It lands 10/10 on Value and Response Time, pairs foam with pocketed coils, and posts an 8/10 overall score at a lower entry price than most hybrids we track. Prices and policies are reference fields here — confirm current terms directly with Vaya.`,
+    winnerNote: `The Vaya Hybrid is our value-category pick. It lands 10/10 on Value and Response Time, pairs foam with pocketed coils, and posts an 8.8/10 overall score at a lower entry price than most hybrids we track. Prices and policies are reference fields here — confirm current terms directly with Vaya.`,
     picks: ['vaya-hybrid', 'eco-terra-hybrid-latex', 'bear-original', 'glacier-summit-hybrid', 'amerisleep-as2', 'sweetnight-coolnest'],
-    filterNote: `Vaya Hybrid leads this category under our ranking criteria. Eco Terra Hybrid Latex has the stronger overall score among the 10/10-value picks, while Amerisleep AS2 is the value pick within the Amerisleep lineup itself.`,
+    filterNote: `Vaya Hybrid leads this category under our ranking criteria. Eco Terra Hybrid Latex, Bear Original, and Glacier Summit Hybrid also post 10/10 on Value with stronger overall scores (9, 9.2, and 9.3 vs the Vaya Hybrid's 8.8), while Amerisleep AS2 is the value pick within the Amerisleep lineup itself.`,
     faqs: [
       {
         question: `What is the best budget mattress for 2026?`,
-        answer: `The Vaya Hybrid is our pick for this category, landing 10/10 on Value and Response Time with an 8/10 overall score. Eco Terra Hybrid Latex scores 10/10 on Value and 9/10 overall at a somewhat higher entry price, while Amerisleep AS2 lands 9/10 overall and 9/10 on Value. Check current prices before comparing cost across any of these.`
+        answer: `The Vaya Hybrid is our pick for this category, landing 10/10 on Value and Response Time with an 8.8/10 overall score. Eco Terra Hybrid Latex scores 10/10 on Value and 9/10 overall at a somewhat higher entry price, while Amerisleep AS2 lands 9.3/10 overall and 9/10 on Value. Check current prices before comparing cost across any of these.`
       },
       {
         question: `How do you measure value in a mattress?`,
@@ -222,7 +222,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
       },
       {
         question: `Do I need to spend more than $1,000 for a good mattress?`,
-        answer: `No. Several models in our dataset land 9–10/10 overall at queen prices under $1,000 — the Eco Terra Hybrid Latex, Bear Original, Vaya Hybrid, and Sweetnight CoolNest all score well at accessible prices. The usual trade-off at lower price points is warranty length (10 years vs. 20) and material quality (standard foam vs. plant-based foam or certified latex).`
+        answer: `No. Several models in our dataset land between 8.8 and 9.2 out of 10 overall at queen prices under $1,000 — the Eco Terra Hybrid Latex, Bear Original, Vaya Hybrid, and Sweetnight CoolNest all score well at accessible prices. The usual trade-off at lower price points is warranty length (10 years vs. 20) and material quality (standard foam vs. plant-based foam or certified latex).`
       }
     ]
   },
@@ -232,9 +232,9 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best mattress for back sleepers in 2026, ranked by medium-firm fit, response, edge support, and overall score.`,
     intro: `Back sleepers need a surface firm enough to stop the hips from sinking, while still allowing some give at the lumbar spine. Our top picks run medium-firm to firm, with strong response-time and edge-support scores.`,
     winner: 'amerisleep-as2',
-    winnerNote: `The AS2 sits at medium-firm (6/10) and lands 9/10 overall. Its HIVE® lumbar zone delivers differentiated, zoned support built specifically for the lower back, and 10/10 on both Response Time and Motion Transfer suits back sleepers who shift positions overnight.`,
+    winnerNote: `The AS2 sits at medium-firm (6/10) and lands 9.3/10 overall. Its HIVE® lumbar zone delivers differentiated, zoned support built specifically for the lower back, and 10/10 on both Response Time and Motion Transfer suits back sleepers who shift positions overnight.`,
     picks: ['amerisleep-as2', 'amerisleep-as3', 'saatva-classic', 'nest-bedding-sparrow', 'helix-dawn-luxe', 'zoma-boost'],
-    filterNote: `Saatva Classic posts 10/10 overall and is a strong innerspring pick for back sleepers. We chose the AS2 as our category lead for its dedicated HIVE® lumbar zoning and 20-year warranty.`,
+    filterNote: `Saatva Classic posts 9.2/10 overall and is a strong innerspring pick for back sleepers. We chose the AS2 as our category lead for its dedicated HIVE® lumbar zoning and 20-year warranty.`,
     faqs: [
       {
         question: `What type of mattress is best for back sleepers?`,
@@ -256,9 +256,9 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best mattress for stomach sleepers in 2026, ranked by firmer feel, response, edge support, and overall score.`,
     intro: `Stomach sleepers need a firmer surface to keep the pelvis from sinking and curving the lumbar spine forward — every pick here runs medium-firm to firm (6/10+). This is a general comfort category, not medical guidance; talk to a healthcare provider about needs tied to a specific condition.`,
     winner: 'amerisleep-as2',
-    winnerNote: `The AS2 lands 9/10 overall at medium-firm (6/10). Its HIVE® zoning spreads 7 zones of differentiated support with a firmer response right under the hips — the key requirement for stomach sleeping — and a 10/10 on Response Time makes position changes easy through the night.`,
+    winnerNote: `The AS2 lands 9.3/10 overall at medium-firm (6/10). Its HIVE® zoning spreads 7 zones of differentiated support with a firmer response right under the hips — the key requirement for stomach sleeping — and a 10/10 on Response Time makes position changes easy through the night.`,
     picks: ['amerisleep-as2', 'brooklyn-bedding-plank-firm', 'bear-original', 'helix-dawn-luxe', 'saatva-classic', 'zoma-boost'],
-    filterNote: `Brooklyn Bedding Plank Firm is the firmest option on this list — a fit for stomach sleepers who want maximum firmness and minimal contouring. Bear Original (9/10 overall, 10/10 value) is the strongest budget pick for stomach sleepers.`,
+    filterNote: `Brooklyn Bedding Plank Firm is the firmest option on this list — a fit for stomach sleepers who want maximum firmness and minimal contouring. Bear Original (9.2/10 overall, 10/10 value) is the strongest budget pick for stomach sleepers.`,
     faqs: [
       {
         question: `Do stomach sleepers need a firm mattress?`,
@@ -280,7 +280,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best mattress for combination sleepers in 2026, ranked for responsive medium-feel fit across positions.`,
     intro: `Combination sleepers move between side, back, and stomach through the night. The best mattresses for them run medium firmness with high response-time scores — so the surface moves with them, not against them — plus strong motion-transfer scores for a partner's comfort.`,
     winner: 'amerisleep-as3',
-    winnerNote: `The AS3 sits at medium firmness (5/10) and lands 10/10 overall with a 9/10 on Response Time. Its Bio-Pur® foam reacts faster than traditional memory foam, so position changes don't meet resistance, and HIVE® zoning adapts as you shift from side to back.`,
+    winnerNote: `The AS3 sits at medium firmness (5/10) and lands 9.5/10 overall with a 9/10 on Response Time. Its Bio-Pur® foam reacts faster than traditional memory foam, so position changes don't meet resistance, and HIVE® zoning adapts as you shift from side to back.`,
     picks: ['amerisleep-as3', 'amerisleep-as3-hybrid', 'casper-dream-hybrid', 'leesa-sapira-hybrid', 'ghostbed-flex', 'bear-star-hybrid'],
     faqs: [
       {
@@ -303,9 +303,9 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best mattress for heavier sleepers in 2026, ranked by edge support, profile, construction, and overall score.`,
     intro: `Heavier sleepers (230 lbs+) need strong edge support to avoid roll-off, durable materials that resist early softening, and deep enough comfort layers to relieve pressure without bottoming out. Hybrids with pocketed coil bases generally hold up better in this category.`,
     winner: 'amerisleep-as6',
-    winnerNote: `The AS6 Black Series lands 10/10 overall with a hybrid coil base, 9/10 edge support, and a 15-inch profile for deep compression without bottoming out. Bio-Pur® foam and a 20-year warranty point to long-term durability — a real factor for heavier sleepers who compress materials faster.`,
+    winnerNote: `The AS6 Black Series lands 9.3/10 overall with a hybrid coil base, 9/10 edge support, and a 15-inch profile for deep compression without bottoming out. Bio-Pur® foam and a 20-year warranty point to long-term durability — a real factor for heavier sleepers who compress materials faster.`,
     picks: ['amerisleep-as6', 'amerisleep-as3-hybrid', 'saatva-classic', 'nest-bedding-sparrow', 'brooklyn-bedding-aurora-luxe', 'bear-star-hybrid'],
-    filterNote: `Saatva Classic (10/10 overall, 10/10 edge) and Nest Bedding Sparrow (10/10 overall, 10/10 edge) are both strong picks for heavier sleepers who need maximum edge support.`,
+    filterNote: `Saatva Classic (9.2/10 overall, 10/10 edge) and Nest Bedding Sparrow (9.3/10 overall, 10/10 edge) are both strong picks for heavier sleepers who need maximum edge support.`,
     faqs: [
       {
         question: `What thickness mattress do heavy sleepers need?`,
@@ -325,9 +325,9 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     title: `Best Mattress for Couples 2026 | The Mattress Digest`,
     h1: `Best Mattress for Couples 2026`,
     description: `Best mattress for couples in 2026, ranked by Motion Transfer, Edge Support, and overall score.`,
-    intro: `Couples need a mattress that isolates movement (a high motion-transfer score) and makes the full bed width usable (a high edge-support score). Our top picks land 9–10/10 on both.`,
+    intro: `Couples need a mattress that isolates movement (a high motion-transfer score) and makes the full bed width usable (a high edge-support score). Our top picks land 9–10/10 on motion transfer, and most also land 9–10/10 on edge support.`,
     winner: 'amerisleep-as3',
-    winnerNote: `The AS3 lands 10/10 on both Motion Transfer and Edge Support — the highest dual score in our dataset. At 10/10 overall and 9/10 value, it's the strongest all-around couples pick across every price tier.`,
+    winnerNote: `The AS3 lands 10/10 on both Motion Transfer and Edge Support — tied for the highest dual score in our dataset. At 9.5/10 overall and 9/10 value, it's the strongest all-around couples pick across every price tier.`,
     picks: ['amerisleep-as3', 'amerisleep-as6', 'nest-bedding-sparrow', 'leesa-sapira-chill-hybrid', 'helix-sunset-luxe', 'ghostbed-luxe'],
     filterNote: `For couples who run hot: the AS6 adds a Refresh Cooling Cover while matching the AS3 on motion transfer (10/10). Ghostbed Luxe also lands 10/10 on motion transfer and is a strong pick when one or both partners sleep warm.`,
     faqs: [
@@ -397,13 +397,13 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     description: `Best mattress for motion isolation in 2026, ranked by the Motion Transfer field in The Mattress Digest's editorial scorecard.`,
     intro: `This ranking runs on the Motion Transfer metric from our 7-metric system. All-foam models absorb motion more effectively than hybrids, since foam doesn't transmit movement through a coil spring network.`,
     winner: 'amerisleep-as3',
-    winnerNote: `The AS3 lands 10/10 on Motion Transfer — tied for the top score in our dataset. At 10/10 overall and 9/10 value, it's also the strongest all-around buy in this category. Its Bio-Pur® all-foam build absorbs movement at the source rather than passing it through a coil system.`,
+    winnerNote: `The AS3 lands 10/10 on Motion Transfer — tied for the top score in our dataset. At 9.5/10 overall and 9/10 value, it's also the strongest all-around buy in this category. Its Bio-Pur® all-foam build absorbs movement at the source rather than passing it through a coil system.`,
     picks: ['amerisleep-as3', 'amerisleep-as6', 'casper-the-one', 'ghostbed-luxe', 'helix-sunset-luxe', 'leesa-sapira-chill-hybrid'],
-    filterNote: `Ghostbed Luxe, Casper The One, Helix Sunset Luxe, and Leesa Sapira Chill Hybrid all land 10/10 on motion transfer. The AS3 and AS6 also hit 10/10 while leading on value, edge support, and overall score.`,
+    filterNote: `Ghostbed Luxe, Casper The One, and Helix Sunset Luxe all land 10/10 on motion transfer, and Leesa Sapira Chill Hybrid is close behind at 9/10. The AS3 and AS6 also hit 10/10 while leading this group on value (9/10 each); the AS3 also leads on overall score (9.5/10) and ties the Chill Hybrid on edge support (10/10).`,
     faqs: [
       {
         question: `Which mattresses have the best motion isolation?`,
-        answer: `All-foam mattresses consistently score highest on motion isolation, since foam absorbs movement right at the source. In our scorecard, the AS3, AS6, Casper The One, Ghostbed Luxe, Helix Sunset Luxe, and Leesa Sapira Chill Hybrid all land 10/10 on motion transfer. Of those, the AS3 and AS6 score higher overall, making them the strongest all-around picks for couples who prioritize motion isolation.`
+        answer: `All-foam mattresses consistently score highest on motion isolation, since foam absorbs movement right at the source. In our scorecard, the AS3, AS6, Casper The One, Ghostbed Luxe, and Helix Sunset Luxe all land 10/10 on motion transfer, with Leesa Sapira Chill Hybrid close behind at 9/10. Of the 10/10 group, the AS3 and AS6 score higher overall (9.5 and 9.3 vs 8.2–8.7), making them the strongest all-around picks for couples who prioritize motion isolation.`
       },
       {
         question: `Is memory foam or innerspring better for motion isolation?`,
@@ -423,7 +423,7 @@ export const BEST_CATEGORIES: Record<string, CategoryConfig> = {
     winner: 'amerisleep-as5',
     winnerNote: `The AS5 is our softest foam model (3/10) and lands 9/10 overall. Its Bio-Pur® foam and Active Flex layer are built to absorb concentrated pressure at the shoulder, hip, and knee — the main contact points for side sleepers dealing with joint discomfort on a firmer surface.`,
     picks: ['amerisleep-as5', 'amerisleep-as5-hybrid', 'saatva-rx', 'purple-restoreplus-hybrid', 'helix-midnight-luxe', 'amerisleep-as3'],
-    filterNote: `Saatva RX (10/10 overall, 10/10 motion transfer) is built for sleepers with musculoskeletal concerns and uses a micro-coil comfort layer. Purple RestorePlus Hybrid (9/10 overall, 10/10 response time) takes a different approach to pressure distribution with its GelFlex Grid.`,
+    filterNote: `Saatva RX (9.2/10 overall, 10/10 motion transfer) is built for sleepers with musculoskeletal concerns and uses a micro-coil comfort layer. Purple RestorePlus Hybrid (8.8/10 overall, 10/10 response time) takes a different approach to pressure distribution with its GelFlex Grid.`,
     faqs: [
       {
         question: `What type of mattress provides the best pressure relief?`,

@@ -157,7 +157,7 @@ const amerisleepMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US"],
     technology: ["Bio-Pur® Plant-Based Memory Foam", "HIVE® 5-Zone Technology", "Refresh Cooling Cover", "Bio-Core® Support Foam"],
-    scores: { overall: 10, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 10 },
+    scores: { overall: 9.5, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-15",
     dateModified: "2026-05-01",
@@ -176,7 +176,7 @@ const amerisleepMattressRecords: Mattress[] = [
       "Strict stomach sleepers may prefer the firmer AS2",
       "No pillow-top option at this price tier"
     ],
-    summary: "The Amerisleep AS3 is our #1 rated mattress for 2026. Its Bio-Pur® comfort layer uses an open-cell, partly plant-derived memory-foam formulation, while HIVE® creates five response zones across the mattress. At 12 inches tall with a medium feel (5/10), it is a versatile option for several sleep positions and comfort preferences.",
+    summary: "The Amerisleep AS3 is one of our top-rated mattresses for 2026, tied at 9.5/10 Overall. Its Bio-Pur® comfort layer uses an open-cell, partly plant-derived memory-foam formulation, while HIVE® creates five response zones across the mattress. At 12 inches tall with a medium feel (5/10), it is a versatile option for several sleep positions and comfort preferences.",
     verdict: "The best all-around memory foam mattress for 2026 — especially for side and back sleepers who sleep hot.",
     layers: [
       {
@@ -257,7 +257,7 @@ const amerisleepMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US"],
     technology: ["Bio-Pur® Plant-Based Memory Foam", "HIVE® 5-Zone Technology", "Refresh Cooling Cover", "Bio-Core® Support Foam"],
-    scores: { overall: 9, value: 9, edgeSupport: 8, trialPeriod: 9, responseTime: 10, motionTransfer: 10, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 9, edgeSupport: 8, trialPeriod: 9, responseTime: 10, motionTransfer: 10, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-20",
     dateModified: "2026-05-01",
@@ -446,14 +446,14 @@ const amerisleepMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US"],
     technology: ["Bio-Pur® Plant-Based Memory Foam", "HIVE® 5-Zone Technology", "Pocketed Coil Support", "Refresh Cooling Cover", "Bio-Core® Support Foam"],
-    scores: { overall: 10, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-02-15",
     dateModified: "2026-05-01",
     bestFor: ["Luxury Sleepers", "Hot Sleepers", "Couples", "Back Sleepers", "Combination Sleepers", "Heavy Sleepers"],
     tags: ["hybrid", "luxury", "cooling", "edge-support", "couples", "premium"],
     pros: [
-      "Top overall score (10/10), tied with the AS3 for the highest in the Amerisleep lineup",
+      "Overall score of 9.3/10, behind only the AS3 (9.5/10) in the Amerisleep lineup",
       "Pocketed coil base adds bounce, airflow, and strong edge support (9/10)",
       "15-inch profile — the tallest and most substantial Amerisleep mattress",
       "Excellent cooling from coil airflow plus Bio-Pur® open-cell foam (10/10)",
@@ -464,7 +464,7 @@ const amerisleepMattressRecords: Mattress[] = [
       "Heavier than all-foam models — harder to set up solo"
     ],
     summary: "The Amerisleep AS6 Black Series is the flagship of the lineup — a 15-inch luxury hybrid combining Bio-Pur® plant foam with a pocketed coil support base. The coil layer adds strong edge support (9/10), excellent airflow for cooling (10/10), and a responsive bounce that all-foam models can't match. Named best recovery mattress by Mashable and best memory foam by Newsweek.",
-    verdict: "The pinnacle of the Amerisleep lineup — the best-performing mattress for couples, hot sleepers, and luxury seekers.",
+    verdict: "The flagship of the Amerisleep lineup — a strong pick for couples (10/10 motion transfer), hot sleepers (10/10 cooling), and luxury seekers.",
     layers: [
       {
         name: "Refresh Cooling Cover",
@@ -508,7 +508,7 @@ const amerisleepMattressRecords: Mattress[] = [
     faqs: [
       {
         question: "What makes the AS6 different from the AS3?",
-        answer: "The fundamental difference is construction type, not test scores — the two are tied on Overall (10/10), Cooling (10/10), and Motion Transfer (10/10), and the AS3 actually scores higher on Edge Support (10/10 vs 9/10). The AS3 is an all-foam mattress; the AS6 is a hybrid with a pocketed coil base, giving it a bouncier feel and a taller 15\" profile vs 12\". The tradeoff is cost — the AS6 starts at $2,399 vs $999 for the AS3."
+        answer: "The fundamental difference is construction type, not test scores — the two are tied on Cooling (10/10) and Motion Transfer (10/10), while the AS3 scores higher on Overall (9.5/10 vs 9.3/10) and Edge Support (10/10 vs 9/10). The AS3 is an all-foam mattress; the AS6 is a hybrid with a pocketed coil base, giving it a bouncier feel and a taller 15\" profile vs 12\". The tradeoff is cost — the AS6 starts at $2,399 vs $999 for the AS3."
       },
       {
         question: "Is the AS6 good for hot sleepers?",
@@ -516,7 +516,7 @@ const amerisleepMattressRecords: Mattress[] = [
       },
       {
         question: "Why is it called the Black Series?",
-        answer: "The AS6 Black Series is Amerisleep's premium luxury tier. The 'Black Series' designation indicates the flagship positioning — premium materials, maximum height (15\"), hybrid construction, and the highest performance scores. It received media recognition including Mashable's best recovery mattress award."
+        answer: "The AS6 Black Series is Amerisleep's premium luxury tier. The 'Black Series' designation indicates the flagship positioning — premium materials, maximum height (15\"), hybrid construction, and strong performance scores. It received media recognition including Mashable's best recovery mattress award."
       }
     ],
     relatedComparisons: ['amerisleep-as3-vs-as6', 'amerisleep-as6-vs-organica'],
@@ -541,7 +541,7 @@ const amerisleepMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US", "GOTS Certified Organic Cotton", "GOLS Certified Organic Latex", "Rainforest Alliance"],
     technology: ["GOLS Certified Organic Latex", "GOTS Organic Cotton Cover", "Organic Wool Fire Barrier", "Pocketed Coil Support"],
-    scores: { overall: 9, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-02-20",
     dateModified: "2026-05-01",
@@ -649,7 +649,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 15,
     certifications: ["CertiPUR-US"],
     technology: ["Dual Steel Coil System", "Lumbar Zone Support", "Organic Cotton Cover"],
-    scores: { overall: 10, value: 7, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 7, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Back Sleepers", "Hot Sleepers", "Luxury Buyers"],
@@ -660,7 +660,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "A strong luxury innerspring, but Amerisleep's 20-year warranty and plant-based foam give the AS3 a practical edge for most sleepers.",
     layers: [{ name: "Coil System", thickness: "14.5 inches", material: "Dual Steel Coil", description: "Dual coil layers for support and cushioning." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,295", priceSale: "$1,995" }],
-    faqs: [{ question: "How does the Saatva Classic compare to the Amerisleep AS3?", answer: "The Saatva Classic uses a dual coil system vs the AS3's all-foam construction. The Saatva offers better edge support and cooling; the AS3 offers better motion isolation and a 20-year warranty vs Saatva's 15-year." }]
+    faqs: [{ question: "How does the Saatva Classic compare to the Amerisleep AS3?", answer: "The Saatva Classic uses a dual coil system vs the AS3's all-foam construction. The two tie on edge support (10/10); the Saatva scores higher on response time (10 vs 9), while the AS3 scores higher on cooling (10 vs 9) and motion isolation (10 vs 9) and offers a 20-year warranty vs Saatva's 15-year." }]
   },
   {
     id: "nolah-evolution-15",
@@ -681,7 +681,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 15,
     certifications: ["CertiPUR-US", "OEKO-TEX"],
     technology: ["AirFoam™ HDMax", "HDMax Tri-Zone Coils", "Cooling Organic Cover"],
-    scores: { overall: 10, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.5, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Hot Sleepers", "Side Sleepers", "Couples"],
@@ -692,7 +692,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Competitive with the AS3 on cooling and pressure relief, but the AS3 holds the edge on warranty length and price.",
     layers: [{ name: "Hybrid System", thickness: "15 inches", material: "AirFoam + Coils", description: "Foam comfort layers over zoned pocketed coils." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,299", priceSale: "$1,999" }],
-    faqs: [{ question: "Is the Nolah Evolution better than the Amerisleep AS3?", answer: "The Nolah Evolution 15 edges ahead on cooling and has a similar feel for side sleepers. The AS3 has a longer warranty (20 vs 15 years) and is typically priced lower." }]
+    faqs: [{ question: "Is the Nolah Evolution better than the Amerisleep AS3?", answer: "The two tie on overall (9.5/10) and have a similar feel for side sleepers. The Evolution 15 scores higher on value (10 vs 9), while the AS3 scores higher on cooling (10 vs 9), has a longer warranty (20 vs 15 years), and is typically priced lower." }]
   },
   {
     id: "brooklyn-bedding-aurora-luxe",
@@ -713,7 +713,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["TitanCool™ Cooling Foam", "TitanFlex™ Foam", "Ascension Coil System"],
-    scores: { overall: 9, value: 9, edgeSupport: 8, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 10 },
+    scores: { overall: 8.8, value: 9, edgeSupport: 8, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Hot Sleepers", "Combination Sleepers"],
@@ -724,7 +724,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Good cooling hybrid, but the 10-year warranty is a notable gap vs the AS3's 20-year coverage.",
     layers: [{ name: "Hybrid System", thickness: "13.5 inches", material: "TitanCool + TitanFlex + Coils", description: "Cooling foam comfort layers over pocketed coils." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,699", priceSale: "$1,499" }],
-    faqs: [{ question: "How does the Aurora Luxe compare to the Amerisleep AS3?", answer: "The Aurora Luxe has better cooling scores but a significantly shorter warranty (10 years vs AS3's 20 years). The AS3 uses plant-based foam with lower off-gassing; the Aurora uses synthetic TitanCool foam." }]
+    faqs: [{ question: "How does the Aurora Luxe compare to the Amerisleep AS3?", answer: "The Aurora Luxe matches the AS3's 10/10 cooling score but has a significantly shorter warranty (10 years vs AS3's 20 years). The AS3 uses plant-based foam with lower off-gassing; the Aurora uses synthetic TitanCool foam." }]
   },
   {
     id: "glacier-apex-hybrid",
@@ -745,7 +745,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Cooling Gel Foam", "Pocketed Coil Support"],
-    scores: { overall: 9, value: 10, edgeSupport: 9, trialPeriod: 10, responseTime: 8, motionTransfer: 9, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 10, edgeSupport: 9, trialPeriod: 10, responseTime: 8, motionTransfer: 9, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Budget Buyers", "Hot Sleepers"],
@@ -777,7 +777,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 25,
     certifications: ["GOLS", "GOTS", "OEKO-TEX", "Rainforest Alliance"],
     technology: ["Talalay Latex", "Organic Wool Fire Barrier", "GOTS Organic Cotton Cover", "Pocketed Coils"],
-    scores: { overall: 8, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 8, coolingBreathability: 9 },
+    scores: { overall: 9, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 8, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Eco-Conscious Buyers", "Hot Sleepers", "Natural Materials"],
@@ -810,18 +810,18 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US", "OEKO-TEX"],
     technology: ["Celliant® Cover", "Copper-Infused Memory Foam", "Pocketed Coil System"],
-    scores: { overall: 9, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.8, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Active Sleepers", "Hot Sleepers", "Couples"],
     tags: ["hybrid", "cooling", "active"],
     pros: ["Celliant® cover for recovery-focused marketing", "20-year warranty matches AS3", "120-night trial", "Copper-infused foam for cooling"],
-    cons: ["Copper infusion provides marginal real-world cooling benefit", "Higher price than AS3 for similar scores"],
+    cons: ["Copper infusion provides marginal real-world cooling benefit", "Higher price than AS3 for a lower overall score (8.8 vs 9.5)"],
     summary: "Bear Star Hybrid targets active sleepers with a Celliant® cover and copper-infused foam. Solid hybrid performer.",
-    verdict: "Comparable overall scores to the AS3, but the AS3's plant-based Bio-Pur® foam is a cleaner material story than synthetic copper-infused foam.",
+    verdict: "Slightly lower overall score than the AS3 (8.8 vs 9.5), and the AS3's plant-based Bio-Pur® foam is a cleaner material story than synthetic copper-infused foam.",
     layers: [{ name: "Hybrid System", thickness: "14 inches", material: "Copper Foam + Celliant + Coils", description: "Recovery-focused foam layers over pocketed coils." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,998", priceSale: "$1,748" }],
-    faqs: [{ question: "Bear Star Hybrid vs Amerisleep AS3 — which wins?", answer: "Both have 20-year warranties. The Bear Star Hybrid is a better fit for sleepers who want a coil system; the AS3's all-foam construction wins on motion isolation. Scores are closely matched overall." }]
+    faqs: [{ question: "Bear Star Hybrid vs Amerisleep AS3 — which wins?", answer: "Both have 20-year warranties. The Bear Star Hybrid is a better fit for sleepers who want a coil system; the AS3's all-foam construction wins on motion isolation. The AS3 scores higher overall (9.5 vs 8.8)." }]
   },
   {
     id: "avocado-green",
@@ -842,7 +842,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 25,
     certifications: ["GOLS", "GOTS", "MADE SAFE®", "Rainforest Alliance"],
     technology: ["GOLS Certified Dunlop Latex", "GOTS Organic Cotton", "Organic Wool Fire Barrier", "Upcycled Steel Coils"],
-    scores: { overall: 9, value: 7, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.8, value: 7, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Eco-Conscious Buyers", "Hot Sleepers", "Firm Preference"],
@@ -874,7 +874,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["GOLS", "GOTS", "OCS", "FSC®", "MADE SAFE®", "EWG Verified®", "GREENGUARD Gold", "Formaldehyde Free (UL)"],
     technology: ["GOLS Certified Organic Latex", "GOTS Organic Cotton & Wool Cover", "Individually Wrapped U.S.-Made Coils", "Glueless Construction", "No Fiberglass Fire Barrier"],
-    scores: { overall: 9, value: 8, edgeSupport: 10, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.8, value: 8, edgeSupport: 10, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-06-24", dateModified: "2026-06-24",
     bestFor: ["Eco-Conscious Buyers", "Budget-Minded Organic Shoppers", "Medium-Firm Preference"],
@@ -882,11 +882,11 @@ const competitorMattressRecords: Mattress[] = [
     pros: ["One of the broadest certification stacks among organic mattresses: GOLS, GOTS, OCS, FSC®, MADE SAFE®, EWG Verified®, GREENGUARD Gold, and UL-verified formaldehyde-free", "Glueless construction — no adhesives anywhere in the build", "Naturally flame-resistant without fiberglass, hydrated silica, boric acid, or rayon fire barriers", "Lower entry price than most certified-organic competitors", "Available in Medium Firm or Plush, with a 120-night trial"],
     cons: ["20-year warranty is prorated after the first 10 years, unlike some competitors' full-term coverage", "10-inch profile is thinner than some premium organic hybrids", "Happsy is a budget sub-brand of Naturepedic — sister-company products share some sourcing, which is worth knowing if comparing the two as fully independent options", "Only two firmness options"],
     summary: "The Happsy Organic Mattress pairs a GOLS-certified organic latex comfort layer with individually wrapped, U.S.-made coils, built without any glues or adhesives. It avoids fiberglass and other synthetic fire-barrier chemicals entirely, and carries one of the broadest certification stacks among organic mattresses at a lower entry price than most certified-organic competitors. Happsy is a budget-focused sister brand of Naturepedic, sharing supply-chain and certification practices.",
-    verdict: "Happsy and the Amerisleep Organica are both certified-organic latex builds with matching 9/10 overall scores in the approved editorial scorecard. Happsy edges ahead on edge support (10 vs 9); the Organica scores higher on value and response time. Happsy's lower entry price and broader certification stack (OCS, FSC®, MADE SAFE®, EWG Verified®, GREENGUARD Gold) may matter more to budget-conscious or certification-focused organic shoppers. Worth noting: Happsy and Naturepedic (also reviewed on this site) are sister brands under the same parent company.",
+    verdict: "Happsy and the Amerisleep Organica are both certified-organic latex builds, with the Organica ahead on overall score (9.2/10 vs 8.8/10) in the approved editorial scorecard. Happsy edges ahead on edge support (10 vs 9); the Organica scores higher on value and response time. Happsy's lower entry price and broader certification stack (OCS, FSC®, MADE SAFE®, EWG Verified®, GREENGUARD Gold) may matter more to budget-conscious or certification-focused organic shoppers. Worth noting: Happsy and Naturepedic (also reviewed on this site) are sister brands under the same parent company.",
     layers: [{ name: "Latex & Coil System", thickness: "10 inches", material: "GOTS Cotton + GOLS Latex + Organic Wool + Wrapped Coils", description: "Organic cotton fabric and quilted batting over individually pocketed, glueless U.S.-made coils with an organic cotton insulator, topped with GOTS-approved latex and organic wool batting." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$899", priceSale: "$899" }],
     faqs: [
-      { question: "Happsy vs Amerisleep Organica — which organic mattress is the better value?", answer: "Both score 9/10 overall in the approved editorial scorecard. Happsy's entry price is lower and its certification stack is broader (it adds OCS, FSC®, MADE SAFE®, EWG Verified®, and GREENGUARD Gold to the GOLS/GOTS both share). The Organica scores higher on response time and is available in a wider range of firmness/model variants." },
+      { question: "Happsy vs Amerisleep Organica — which organic mattress is the better value?", answer: "The Organica scores 9.2/10 overall vs Happsy's 8.8/10 in the approved editorial scorecard. Happsy's entry price is lower and its certification stack is broader (it adds OCS, FSC®, MADE SAFE®, EWG Verified®, and GREENGUARD Gold to the GOLS/GOTS both share). The Organica scores higher on response time and is available in a wider range of firmness/model variants." },
       { question: "Is Happsy related to Naturepedic?", answer: "Yes — Happsy is a budget-focused sister brand under the same parent company as Naturepedic, which is also reviewed on this site. The two share sourcing and certification practices, with Happsy positioned at a lower price point." },
       { question: "Does the Happsy mattress use fiberglass?", answer: "No. Happsy states its mattresses achieve flame resistance naturally, without fiberglass, hydrated silica, boric acid treatments, or rayon-based fire barriers." },
       { question: "Does Happsy require a box spring?", answer: "No. Happsy mattresses work on any flat surface, the Happsy Organic Foundation, platform beds with slats no more than 2-3 inches apart, or adjustable bases." }
@@ -911,18 +911,18 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Purple Grid™ Technology", "Responsive Coil System"],
-    scores: { overall: 9, value: 7, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.8, value: 7, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Hot Sleepers", "Pressure Relief", "Unique Feel Preference"],
     tags: ["hybrid", "cooling", "unique-feel"],
     pros: ["Purple Grid™ offers a distinctly different feel from foam", "Excellent cooling and pressure relief scores", "Good responsiveness"],
-    cons: ["10-year warranty is below Amerisleep's 20-year", "Higher price for comparable overall performance", "Grid feel is polarizing — some sleepers dislike it"],
+    cons: ["10-year warranty is below Amerisleep's 20-year", "Higher price than the AS3 despite a lower overall score (8.8 vs 9.5)", "Grid feel is polarizing — some sleepers dislike it"],
     summary: "The Purple RestorePlus Hybrid uses Purple's proprietary Grid™ technology over a coil system. Distinctive feel unlike any foam mattress.",
-    verdict: "Best for sleepers who want a truly different feel from memory foam. The AS3 wins on warranty (20 vs 10 years) and price for similar overall scores.",
+    verdict: "Best for sleepers who want a truly different feel from memory foam. The AS3 wins on warranty (20 vs 10 years), price, and overall score (9.5 vs 8.8).",
     layers: [{ name: "Grid + Coil System", thickness: "13 inches", material: "Purple Grid™ + Pocketed Coils", description: "Gel-like grid structure over responsive coils." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,699", priceSale: "$2,399" }],
-    faqs: [{ question: "Purple RestorePlus vs Amerisleep AS3 — main differences?", answer: "Purple uses its proprietary Grid™ technology which provides a gel-like feel; the AS3 uses traditional memory foam feel with plant-based materials. Purple scores slightly higher on cooling; the AS3 has double the warranty (20 vs 10 years) at a lower price." }]
+    faqs: [{ question: "Purple RestorePlus vs Amerisleep AS3 — main differences?", answer: "Purple uses its proprietary Grid™ technology which provides a gel-like feel; the AS3 uses traditional memory foam feel with plant-based materials. The AS3 scores higher on cooling (10 vs 9) and overall (9.5 vs 8.8), and has double the warranty (20 vs 10 years) at a lower price." }]
   },
   {
     id: "nest-bedding-sparrow",
@@ -943,7 +943,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US", "OEKO-TEX"],
     technology: ["SmartFlow Support™ Coils", "QE Foam", "Organic Cotton Cover"],
-    scores: { overall: 10, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.3, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Combination Sleepers", "Value Buyers", "Trial-Focused Buyers"],
@@ -981,12 +981,12 @@ const competitorMattressRecords: Mattress[] = [
     bestFor: ["Side Sleepers", "Couples", "Pressure Relief"],
     tags: ["hybrid", "side-sleepers", "couples"],
     pros: ["Strong motion isolation for a hybrid", "Excellent pressure relief", "Tencel™ cover for softness"],
-    cons: ["15-year warranty vs AS3's 20-year", "Higher price than AS3", "Cooling below average for a hybrid"],
+    cons: ["15-year warranty vs AS3's 20-year", "Higher price than AS3", "Value score of 7/10 vs the AS3's 9/10"],
     summary: "The Helix Midnight Luxe is a premium hybrid targeting side sleepers and couples with strong pressure relief and motion isolation.",
-    verdict: "Solid hybrid for side sleepers and couples. The AS3 has a longer warranty and lower price; the Midnight Luxe has better edge support and coil bounce.",
+    verdict: "Solid hybrid for side sleepers and couples. The AS3 has a longer warranty and lower price; the Midnight Luxe has a coil-spring bounce and matches the AS3's 10/10 edge support.",
     layers: [{ name: "Hybrid System", thickness: "13.5 inches", material: "Memory Plus Foam + Zoned Coils", description: "Foam comfort layers over zoned pocketed coils." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,199", priceSale: "$1,999" }],
-    faqs: [{ question: "Helix Midnight Luxe vs Amerisleep AS3 for side sleepers?", answer: "Both score well for side sleepers. The Midnight Luxe is a hybrid with slightly better edge support; the AS3 is all-foam with better motion isolation. The AS3 has a 20-year warranty vs Midnight Luxe's 15 years." }]
+    faqs: [{ question: "Helix Midnight Luxe vs Amerisleep AS3 for side sleepers?", answer: "Both score well for side sleepers. The Midnight Luxe is a hybrid that matches the AS3's 10/10 edge support score; the AS3 is all-foam with better motion isolation (10 vs 9). The AS3 has a 20-year warranty vs Midnight Luxe's 15 years." }]
   },
   {
     id: "leesa-original",
@@ -1007,7 +1007,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["LSA200™ Foam", "Memory Foam Comfort Layer", "Dense Support Core"],
-    scores: { overall: 8, value: 8, edgeSupport: 7, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 8 },
+    scores: { overall: 8.3, value: 8, edgeSupport: 7, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Value Buyers", "Side Sleepers", "Motion Isolation"],
@@ -1039,7 +1039,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["LSA200™ Foam", "Pocketed Spring System", "Memory Foam Layer"],
-    scores: { overall: 9, value: 8, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.7, value: 8, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Combination Sleepers", "Couples", "Value Hybrid Buyers"],
@@ -1071,7 +1071,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Firm Foam Layers", "High-Density Support Core", "Flippable Design"],
-    scores: { overall: 9, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 8 },
+    scores: { overall: 8.8, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Stomach Sleepers", "Back Sleepers", "Very Firm Preference", "Budget Firm"],
@@ -1103,7 +1103,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US", "OEKO-TEX"],
     technology: ["Celliant® Cover", "Cooling Graphite Foam", "Support Core"],
-    scores: { overall: 9, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Budget Buyers", "Back Sleepers", "Value Foam"],
@@ -1147,7 +1147,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Comparable warranty to the AS3 and competitive cooling, but the AS3's plant-based foam and HIVE® zoning give it slightly better scores overall at a lower price.",
     layers: [{ name: "Hybrid System", thickness: "13 inches", material: "Ghost Bounce + Ghost Comfort + Coils", description: "Responsive foam layers over pocketed coils." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,995", priceSale: "$1,745" }],
-    faqs: [{ question: "GhostBed Flex vs Amerisleep AS3?", answer: "Both have 20-year warranties. The GhostBed Flex is a hybrid with better cooling; the AS3 is all-foam with better motion isolation and uses plant-based foam. Scores are comparable; the AS3 is typically less expensive." }]
+    faqs: [{ question: "GhostBed Flex vs Amerisleep AS3?", answer: "Both have 20-year warranties. The GhostBed Flex is a hybrid; the AS3 is all-foam and uses plant-based foam. Both score 10/10 on cooling and motion isolation, and the AS3 is slightly higher overall (9.5 vs 9); the AS3 is typically less expensive." }]
   },
   {
     id: "helix-dawn-luxe",
@@ -1168,7 +1168,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 15,
     certifications: ["CertiPUR-US"],
     technology: ["Firm Helix Foam", "Zoned Pocketed Coils", "Cashmere Pillow Top"],
-    scores: { overall: 9, value: 7, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.5, value: 7, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Back Sleepers", "Stomach Sleepers", "Firm Hybrid Preference"],
@@ -1179,7 +1179,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Good firm hybrid for back sleepers. The AS2 offers similar firm support with a 20-year warranty at a lower price.",
     layers: [{ name: "Firm Hybrid System", thickness: "13.5 inches", material: "Firm Foam + Cashmere + Zoned Coils", description: "Firm foam and cashmere layers over zoned coil support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,199", priceSale: "$1,999" }],
-    faqs: [{ question: "Helix Dawn Luxe vs Amerisleep AS2 for back sleepers?", answer: "Both target back sleepers. The Dawn Luxe is a hybrid with better edge support; the AS2 is all-foam with a 20-year warranty vs Helix's 15-year. The AS2 is typically less expensive." }]
+    faqs: [{ question: "Helix Dawn Luxe vs Amerisleep AS2 for back sleepers?", answer: "Both target back sleepers. The Dawn Luxe is a hybrid and ties the AS2 on edge support (8/10 each); the AS2 is all-foam with a 20-year warranty vs Helix's 15-year. The AS2 is typically less expensive." }]
   },
   {
     id: "leesa-sapira-chill-hybrid",
@@ -1200,7 +1200,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Cooling Foam", "Pocketed Coil System", "Phase Change Cover"],
-    scores: { overall: 10, value: 8, edgeSupport: 10, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 8, edgeSupport: 10, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Hot Sleepers", "Couples", "Luxury Buyers"],
@@ -1211,7 +1211,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Strong cooling hybrid, but the 10-year warranty is a notable gap vs the AS6's 20-year at a similar price point.",
     layers: [{ name: "Cooling Hybrid System", thickness: "13 inches", material: "Cooling Foam + Phase Change Cover + Coils", description: "Cooling-focused foam over pocketed coil support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,299", priceSale: "$2,099" }],
-    faqs: [{ question: "Leesa Sapira Chill vs Amerisleep AS6 for hot sleepers?", answer: "Both target hot sleepers as hybrids. The AS6 has a 20-year warranty vs Leesa's 10-year and scores higher overall. The Sapira Chill's phase change cover provides slightly more active cooling." }]
+    faqs: [{ question: "Leesa Sapira Chill vs Amerisleep AS6 for hot sleepers?", answer: "Both target hot sleepers as hybrids. The two tie on overall score (9.3/10) and cooling (10/10), but the AS6 has a 20-year warranty vs Leesa's 10-year. The Sapira Chill uses a phase change cover designed for active cooling." }]
   },
   {
     id: "helix-sunset-luxe",
@@ -1232,18 +1232,18 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 15,
     certifications: ["CertiPUR-US"],
     technology: ["Memory Plus Foam", "Zoned Pocketed Coils", "Tencel™ Cover", "Pillow Top"],
-    scores: { overall: 9, value: 7, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 8.7, value: 7, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Side Sleepers", "Pressure Relief", "Lightweight Sleepers"],
     tags: ["hybrid", "soft", "side-sleepers", "pressure-relief"],
     pros: ["Excellent pressure relief for a hybrid", "Good motion isolation for coil construction", "Pillow top adds plush feel"],
-    cons: ["15-year warranty vs AS5's 20-year", "Less responsive than AS5's Active Flex layer", "Higher price for comparable performance"],
+    cons: ["15-year warranty vs AS5's 20-year", "No Active Flex layer like the AS5's", "Higher price for comparable performance"],
     summary: "The Helix Sunset Luxe is a soft hybrid targeting side sleepers with a pillow top and strong pressure relief.",
-    verdict: "Competitive with the AS5 Hybrid for side sleepers. The AS5 has a 20-year warranty and Active Flex layer; the Sunset Luxe has a pillow top and better edge support.",
+    verdict: "Competitive with the AS5 Hybrid for side sleepers. The AS5 has a 20-year warranty and Active Flex layer; the Sunset Luxe has a pillow top.",
     layers: [{ name: "Soft Hybrid System", thickness: "14 inches", material: "Memory Plus + Pillow Top + Zoned Coils", description: "Soft foam and pillow top over zoned coil support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,199", priceSale: "$1,999" }],
-    faqs: [{ question: "Helix Sunset Luxe vs Amerisleep AS5 Hybrid for side sleepers?", answer: "Both are soft hybrids for side sleepers. The AS5 has a 20-year warranty vs Helix's 15-year. The Sunset Luxe has a pillow top; the AS5 has the Active Flex layer for more responsive bounce. Pressure relief is comparable." }]
+    faqs: [{ question: "Helix Sunset Luxe vs Amerisleep AS5 Hybrid for side sleepers?", answer: "Both are soft hybrids for side sleepers. The AS5 has a 20-year warranty vs Helix's 15-year. The Sunset Luxe has a pillow top; the AS5 has the Active Flex layer designed for responsive bounce. Pressure relief is comparable." }]
   },
   {
     id: "ghostbed-luxe",
@@ -1264,18 +1264,18 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 25,
     certifications: ["CertiPUR-US"],
     technology: ["Ghost Ice™ Cooling Fabric", "Cooling Gel Foam", "Memory Foam", "Dense Support Core"],
-    scores: { overall: 7, value: 8, edgeSupport: 8, trialPeriod: 9, responseTime: 6, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 8.3, value: 8, edgeSupport: 8, trialPeriod: 9, responseTime: 6, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Hot Sleepers", "Side Sleepers", "Pressure Relief"],
     tags: ["memory-foam", "cooling", "soft", "side-sleepers"],
-    pros: ["Exceptional cooling scores — among the best in all-foam", "25-year warranty exceeds AS5's 20-year", "Strong pressure relief"],
+    pros: ["Strong cooling score (9/10) for an all-foam mattress", "25-year warranty exceeds AS5's 20-year", "Strong pressure relief"],
     cons: ["Expensive for all-foam construction", "Poor edge support vs hybrid alternatives", "Slow responsiveness"],
     summary: "The GhostBed Luxe targets hot side sleepers with premium cooling foam layers and a 25-year warranty.",
-    verdict: "Strong cooling for an all-foam mattress. The AS5 competes on pressure relief; the Luxe wins on cooling and warranty (25 vs 20 years), but costs more.",
+    verdict: "Strong cooling for an all-foam mattress. The AS5 competes on pressure relief and scores higher on cooling (10 vs 9); the Luxe wins on warranty (25 vs 20 years), but costs more.",
     layers: [{ name: "Cooling Foam System", thickness: "13 inches", material: "Ghost Ice + Gel Foam + Memory Foam + Core", description: "Multi-layer cooling foam construction." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,245", priceSale: "$1,995" }],
-    faqs: [{ question: "GhostBed Luxe vs Amerisleep AS5 for hot side sleepers?", answer: "Both target hot side sleepers. The GhostBed Luxe wins on cooling scores and has a longer warranty (25 vs 20 years). The AS5's Active Flex layer gives it better responsiveness. The Luxe is more expensive." }]
+    faqs: [{ question: "GhostBed Luxe vs Amerisleep AS5 for hot side sleepers?", answer: "Both target hot side sleepers. The AS5 scores higher on cooling (10 vs 9), while the GhostBed Luxe has a longer warranty (25 vs 20 years). The AS5's Active Flex layer gives it better responsiveness (8 vs 6). The Luxe is more expensive." }]
   },
   {
     id: "casper-the-one",
@@ -1296,7 +1296,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["AirScape™ Foam", "Zoned Support", "Support Core"],
-    scores: { overall: 8, value: 8, edgeSupport: 7, trialPeriod: 9, responseTime: 7, motionTransfer: 10, coolingBreathability: 8 },
+    scores: { overall: 8.2, value: 8, edgeSupport: 7, trialPeriod: 9, responseTime: 7, motionTransfer: 10, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Budget Buyers", "First-Time Buyers", "Side Sleepers"],
@@ -1328,7 +1328,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["AirScape™ Foam", "Zoned Pocketed Coils", "Ergonomic Zones"],
-    scores: { overall: 9, value: 8, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.7, value: 8, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Combination Sleepers", "Couples", "Casper Brand Loyalists"],
@@ -1339,7 +1339,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Good hybrid feel, but the 10-year warranty is a significant gap vs the AS3's 20-year at a similar or higher price.",
     layers: [{ name: "Hybrid System", thickness: "12 inches", material: "AirScape Foam + Zoned Coils", description: "Ergonomically zoned foam over pocketed coil support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,895", priceSale: "$1,695" }],
-    faqs: [{ question: "Casper Dream Hybrid vs Amerisleep AS3?", answer: "The Casper Dream Hybrid adds coils for better bounce and edge support vs the AS3's all-foam. However, the Dream Hybrid's 10-year warranty vs the AS3's 20-year is a significant long-term difference at comparable pricing." }]
+    faqs: [{ question: "Casper Dream Hybrid vs Amerisleep AS3?", answer: "The Casper Dream Hybrid adds coils for a bouncier feel vs the AS3's all-foam. However, the Dream Hybrid's 10-year warranty vs the AS3's 20-year is a significant long-term difference at comparable pricing." }]
   },
   {
     id: "saatva-rx",
@@ -1360,7 +1360,7 @@ const competitorMattressRecords: Mattress[] = [
     warrantyYears: 20,
     certifications: ["CertiPUR-US"],
     technology: ["Micro Coil Comfort Layer", "Lumbar Zone Quilting", "Dual Coil Support", "Organic Cotton Cover"],
-    scores: { overall: 10, value: 7, edgeSupport: 9, trialPeriod: 10, responseTime: 10, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 7, edgeSupport: 9, trialPeriod: 10, responseTime: 10, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-05-01",
     bestFor: ["Luxury Buyers", "Pressure Pain", "Hot Sleepers with Back Concerns"],
@@ -1383,18 +1383,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 20,
     certifications: ["CertiPUR-US"],
     technology: ["Bio-Pur® Plant-Based Foam","HIVE® Zoning","Pocketed Coil Base"],
-    scores: { overall: 10, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Side Sleepers","Combination Sleepers","Hot Sleepers","Couples"],
     tags: ["hybrid","medium","cooling"],
-    pros: ["Scores 10/10 overall","Bio-Pur® plant-based foam comfort layer","Coil base adds cooling and edge support vs all-foam AS3","20-year warranty"],
+    pros: ["Scores 9.3/10 overall","Bio-Pur® plant-based foam comfort layer","Coil base adds airflow and a bouncier feel vs all-foam AS3","20-year warranty"],
     cons: ["Slightly higher price than AS3 all-foam","Hybrid feel not ideal for those preferring pure foam contouring"],
-    summary: "The Amerisleep AS3 Hybrid pairs the AS3's Bio-Pur® medium comfort layer with a pocketed coil support system for better edge support and airflow.",
-    verdict: "The AS3 Hybrid is the upgrade path for AS3 fans who want better edge support and enhanced cooling without changing the feel they love.",
+    summary: "The Amerisleep AS3 Hybrid pairs the AS3's Bio-Pur® medium comfort layer with a pocketed coil support system for added airflow and a bouncier feel.",
+    verdict: "The AS3 Hybrid is the upgrade path for AS3 fans who want a coil base and added airflow without changing the feel they love.",
     layers: [{ name: "Bio-Pur® + Coil Hybrid System", thickness: "12 inches", material: "Plant-Based Foam + Pocketed Coils", description: "Bio-Pur® comfort foam over pocketed coil support base for airflow and responsiveness." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,549", priceSale: "$1,149" }],
-    faqs: [{ question: "What is the difference between the AS3 and AS3 Hybrid?", answer: "The AS3 is all-foam; the AS3 Hybrid adds a pocketed coil support system under the same Bio-Pur® comfort layer. The hybrid improves edge support, airflow, and responsiveness at a slightly higher price." }]
+    faqs: [{ question: "What is the difference between the AS3 and AS3 Hybrid?", answer: "The AS3 is all-foam; the AS3 Hybrid adds a pocketed coil support system under the same Bio-Pur® comfort layer. The hybrid adds airflow and a bouncier feel at a slightly higher price; the scorecard records 10/10 edge support and cooling for both." }]
   },
   {
     id: "amerisleep-as5-hybrid", name: "Amerisleep AS5 Hybrid", brand: "Amerisleep", model: "AS5 Hybrid",
@@ -1407,18 +1407,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 20,
     certifications: ["CertiPUR-US"],
     technology: ["Bio-Pur® Plant-Based Foam","Active Flex Transition Layer","Pocketed Coil Base"],
-    scores: { overall: 9, value: 8, edgeSupport: 9, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 10 },
+    scores: { overall: 8.8, value: 8, edgeSupport: 9, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Side Sleepers","Light Sleepers","Hot Sleepers","Shoulder and Hip Pressure"],
     tags: ["hybrid","soft","pressure-relief","cooling"],
-    pros: ["Soft plush feel with coil support underneath","Excellent cooling (10/10)","Better edge support than AS5 all-foam","20-year warranty"],
+    pros: ["Soft plush feel with coil support underneath","Excellent cooling (10/10)","Coil base adds airflow and bounce vs the all-foam AS5","20-year warranty"],
     cons: ["Not firm enough for back or stomach sleepers","Highest price in the hybrid lineup"],
-    summary: "The Amerisleep AS5 Hybrid delivers the AS5's soft plush feel with added coil support for better edge support and airflow. Designed for dedicated side sleepers who want cloud-like comfort with hybrid responsiveness.",
-    verdict: "Ideal for strict side sleepers who want maximum plushness plus the structural benefits of coils — better edge and cooling than the all-foam AS5.",
+    summary: "The Amerisleep AS5 Hybrid delivers the AS5's soft plush feel with added coil support for airflow and bounce. Designed for dedicated side sleepers who want cloud-like comfort with hybrid responsiveness.",
+    verdict: "Ideal for strict side sleepers who want maximum plushness plus the structural benefits of coils — a coil base and added airflow compared with the all-foam AS5.",
     layers: [{ name: "Soft Hybrid System", thickness: "14 inches", material: "Bio-Pur® + Active Flex + Pocketed Coils", description: "Plush Bio-Pur® comfort layer with Active Flex transition over pocketed coil base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,849", priceSale: "$1,449" }],
-    faqs: [{ question: "AS5 vs AS5 Hybrid — which is better for side sleepers?", answer: "Both target side sleepers. The AS5 Hybrid adds coils for better edge support and airflow; the all-foam AS5 offers a slightly deeper pressure-relieving hug. Hot side sleepers should lean toward the hybrid." }]
+    faqs: [{ question: "AS5 vs AS5 Hybrid — which is better for side sleepers?", answer: "Both target side sleepers. The AS5 Hybrid adds coils for airflow and bounce; the all-foam AS5 offers a slightly deeper pressure-relieving hug and scores 10/10 on edge support vs 9/10 for the hybrid. Both record 10/10 on cooling." }]
   },
   {
     id: "amerisleep-organica-plush", name: "Amerisleep Organica Plush", brand: "Amerisleep", model: "Organica Plush",
@@ -1464,7 +1464,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Best budget path to certified organic latex. Lower edge support and shorter trial than top competitors, but the value score and response time are notable.",
     layers: [{ name: "Latex Hybrid System", thickness: "11 inches", material: "GOLS Latex + Pocketed Coils", description: "GOLS-certified organic latex comfort layer over pocketed coil support base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,499", priceSale: "$1,249" }],
-    faqs: [{ question: "How does Eco Terra compare to Amerisleep Organica?", answer: "The Eco Terra Hybrid Latex scores higher on value and response time. The Amerisleep Organica scores higher on overall, edge support, and trial period, and includes GOTS-certified organic cotton and wool alongside the latex." }]
+    faqs: [{ question: "How does Eco Terra compare to Amerisleep Organica?", answer: "The Eco Terra Hybrid Latex scores higher on value (10 vs 9) and ties the Organica on response time (10/10). The Amerisleep Organica scores higher on overall, edge support, and trial period, and includes GOTS-certified organic cotton and wool alongside the latex." }]
   },
   {
     id: "form-core", name: "FORM Core", brand: "FORM", model: "Core",
@@ -1476,7 +1476,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["FORM Responsive Foam","Base Support Foam"],
-    scores: { overall: 9, value: 8, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 8, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Budget Foam Seekers","Couples Sensitive to Motion","Side Sleepers","Combination Sleepers"],
@@ -1487,7 +1487,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Strong foam option for couples prioritizing motion isolation. Edge support is solid for an all-foam build. The 10-year warranty is a notable gap vs Amerisleep's 20-year.",
     layers: [{ name: "All-Foam System", thickness: "10 inches", material: "Responsive Foam + Base Support Foam", description: "Comfort foam layer over dense base support foam." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$899", priceSale: "$699" }],
-    faqs: [{ question: "FORM Core vs Amerisleep AS3?", answer: "The AS3 uses Bio-Pur® plant-based foam and has a 20-year warranty vs FORM Core's 10-year. The FORM Core scores higher on motion transfer but lower on value relative to warranty length." }]
+    faqs: [{ question: "FORM Core vs Amerisleep AS3?", answer: "The AS3 uses Bio-Pur® plant-based foam and has a 20-year warranty vs FORM Core's 10-year. Both score 10/10 on motion transfer, and the FORM Core scores lower on value (8 vs 9)." }]
   },
   {
     id: "form-core-hybrid", name: "FORM Core Hybrid", brand: "FORM", model: "Core Hybrid",
@@ -1499,18 +1499,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["FORM Responsive Foam","Pocketed Coil System"],
-    scores: { overall: 10, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.5, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Couples","Combination Sleepers","Hot Sleepers","Edge-to-Edge Support Seekers"],
     tags: ["hybrid","medium","cooling","edge-support"],
-    pros: ["10/10 overall score","Perfect edge support and response time scores","100-night trial with 10/10 trial period score","Hybrid airflow over all-foam models"],
+    pros: ["9.5/10 overall score","Perfect edge support and response time scores","100-night trial with 10/10 trial period score","Hybrid airflow over all-foam models"],
     cons: ["10-year warranty below the category average","Value score of 8 reflects mid-tier pricing"],
     summary: "The FORM Core Hybrid combines foam comfort with pocketed coil support for notable edge support, response time, and motion isolation simultaneously.",
     verdict: "Exceptional all-around hybrid performance. The only meaningful gap vs top-tier competitors is the 10-year warranty.",
     layers: [{ name: "Hybrid System", thickness: "12 inches", material: "Responsive Foam + Pocketed Coils", description: "Foam comfort layer over pocketed coil base for airflow and responsiveness." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,199", priceSale: "$899" }],
-    faqs: [{ question: "FORM Core Hybrid vs Amerisleep AS3 Hybrid?", answer: "The FORM Core Hybrid scores 10/10 across most metrics. The AS3 Hybrid has a 20-year warranty vs FORM's 10-year, uses Bio-Pur® plant-based foam, and has higher brand trust. Both hit the same overall score." }]
+    faqs: [{ question: "FORM Core Hybrid vs Amerisleep AS3 Hybrid?", answer: "The FORM Core Hybrid scores 10/10 on edge support, trial period, response time, and motion transfer, and 9.5/10 overall vs the AS3 Hybrid's 9.3/10. The AS3 Hybrid has a 20-year warranty vs FORM's 10-year, uses Bio-Pur® plant-based foam, and has higher brand trust." }]
   },
   {
     id: "form-prime", name: "FORM Prime", brand: "FORM", model: "Prime",
@@ -1522,18 +1522,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["FORM Prime Foam","Zoned Support Layer","Base Support Foam"],
-    scores: { overall: 10, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.3, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Side Sleepers","Couples","Combination Sleepers","Premium Foam Seekers"],
     tags: ["foam","medium","premium","motion-isolation"],
-    pros: ["10/10 overall","Perfect edge support and motion transfer","Premium foam construction","100-night trial"],
+    pros: ["9.3/10 overall","Perfect edge support and motion transfer","Premium foam construction","100-night trial"],
     cons: ["All-foam limits cooling vs hybrids","10-year warranty is a gap vs 20-year market leaders"],
     summary: "The FORM Prime is a premium all-foam mattress with zoned support and high-density comfort foam, optimized for edge support and motion isolation.",
     verdict: "Strong premium foam performer. Falls short only on warranty length relative to Amerisleep's 20-year coverage and cooling vs hybrid alternatives.",
     layers: [{ name: "Premium Foam System", thickness: "12 inches", material: "Prime Foam + Zoned Base", description: "High-density prime foam comfort layer over zoned support base foam." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,399", priceSale: "$1,099" }],
-    faqs: [{ question: "FORM Prime vs Amerisleep AS5 for side sleepers?", answer: "The FORM Prime scores higher on edge support; the AS5 is softer (3/10 vs Prime's 5/10) for deeper pressure relief. The AS5 has a 20-year warranty vs Prime's 10-year. Side sleepers needing maximum plushness should choose the AS5." }]
+    faqs: [{ question: "FORM Prime vs Amerisleep AS5 for side sleepers?", answer: "The FORM Prime and AS5 tie on edge support (10/10 each); the AS5 is softer (3/10 vs Prime's 5/10) for deeper pressure relief. The AS5 has a 20-year warranty vs Prime's 10-year. Side sleepers needing maximum plushness should choose the AS5." }]
   },
   {
     id: "form-prime-x", name: "FORM Prime X", brand: "FORM", model: "Prime X",
@@ -1545,18 +1545,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["FORM Prime X Foam","Advanced Zoned Coil System","Cooling Cover"],
-    scores: { overall: 10, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.5, value: 8, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Couples","Combination Sleepers","Hot Sleepers","Premium Hybrid Seekers"],
     tags: ["hybrid","premium","motion-isolation","edge-support"],
-    pros: ["10/10 across most metrics","Top-of-line FORM build","14-inch profile with coil base","100-night trial"],
+    pros: ["10/10 on edge support, trial period, response time, and motion transfer","Top-of-line FORM build","14-inch profile with coil base","100-night trial"],
     cons: ["10-year warranty below class leaders","Premium price point with value score of 8"],
-    summary: "The FORM Prime X is the flagship FORM model — a premium hybrid with advanced coil and foam combination for top performance across all metrics.",
-    verdict: "FORM's best model hits near-perfect scores. The 10-year warranty vs Amerisleep AS6's 20-year warranty is the primary trade-off at comparable price points.",
+    summary: "The FORM Prime X is the flagship FORM model — a premium hybrid with advanced coil and foam combination that scores 9.5/10 overall.",
+    verdict: "FORM's flagship hits near-perfect scores (9.5/10 overall). The 10-year warranty vs Amerisleep AS6's 20-year warranty is the primary trade-off at comparable price points.",
     layers: [{ name: "Premium Hybrid System", thickness: "14 inches", material: "Prime X Foam + Advanced Coil System", description: "Advanced foam comfort layers over zoned pocketed coil support base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,799", priceSale: "$1,399" }],
-    faqs: [{ question: "FORM Prime X vs Amerisleep AS6 Black Series?", answer: "Both score 10/10 overall. The AS6 has a 20-year warranty vs FORM Prime X's 10-year. Amerisleep uses Bio-Pur® plant-based foam. For warranty coverage, the AS6 is the stronger long-term investment." }]
+    faqs: [{ question: "FORM Prime X vs Amerisleep AS6 Black Series?", answer: "The FORM Prime X scores 9.5/10 overall vs the AS6's 9.3/10. The AS6 has a 20-year warranty vs FORM Prime X's 10-year. Amerisleep uses Bio-Pur® plant-based foam. For warranty coverage, the AS6 is the stronger long-term investment." }]
   },
   {
     id: "glacier-original-hybrid", name: "Glacier Original Hybrid", brand: "Glacier", model: "Original Hybrid",
@@ -1568,18 +1568,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 365, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Glacier Cooling Foam","Pocketed Coil Base"],
-    scores: { overall: 8, value: 10, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 8, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 10, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 8, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Hot Sleepers","Value Seekers","Combination Sleepers"],
     tags: ["hybrid","cooling","value"],
     pros: ["10/10 value and cooling scores","365-night trial","Strong edge support (9/10)"],
-    cons: ["Overall score of 8 below top-tier competitors","Motion transfer score of 8 — less effective for couples than foam options"],
+    cons: ["Overall score of 9.3 sits just below the 9.5 leaders","Motion transfer score of 8 — less effective for couples than foam options"],
     summary: "The Glacier Original Hybrid delivers strong cooling and value at an accessible price with a notable 365-night trial period.",
-    verdict: "Best choice when cooling and value are the top priorities. Motion isolation is average; overall build doesn't reach the top tier.",
+    verdict: "Best choice when cooling and value are the top priorities. Motion isolation is average; the overall score of 9.3 sits just below the 9.5 leaders.",
     layers: [{ name: "Cooling Hybrid System", thickness: "12 inches", material: "Cooling Foam + Pocketed Coils", description: "Cooling foam comfort layer over pocketed coil support base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,399", priceSale: "$1,099" }],
-    faqs: [{ question: "Glacier Original vs Glacier Summit Hybrid?", answer: "Both score 10/10 on value and offer 365-night trials. The Summit is medium-firm and targets back sleepers; the Original is medium and suits combination sleepers. Both sit at overall 8/10." }]
+    faqs: [{ question: "Glacier Original vs Glacier Summit Hybrid?", answer: "Both score 10/10 on value and offer 365-night trials. The Summit is medium-firm and targets back sleepers; the Original is medium and suits combination sleepers. Both sit at overall 9.3/10." }]
   },
   {
     id: "glacier-summit-hybrid", name: "Glacier Summit Hybrid", brand: "Glacier", model: "Summit Hybrid",
@@ -1591,18 +1591,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 365, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Glacier Summit Foam","Zoned Pocketed Coil Base"],
-    scores: { overall: 8, value: 10, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 8, coolingBreathability: 10 },
+    scores: { overall: 9.3, value: 10, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 8, coolingBreathability: 10 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Hot Sleepers","Back Sleepers","Value Seekers"],
     tags: ["hybrid","cooling","medium-firm","value"],
     pros: ["10/10 value and cooling scores","365-night trial","Medium-firm feel for back sleepers","Strong edge support"],
-    cons: ["Overall score 8 — strong but not top-tier","Motion isolation average at 8/10"],
+    cons: ["Overall score 9.3 — strong, just below the 9.5 leaders","Motion isolation average at 8/10"],
     summary: "The Glacier Summit Hybrid is the medium-firm model in the Glacier lineup, targeting back sleepers who want excellent cooling and value.",
     verdict: "Strong value and cooling with a firmer feel than the Original. Motion isolation trails strong, but value and cooling hold up well.",
     layers: [{ name: "Medium-Firm Cooling Hybrid", thickness: "13 inches", material: "Summit Foam + Zoned Pocketed Coils", description: "Firmer foam comfort layer over zoned pocketed coil base for back sleeper support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,699", priceSale: "$1,299" }],
-    faqs: [{ question: "Glacier Summit vs Amerisleep AS2 for back sleepers?", answer: "The AS2 scores higher overall (9 vs 8) with better response time and motion transfer. The Glacier Summit wins on value (10 vs 9) and trial length (365 vs 100 nights). The AS2 has a 20-year warranty vs Summit's 10-year." }]
+    faqs: [{ question: "Glacier Summit vs Amerisleep AS2 for back sleepers?", answer: "The two tie on overall (9.3/10 each), but the AS2 has better response time (10 vs 9) and motion transfer (10 vs 8). The Glacier Summit wins on value (10 vs 9) and trial length (365 vs 100 nights). The AS2 has a 20-year warranty vs Summit's 10-year." }]
   },
   {
     id: "latex-for-less-hybrid-latex-mattress", name: "Latex For Less Hybrid Latex Mattress", brand: "Latex For Less", model: "Hybrid Latex",
@@ -1614,7 +1614,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 120, warrantyYears: 20,
     certifications: ["GOLS","OEKO-TEX"],
     technology: ["GOLS-Certified Natural Latex","Pocketed Coil Base"],
-    scores: { overall: 8, value: 10, edgeSupport: 5, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 8.7, value: 10, edgeSupport: 5, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Budget Latex Seekers","Natural Material Preference","Hot Sleepers"],
@@ -1625,7 +1625,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Exceptional value for certified organic latex, but the 5/10 edge support is a meaningful limitation for edge-of-bed sitting and couples needing full surface use.",
     layers: [{ name: "Natural Latex Comfort Layer", thickness: "9 inches", material: "GOLS Natural Latex + Pocketed Coils", description: "Organic latex comfort layer over pocketed coil support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,149", priceSale: "$849" }],
-    faqs: [{ question: "Latex For Less vs Amerisleep Organica for natural latex?", answer: "The Organica scores higher overall (9 vs 8) and edge support (9 vs 5), and includes organic cotton and wool certifications alongside the latex. The Latex For Less wins on value (10 vs 9) and costs significantly less, making it the budget path to certified latex." }]
+    faqs: [{ question: "Latex For Less vs Amerisleep Organica for natural latex?", answer: "The Organica scores higher overall (9.2 vs 8.7) and edge support (9 vs 5), and includes organic cotton and wool certifications alongside the latex. The Latex For Less wins on value (10 vs 9) and costs significantly less, making it the budget path to certified latex." }]
   },
   {
     id: "naturepedic-eos-classic", name: "Naturepedic EOS Classic", brand: "Naturepedic", model: "EOS Classic",
@@ -1637,7 +1637,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 90, warrantyYears: 20,
     certifications: ["GOLS","GOTS","OEKO-TEX","Made Safe"],
     technology: ["GOLS-Certified Organic Latex","GOTS Organic Cotton","Organic Wool","Coil Base"],
-    scores: { overall: 9, value: 6, edgeSupport: 9, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 9 },
+    scores: { overall: 8.3, value: 6, edgeSupport: 9, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Eco-Conscious Shoppers","Families","Chemical Sensitivities","Hot Sleepers"],
@@ -1648,7 +1648,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Strong organic certifications at a premium price. For the truly non-toxic-first buyer, there are few better options. Value score reflects the certification premium.",
     layers: [{ name: "Certified Organic Hybrid System", thickness: "11 inches", material: "GOLS Latex + Organic Wool + Coil Base", description: "Multiple layers of certified organic latex and wool over coil base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,799", priceSale: "$2,399" }],
-    faqs: [{ question: "Naturepedic EOS Classic vs Amerisleep Organica?", answer: "Both are certified organic hybrids. The EOS Classic adds Made Safe certification at a higher price. The Organica scores the same overall at significantly lower cost, making it the better value for most shoppers." }]
+    faqs: [{ question: "Naturepedic EOS Classic vs Amerisleep Organica?", answer: "Both are certified organic hybrids. The EOS Classic adds Made Safe certification at a higher price. The Organica scores higher overall (9.2 vs 8.3) at significantly lower cost, making it the better value for most shoppers." }]
   },
   {
     id: "naturepedic-concerto-plush", name: "Naturepedic Concerto Plush", brand: "Naturepedic", model: "Concerto Plush",
@@ -1660,7 +1660,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 90, warrantyYears: 20,
     certifications: ["GOLS","GOTS","OEKO-TEX","Made Safe"],
     technology: ["GOLS-Certified Organic Latex","GOTS Organic Cotton Cover","Organic Wool Comfort Layer","Coil Base"],
-    scores: { overall: 9, value: 6, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 9 },
+    scores: { overall: 8.2, value: 6, edgeSupport: 8, trialPeriod: 9, responseTime: 9, motionTransfer: 8, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Side Sleepers","Eco-Conscious Shoppers","Chemical Sensitivities","Plush Preference"],
@@ -1683,18 +1683,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 365, warrantyYears: 99,
     certifications: ["CertiPUR-US","OEKO-TEX"],
     technology: ["Smart Foam","Quantum Edge Coil System"],
-    scores: { overall: 10, value: 8, edgeSupport: 9, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 8, edgeSupport: 9, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Combination Sleepers","Couples","Hot Sleepers","Those Wanting Exceptional Trial Period"],
     tags: ["hybrid","medium","trial-period"],
-    pros: ["10/10 overall and response time","365-night trial in the source dataset","Lifetime warranty (up to 99 years)","Strong edge support for hybrid"],
+    pros: ["9.2/10 overall and 10/10 response time","365-night trial in the source dataset","Lifetime warranty (up to 99 years)","Strong edge support for hybrid"],
     cons: ["Value score 8 at mid-premium pricing","Less motion isolation than top foam options"],
     summary: "The Nest Bedding Owl is a versatile hybrid with notable trial period and warranty terms. Strong overall performance with a 365-night trial and lifetime warranty.",
     verdict: "Exceptional trial and warranty terms make this the lowest-risk premium hybrid purchase. Performance is strong across all metrics.",
     layers: [{ name: "Smart Hybrid System", thickness: "12 inches", material: "Smart Foam + Quantum Edge Coils", description: "Responsive foam comfort layer over Quantum Edge coil system for edge support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,599", priceSale: "$1,299" }],
-    faqs: [{ question: "Nest Bedding Owl vs Amerisleep AS6 Black Series?", answer: "The Owl scores identically on overall (10). The AS6 has better motion transfer (10 vs 9); the Owl wins on trial period (365 vs 100 nights). Both have strong warranties — Nest's lifetime vs AS6's 20-year." }]
+    faqs: [{ question: "Nest Bedding Owl vs Amerisleep AS6 Black Series?", answer: "The Owl scores 9.2 overall vs the AS6's 9.3. The AS6 has better motion transfer (10 vs 9); the Owl wins on trial period (365 vs 100 nights). Both have strong warranties — Nest's lifetime vs AS6's 20-year." }]
   },
   {
     id: "nest-bedding-puffin-kids", name: "Nest Bedding Puffin Kids", brand: "Nest Bedding", model: "Puffin Kids",
@@ -1706,12 +1706,12 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 30, warrantyYears: 10,
     certifications: ["CertiPUR-US","OEKO-TEX"],
     technology: ["OEKO-TEX Certified Comfort Foam","Support Base Foam"],
-    scores: { overall: 9, value: 10, edgeSupport: 9, trialPeriod: 5, responseTime: 9, motionTransfer: 8, coolingBreathability: 8 },
+    scores: { overall: 8.2, value: 10, edgeSupport: 9, trialPeriod: 5, responseTime: 9, motionTransfer: 8, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Children and Kids","Value-Conscious Parents","Safe Non-Toxic Materials"],
     tags: ["kids","foam","value","certified"],
-    pros: ["10/10 value for a certified kids mattress","OEKO-TEX certified materials","9/10 overall for a children's mattress","Strong edge support for small frames"],
+    pros: ["10/10 value for a certified kids mattress","OEKO-TEX certified materials","8.2/10 overall for a children's mattress","Strong edge support for small frames"],
     cons: ["Trial period score 5 — short 30-night trial","Cooling 8/10 — modest for active children","Motion transfer 8/10"],
     summary: "The Nest Bedding Puffin Kids is a certified OEKO-TEX foam mattress designed specifically for children with safe, non-toxic materials at an accessible price.",
     verdict: "Best value in the certified kids mattress category. The short trial period is the main trade-off for a product category where exchanges are less common anyway.",
@@ -1729,7 +1729,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 365, warrantyYears: 99,
     certifications: ["CertiPUR-US","OEKO-TEX"],
     technology: ["Phase Change Foam","Support Base Foam"],
-    scores: { overall: 9, value: 9, edgeSupport: 9, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 8 },
+    scores: { overall: 9.2, value: 9, edgeSupport: 9, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Side Sleepers","Hot Sleepers","Those Wanting Exceptional Trial Period"],
@@ -1752,18 +1752,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 120, warrantyYears: 15,
     certifications: ["GOLS","GOTS","Rainforest Alliance"],
     technology: ["GOLS-Certified Organic Talalay Latex","Organic Cotton Cover","Coil Base"],
-    scores: { overall: 8, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 8, coolingBreathability: 9 },
+    scores: { overall: 9, value: 9, edgeSupport: 9, trialPeriod: 9, responseTime: 10, motionTransfer: 8, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Natural Material Preference","Hot Sleepers","Eco-Conscious Shoppers","Back Sleepers"],
     tags: ["natural","latex","organic","hybrid"],
     pros: ["GOLS-certified organic Talalay latex","Excellent response time (10/10)","Good value for organic (9/10)","Rainforest Alliance certification"],
-    cons: ["Overall score 8 — below the Nolah Evolution lineup","Motion transfer 8/10","15-year warranty vs 20-year market leaders"],
+    cons: ["Overall score 9 — below the Nolah Evolution 15 (9.5)","Motion transfer 8/10","15-year warranty vs 20-year market leaders"],
     summary: "The Nolah Natural 11 uses GOLS-certified organic Talalay latex with organic cotton and a Rainforest Alliance certification for the eco-conscious buyer.",
-    verdict: "Strong organic option with notable response time. For buyers who want certified natural latex at a good value, it is a strong contender despite an 8/10 overall.",
+    verdict: "Strong organic option with notable response time. For buyers who want certified natural latex at a good value, it is a strong contender at a 9/10 overall.",
     layers: [{ name: "Organic Talalay Latex Comfort Layer", thickness: "11 inches", material: "GOLS Organic Talalay Latex + Coil Base", description: "Certified organic Talalay latex comfort layer over coil support base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,599", priceSale: "$1,299" }],
-    faqs: [{ question: "Nolah Natural 11 vs Amerisleep Organica?", answer: "The Organica scores higher overall (9 vs 8) and includes GOTS wool and organic cotton alongside the latex. The Nolah Natural adds a Rainforest Alliance certification and hits a lower starting price. Both carry similar trial terms." }]
+    faqs: [{ question: "Nolah Natural 11 vs Amerisleep Organica?", answer: "The Organica scores higher overall (9.2 vs 9) and includes GOTS wool and organic cotton alongside the latex. The Nolah Natural adds a Rainforest Alliance certification and hits a lower starting price. Both carry similar trial terms." }]
   },
   {
     id: "nolah-original-hybrid", name: "Nolah Original Hybrid", brand: "Nolah", model: "Original Hybrid",
@@ -1787,7 +1787,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Solid entry-level hybrid from a reputable brand. The Evolution 15 outscores it across most metrics; choose the Original when budget is the primary constraint.",
     layers: [{ name: "AirFoam Hybrid System", thickness: "10 inches", material: "AirFoam™ + Pocketed Coils", description: "AirFoam™ comfort layer over pocketed coil support base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,299", priceSale: "$999" }],
-    faqs: [{ question: "Nolah Original Hybrid vs Nolah Evolution 15?", answer: "The Evolution 15 scores 10/10 overall vs Original's 8/10. The Evolution uses HDMax Tri-Zone coils and AirFoam HDMax for better pressure relief and cooling. The Original is the budget entry point at roughly 50% of the Evolution's price." }]
+    faqs: [{ question: "Nolah Original Hybrid vs Nolah Evolution 15?", answer: "The Evolution 15 scores 9.5/10 overall vs Original's 8/10. The Evolution uses HDMax Tri-Zone coils and AirFoam HDMax for better pressure relief and cooling. The Original is the budget entry point at roughly 50% of the Evolution's price." }]
   },
   {
     id: "plushbeds-botanical-bliss", name: "PlushBeds Botanical Bliss", brand: "PlushBeds", model: "Botanical Bliss",
@@ -1799,7 +1799,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 25,
     certifications: ["GOLS","GOTS","OEKO-TEX","eco-INSTITUT"],
     technology: ["GOLS-Certified Organic Dunlop Latex","GOTS Organic Cotton Cover","Organic Wool Fire Barrier"],
-    scores: { overall: 9, value: 7, edgeSupport: 8, trialPeriod: 9, responseTime: 8, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 8.7, value: 7, edgeSupport: 8, trialPeriod: 10, responseTime: 8, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Eco-Conscious Shoppers","Side Sleepers","Chemical Sensitivities","Those Seeking Organic Certifications"],
@@ -1810,7 +1810,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Top organic credentials with class-best motion isolation. The premium price and slower Dunlop response time are the main trade-offs vs the Signature Bliss.",
     layers: [{ name: "All-Latex System", thickness: "12 inches", material: "GOLS Dunlop Latex Layers", description: "Multiple GOLS-certified organic Dunlop latex layers in a fully organic construction." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,999", priceSale: "$1,699" }],
-    faqs: [{ question: "PlushBeds Botanical Bliss vs Signature Bliss?", answer: "The Signature Bliss scores 10/10 overall vs Botanical Bliss's 9/10. The Signature adds a hybrid coil base for better edge support and response time. The Botanical Bliss is all-latex with better motion isolation (10 vs 9). Choose Botanical for pure latex feel; Signature for hybrid performance." }]
+    faqs: [{ question: "PlushBeds Botanical Bliss vs Signature Bliss?", answer: "The Signature Bliss scores 9.5/10 overall vs Botanical Bliss's 8.7/10. The Signature adds a hybrid coil base for better edge support and response time. The Botanical Bliss is all-latex with better motion isolation (10 vs 9). Choose Botanical for pure latex feel; Signature for hybrid performance." }]
   },
   {
     id: "plushbeds-luxury-bliss", name: "PlushBeds Luxury Bliss", brand: "PlushBeds", model: "Luxury Bliss",
@@ -1822,18 +1822,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 25,
     certifications: ["GOLS","GOTS","GREENGUARD Gold","eco-INSTITUT"],
     technology: ["GOLS-Certified Organic Latex","GOTS Organic Cotton Cover","Organic Wool","Fabric-Encased Coils"],
-    scores: { overall: 8, value: 8, edgeSupport: 7, trialPeriod: 9, responseTime: 10, motionTransfer: 7, coolingBreathability: 9 },
+    scores: { overall: 8.5, value: 8, edgeSupport: 7, trialPeriod: 10, responseTime: 10, motionTransfer: 7, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Combination Sleepers","Hot Sleepers","Natural Latex Seekers","Hybrid Shoppers"],
     tags: ["latex","hybrid","organic","medium"],
     pros: ["Excellent response time (10/10)","Organic latex over fabric-encased coils","Strong cooling score (9/10)","Long warranty coverage in the locked dataset"],
-    cons: ["Edge support 7/10 — notable weakness","Motion transfer 7/10 — less effective for couples","Overall score 8 vs higher-rated PlushBeds options"],
+    cons: ["Edge support 7/10 — notable weakness","Motion transfer 7/10 — less effective for couples","Overall score 8.5 vs higher-rated PlushBeds options"],
     summary: "The PlushBeds Luxury Bliss is a 12-inch organic latex hybrid that pairs a responsive latex comfort layer with fabric-encased coils and organic cotton and wool materials.",
     verdict: "A responsive natural-material hybrid with strong cooling. Its locked scorecard shows weaker edge support and motion isolation than higher-rated models, which matters for couples using the full surface.",
     layers: [{ name: "Organic Latex Hybrid System", thickness: "12 inches", material: "GOLS Latex + Organic Wool + Fabric-Encased Coils", description: "Organic latex and wool comfort materials over a fabric-encased coil support system." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,599", priceSale: "$1,299" }],
-    faqs: [{ question: "PlushBeds Luxury Bliss vs Amerisleep AS3?", answer: "The AS3 scores higher overall (10 vs 8) and better on edge support and motion transfer. The Luxury Bliss has a longer warranty (25 vs 20 years) and slightly lower price. AS3's Bio-Pur® plant-based foam is a meaningful differentiator." }]
+    faqs: [{ question: "PlushBeds Luxury Bliss vs Amerisleep AS3?", answer: "The AS3 scores higher overall (9.5 vs 8.5) and better on edge support and motion transfer. The Luxury Bliss has a longer warranty (25 vs 20 years) and slightly lower price. AS3's Bio-Pur® plant-based foam is a meaningful differentiator." }]
   },
   {
     id: "plushbeds-organic-bliss", name: "PlushBeds Organic Bliss", brand: "PlushBeds", model: "Organic Bliss",
@@ -1845,12 +1845,12 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 25,
     certifications: ["GOLS","GOTS","GREENGUARD Gold","eco-INSTITUT"],
     technology: ["GOLS-Certified Organic Latex","GOTS Organic Cotton Cover","GOTS Organic Wool","Integrated Latex Pillow Top"],
-    scores: { overall: 9, value: 8, edgeSupport: 9, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9, value: 8, edgeSupport: 9, trialPeriod: 10, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Eco-Conscious Shoppers","Couples","Chemical Sensitivities","Balanced Sleepers"],
     tags: ["organic","latex","pillow-top","eco"],
-    pros: ["Balanced 9/10 scores across all metrics","GOTS organic cotton and wool","25-year warranty","Strong edge support (9/10) for organic category"],
+    pros: ["Balanced scores of 8 to 10 across all seven metrics","GOTS organic cotton and wool","25-year warranty","Strong edge support (9/10) for organic category"],
     cons: ["Premium pricing reflects the organic materials and pillow-top construction","Heavier and more responsive than shoppers accustomed to memory foam may prefer"],
     summary: "The PlushBeds Organic Bliss is an organic latex pillow-top mattress built with GOLS-certified latex plus GOTS-certified cotton and wool.",
     verdict: "A balanced organic latex option whose locked scorecard is consistently strong across all seven metrics. It best suits shoppers who want a plush pillow top without switching to synthetic memory foam.",
@@ -1891,18 +1891,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 25,
     certifications: ["GOLS","GOTS","OEKO-TEX","eco-INSTITUT"],
     technology: ["GOLS-Certified Organic Latex","GOTS Organic Cotton Cover","Organic Wool","Pocketed Coil Base"],
-    scores: { overall: 10, value: 9, edgeSupport: 10, trialPeriod: 9, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9.5, value: 9, edgeSupport: 10, trialPeriod: 10, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Eco-Conscious Shoppers","Couples","Hot Sleepers","All Sleep Positions"],
     tags: ["organic","latex","hybrid","premium","eco"],
-    pros: ["10/10 overall, edge support, and response time","GOLS + GOTS + OEKO-TEX + eco-INSTITUT certified","25-year warranty","Organic latex hybrid construction"],
+    pros: ["9.5/10 overall, 10/10 edge support and response time","GOLS + GOTS + OEKO-TEX + eco-INSTITUT certified","25-year warranty","Organic latex hybrid construction"],
     cons: ["Value 9 — premium pricing across all certifications","Higher price than the Botanical Bliss"],
     summary: "The PlushBeds Signature Bliss is the brand's flagship hybrid, combining GOLS organic latex, GOTS organic cotton, organic wool, and a pocketed coil base with notable scores and certifications.",
-    verdict: "The strongest certified organic hybrid available, scoring 10/10 overall. Best for buyers who want the deepest organic credentials with flagship performance.",
+    verdict: "The strongest certified organic hybrid available, scoring 9.5/10 overall. Best for buyers who want the deepest organic credentials with flagship performance.",
     layers: [{ name: "Certified Organic Hybrid System", thickness: "13 inches", material: "GOLS Latex + GOTS Cotton + Wool + Pocketed Coils", description: "Multi-certified organic latex and wool comfort layers over pocketed coil support base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$2,399", priceSale: "$1,999" }],
-    faqs: [{ question: "PlushBeds Signature Bliss vs Amerisleep AS6 Black Series?", answer: "Both score 10/10 overall. The Signature Bliss has deeper organic certifications and a 25-year warranty vs AS6's 20-year. The AS6 uses Bio-Pur® foam vs latex. For eco-certification depth and latex feel, Signature Bliss leads. For brand warranty and foam technology, AS6 leads." }]
+    faqs: [{ question: "PlushBeds Signature Bliss vs Amerisleep AS6 Black Series?", answer: "The Signature Bliss scores 9.5/10 overall vs the AS6's 9.3/10. The Signature Bliss has deeper organic certifications and a 25-year warranty vs AS6's 20-year. The AS6 uses Bio-Pur® foam vs latex. For eco-certification depth and latex feel, Signature Bliss leads. For brand warranty and foam technology, AS6 leads." }]
   },
   {
     id: "sweetnight-coolnest", name: "SweetNight CoolNest Memory Foam Mattress", brand: "SweetNight", model: "CoolNest",
@@ -1914,18 +1914,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Gel-Infused Cooling Memory Foam","Base Support Foam"],
-    scores: { overall: 8, value: 10, edgeSupport: 7, trialPeriod: 9, responseTime: 8, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 8.8, value: 10, edgeSupport: 7, trialPeriod: 9, responseTime: 8, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Budget Shoppers","Couples Needing Motion Isolation","Hot Sleepers on a Budget"],
     tags: ["foam","budget","motion-isolation","value"],
     pros: ["10/10 value — most affordable option in the tested set","Perfect motion isolation (10/10)","Gel-infused cooling foam","100-night trial"],
-    cons: ["Overall score 8 — not a top performer","Edge support 7/10 — weak","Response time 8/10 — slow repositioning"],
+    cons: ["Overall score 8.8 — not a top performer","Edge support 7/10 — weak","Response time 8/10 — slow repositioning"],
     summary: "The SweetNight CoolNest delivers gel-infused memory foam with class-best value and motion isolation at the lowest price point in the tested lineup.",
     verdict: "For the budget buyer who needs motion isolation and can accept below-average edge support, the CoolNest delivers strong value. Not competitive on overall performance.",
     layers: [{ name: "Budget Cooling Foam System", thickness: "10 inches", material: "Gel-Infused Memory Foam + Base Support Foam", description: "Gel-infused cooling memory foam over dense base support foam." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$549", priceSale: "$399" }],
-    faqs: [{ question: "SweetNight CoolNest vs Amerisleep AS3 — what are the trade-offs?", answer: "The AS3 scores 10/10 overall vs CoolNest's 8/10. The CoolNest wins on value (10 vs 9) and costs significantly less. The AS3 uses plant-based Bio-Pur® foam and carries a 20-year warranty vs CoolNest's 10-year. For budget, choose CoolNest; for performance and longevity, AS3." }]
+    faqs: [{ question: "SweetNight CoolNest vs Amerisleep AS3 — what are the trade-offs?", answer: "The AS3 scores 9.5/10 overall vs CoolNest's 8.8/10. The CoolNest wins on value (10 vs 9) and costs significantly less. The AS3 uses plant-based Bio-Pur® foam and carries a 20-year warranty vs CoolNest's 10-year. For budget, choose CoolNest; for performance and longevity, AS3." }]
   },
   {
     id: "sweetnight-prime", name: "SweetNight Prime Memory Foam Mattress", brand: "SweetNight", model: "Prime",
@@ -1949,7 +1949,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "The most affordable tested option. The low overall and edge support scores reflect the price point. Reserve for non-primary sleep situations or tightest-budget needs.",
     layers: [{ name: "Basic Foam System", thickness: "10 inches", material: "Memory Foam + Base Support Foam", description: "Standard memory foam comfort layer over base support foam." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$399", priceSale: "$299" }],
-    faqs: [{ question: "SweetNight Prime vs SweetNight CoolNest — which should I choose?", answer: "The CoolNest adds gel-infused cooling foam and scores higher overall (8 vs 7) and on cooling (9 vs 8) and edge support (7 vs 5). The Prime is the entry point. For the same budget, the CoolNest is the better buy." }]
+    faqs: [{ question: "SweetNight Prime vs SweetNight CoolNest — which should I choose?", answer: "The CoolNest adds gel-infused cooling foam and scores higher overall (8.8 vs 7) and on cooling (9 vs 8) and edge support (7 vs 5). The Prime is the entry point. For the same budget, the CoolNest is the better buy." }]
   },
   {
     id: "vaya-foam", name: "Vaya Foam", brand: "Vaya", model: "Foam",
@@ -1961,7 +1961,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Vaya Foam Comfort Layer","Base Support Foam"],
-    scores: { overall: 8, value: 10, edgeSupport: 7, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 8 },
+    scores: { overall: 8.7, value: 10, edgeSupport: 7, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Budget Foam Seekers","Side Sleepers on a Budget","First-Time Mattress Buyers"],
@@ -1972,7 +1972,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Best budget foam pick for solo sleepers. Edge support weakness matters more for couples needing full surface use. The 10-year warranty is below the market standard.",
     layers: [{ name: "Budget Foam System", thickness: "12 inches", material: "Vaya Comfort Foam + Base Support Foam", description: "Responsive comfort foam over dense base support foam." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$549", priceSale: "$399" }],
-    faqs: [{ question: "Vaya Foam vs Amerisleep AS3 — is the price difference worth it?", answer: "The AS3 scores 10/10 overall vs Vaya's 8/10. The AS3 uses Bio-Pur® plant-based foam with a 20-year warranty vs Vaya's 10-year. Vaya wins on price (10/10 value) and is a solid budget entry. For long-term primary sleep, the AS3's warranty and overall score justify the price difference." }]
+    faqs: [{ question: "Vaya Foam vs Amerisleep AS3 — is the price difference worth it?", answer: "The AS3 scores 9.5/10 overall vs Vaya's 8.7/10. The AS3 uses Bio-Pur® plant-based foam with a 20-year warranty vs Vaya's 10-year. Vaya wins on price (10/10 value) and is a solid budget entry. For long-term primary sleep, the AS3's warranty and overall score justify the price difference." }]
   },
   {
     id: "vaya-hybrid", name: "Vaya Hybrid", brand: "Vaya", model: "Hybrid",
@@ -1984,18 +1984,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Vaya Foam Comfort Layer","Pocketed Coil Base"],
-    scores: { overall: 8, value: 10, edgeSupport: 8, trialPeriod: 9, responseTime: 10, motionTransfer: 8, coolingBreathability: 8 },
+    scores: { overall: 8.8, value: 10, edgeSupport: 8, trialPeriod: 9, responseTime: 10, motionTransfer: 8, coolingBreathability: 8 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Budget Hybrid Seekers","Combination Sleepers","Hot Sleepers on a Budget"],
     tags: ["hybrid","budget","value","response-time"],
-    pros: ["10/10 value — best value hybrid in the tested set","Excellent response time (10/10)","Better edge support than Vaya Foam","Hybrid airflow"],
-    cons: ["Overall score 8","Cooling 8/10 despite hybrid construction","Motion transfer 8/10","10-year warranty"],
+    pros: ["10/10 value — tied for the top value score among hybrids in the tested set","Excellent response time (10/10)","Better edge support than Vaya Foam","Hybrid airflow"],
+    cons: ["Overall score 8.8","Cooling 8/10 despite hybrid construction","Motion transfer 8/10","10-year warranty"],
     summary: "The Vaya Hybrid adds coil support to Vaya's budget foam formula for better edge support and airflow at an accessible price. Strong value and response time for the price.",
-    verdict: "Best value hybrid tested. Strong response time is the standout metric. For a budget hybrid that does not compromise on feel, the Vaya Hybrid leads the value category.",
+    verdict: "One of the best value hybrids tested. Strong response time is the standout metric. For a budget hybrid that does not compromise on feel, the Vaya Hybrid sits at the top of the value category, tied with other 10/10 value models.",
     layers: [{ name: "Budget Hybrid System", thickness: "12 inches", material: "Vaya Comfort Foam + Pocketed Coils", description: "Responsive foam comfort layer over pocketed coil base for airflow and support." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$799", priceSale: "$599" }],
-    faqs: [{ question: "Vaya Hybrid vs Amerisleep AS3 Hybrid?", answer: "The AS3 Hybrid scores 10/10 overall vs Vaya Hybrid's 8/10. The AS3 Hybrid uses Bio-Pur® plant-based foam with a 20-year warranty. The Vaya Hybrid scores 10/10 on value and response time. Choose Vaya for budget; AS3 Hybrid for performance and longevity." }]
+    faqs: [{ question: "Vaya Hybrid vs Amerisleep AS3 Hybrid?", answer: "The AS3 Hybrid scores 9.3/10 overall vs Vaya Hybrid's 8.8/10. The AS3 Hybrid uses Bio-Pur® plant-based foam with a 20-year warranty. The Vaya Hybrid scores 10/10 on value and response time. Choose Vaya for budget; AS3 Hybrid for performance and longevity." }]
   },
   {
     id: "westin-heavenly-bed", name: "Westin Heavenly Bed", brand: "Westin", model: "Heavenly Bed",
@@ -2007,12 +2007,12 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 0, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Euro Pillow-Top","Coil-on-Coil Support System","Cotton Damask Cover"],
-    scores: { overall: 10, value: 8, edgeSupport: 10, trialPeriod: 0, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 7.7, value: 8, edgeSupport: 10, trialPeriod: 0, responseTime: 10, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Hotel Sleep Experience Fans","Hotel-Style Feel at Home","Back Sleepers","Pillow-Top Preference"],
     tags: ["innerspring","luxury","hotel","pillow-top"],
-    pros: ["10/10 overall — matches the best in the tested set","Perfect edge support and response time","Recognized hotel luxury feel","Euro pillow-top plush comfort"],
+    pros: ["Perfect edge support and response time","Recognized hotel luxury feel","Euro pillow-top plush comfort"],
     cons: ["No home trial period (hotel mattress sold direct)","10-year warranty","Motion transfer 9/10 — innerspring behavior","Not returnable once used"],
     summary: "The Westin Heavenly Bed is the mattress used in Westin hotels, sold directly through the Westin Shop. Euro pillow-top comfort over coil-on-coil support delivers a luxury hotel sleep experience.",
     verdict: "For buyers who specifically want the Westin hotel feel at home, this is the exact product. The 0/10 trial score reflects the no-return-trial purchase model typical of hospitality sales.",
@@ -2030,18 +2030,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Triangulex™ Foam","Reactiv™ Layer","AirCloth Cover","Pocketed Coil Base"],
-    scores: { overall: 10, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
+    scores: { overall: 9.5, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 10, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Performance Sleepers","Couples","Hot Sleepers","Value Seekers"],
     tags: ["hybrid","performance","value","motion-isolation"],
-    pros: ["10/10 overall, value, edge support, and motion transfer","Triangulex™ zoned pressure relief","Strong value despite premium features","100-night trial"],
+    pros: ["9.5/10 overall, with 10/10 value, edge support, and motion transfer","Triangulex™ zoned pressure relief","Strong value despite premium features","100-night trial"],
     cons: ["10-year warranty is below market average","Zoma is a newer brand vs established competitors"],
     summary: "The Zoma Boost is Zoma's flagship hybrid with zoned Triangulex™ foam, Reactiv™ layer, and pocketed coils. Scores 10/10 across multiple metrics at a competitive price.",
     verdict: "Exceptional all-around hybrid performance at a strong value price point. The only notable gap vs top-tier competitors is the 10-year warranty vs 20-year leaders.",
     layers: [{ name: "Performance Hybrid System", thickness: "14 inches", material: "Triangulex Foam + Reactiv Layer + Pocketed Coils", description: "Zoned Triangulex foam pressure relief over Reactiv transition layer and pocketed coil base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,299", priceSale: "$999" }],
-    faqs: [{ question: "Zoma Boost vs Amerisleep AS6 Black Series?", answer: "Both score 10/10 overall. The AS6 uses Bio-Pur® plant-based foam and has a 20-year warranty. The Zoma Boost offers comparable performance at a significantly lower price, making it the value-optimized choice. Trade-off is the 10-year vs 20-year warranty." }]
+    faqs: [{ question: "Zoma Boost vs Amerisleep AS6 Black Series?", answer: "The Zoma Boost scores 9.5/10 overall vs the AS6's 9.3/10. The AS6 uses Bio-Pur® plant-based foam and has a 20-year warranty. The Zoma Boost offers comparable performance at a significantly lower price, making it the value-optimized choice. Trade-off is the 10-year vs 20-year warranty." }]
   },
   {
     id: "zoma-hybrid", name: "Zoma Hybrid", brand: "Zoma", model: "Hybrid",
@@ -2053,18 +2053,18 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Triangulex™ Zoned Foam","Pocketed Coil Base"],
-    scores: { overall: 9, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9.3, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 9, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Value-Seeking Couples","Combination Sleepers","Hot Sleepers"],
     tags: ["hybrid","value","edge-support"],
     pros: ["10/10 value and edge support","Zoned Triangulex™ foam pressure relief","100-night trial","Strong motion isolation (9/10)"],
-    cons: ["10-year warranty","Overall 9 — below the Zoma Boost flagship"],
+    cons: ["10-year warranty","Overall 9.3 — below the Zoma Boost flagship (9.5)"],
     summary: "The Zoma Hybrid delivers zoned pressure relief foam over pocketed coils with class-best value and edge support at a mid-range price.",
     verdict: "The best value hybrid for edge support and couples. Stepping up to the Zoma Boost adds motion isolation and overall score improvements for more budget.",
     layers: [{ name: "Value Hybrid System", thickness: "12 inches", material: "Triangulex Foam + Pocketed Coils", description: "Zoned Triangulex foam comfort layer over pocketed coil base." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$1,099", priceSale: "$799" }],
-    faqs: [{ question: "Zoma Hybrid vs Amerisleep AS3 Hybrid?", answer: "The AS3 Hybrid scores 10/10 overall vs Zoma Hybrid's 9/10. The Zoma Hybrid scores 10/10 on value and edge support. The AS3 Hybrid uses Bio-Pur® plant-based foam and carries a 20-year warranty. For value and edge, Zoma wins. For performance and warranty, AS3 Hybrid wins." }]
+    faqs: [{ question: "Zoma Hybrid vs Amerisleep AS3 Hybrid?", answer: "The AS3 Hybrid and Zoma Hybrid tie at 9.3/10 overall, and both score 10/10 on edge support. The Zoma Hybrid scores 10/10 on value vs 9/10 for the AS3 Hybrid. The AS3 Hybrid uses Bio-Pur® plant-based foam and carries a 20-year warranty. For value, Zoma wins. For cooling (10 vs 9) and warranty, AS3 Hybrid wins." }]
   },
   {
     id: "zoma-start", name: "Zoma Start", brand: "Zoma", model: "Start",
@@ -2077,7 +2077,7 @@ const competitorMattressRecords: Mattress[] = [
     trialNights: 100, warrantyYears: 10,
     certifications: ["CertiPUR-US"],
     technology: ["Triangulex™ Zoned Foam","Base Support Foam"],
-    scores: { overall: 9, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 9 },
+    scores: { overall: 9.2, value: 10, edgeSupport: 10, trialPeriod: 9, responseTime: 8, motionTransfer: 9, coolingBreathability: 9 },
     reviewer: reviewer_editorial,
     dateReviewed: "2026-01-01", dateModified: "2026-06-16",
     bestFor: ["Budget Foam Seekers","Side Sleepers","First-Time Buyers","Value-Conscious Shoppers"],
@@ -2088,7 +2088,7 @@ const competitorMattressRecords: Mattress[] = [
     verdict: "Strongest value foam option for budget buyers who need edge support. Step up to the Zoma Hybrid for coil performance; Zoma Boost for premium all-around scores.",
     layers: [{ name: "Zoned Foam System", thickness: "10 inches", material: "Triangulex Zoned Foam + Base Support Foam", description: "Zoned pressure-relief foam comfort layer over dense base support foam." }],
     sizePricing: [{ size: "Queen", dimensions: "60\" × 80\"", priceOriginal: "$699", priceSale: "$499" }],
-    faqs: [{ question: "Zoma Start vs Vaya Foam — which is the better budget foam?", answer: "Both score 9/10 overall and 10/10 on value. The Zoma Start has better edge support (10 vs 7). The Vaya Foam has better response time (9 vs 8). For edge support, choose Zoma Start; for responsiveness, choose Vaya Foam." }]
+    faqs: [{ question: "Zoma Start vs Vaya Foam — which is the better budget foam?", answer: "The Zoma Start scores 9.2/10 overall vs Vaya Foam's 8.7/10, and both score 10/10 on value. The Zoma Start has better edge support (10 vs 7). The Vaya Foam has better response time (9 vs 8). For edge support, choose Zoma Start; for responsiveness, choose Vaya Foam." }]
   },
 ];
 
