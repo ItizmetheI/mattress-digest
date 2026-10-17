@@ -6,25 +6,40 @@ import LatestGuides from '../components/LatestGuides';
 import Methodology from '../components/Methodology';
 import FinalPick from '../components/FinalPick';
 import { allMattresses } from '../data/mattresses';
+import { BEST_CATEGORIES } from '../lib/bestCategories';
 import { comparisons } from '../data/comparisons';
 import { formatDateOnly } from '../lib/dateFormat';
 import { TRUST_BADGE_LABEL } from '../lib/disclosure';
 
 const SITE_URL = import.meta.env.SITE_URL || 'https://mattressscore.ahmedbarkat1067.workers.dev';
-const METRIC_LABEL = { overall: 'Overall', value: 'Value', trialPeriod: 'Trial', coolingBreathability: 'Cooling', edgeSupport: 'Edge' } as const;
+const METRIC_LABEL = { overall: 'Overall', value: 'Value', coolingBreathability: 'Cooling', edgeSupport: 'Edge Support' } as const;
+const TYPE_LABEL: Record<string, string> = { 'memory-foam': 'Memory foam', foam: 'Foam', hybrid: 'Hybrid', latex: 'Latex', innerspring: 'Innerspring' };
+const winnerOf = (category: string) => {
+  const id = BEST_CATEGORIES[category]?.winner;
+  const mattress = allMattresses.find(item => item.id === id);
+  if (!mattress) throw new Error(`Missing homepage winner for ${category}: ${id}`);
+  return mattress;
+};
 const featuredPicks = ([
-  { id: 'amerisleep-as3', label: 'Best Overall', metric: 'overall', badge: '#1 Pick', desc: 'All-foam build, medium feel, and one of the highest Overall scores in the dataset.' },
-  { id: 'plushbeds-signature-bliss', label: 'Best Organic', metric: 'overall', desc: 'A latex hybrid carrying the widest certification list we track; confirm current scope before buying.' },
-  { id: 'vaya-hybrid', label: 'Best Value', metric: 'value', desc: 'Lower-priced hybrid that still posts perfect Value and Response Time marks.' },
-  { id: 'nest-bedding-sparrow', label: 'Trial Flexibility', metric: 'trialPeriod', desc: 'Hybrid construction with a top-scoring Trial Period.' },
-  { id: 'ghostbed-luxe', label: 'Cooling Foam', metric: 'coolingBreathability', desc: 'Foam-only build pairing a perfect Motion Transfer score with strong Cooling.' },
-  { id: 'westin-heavenly-bed', label: 'Hotel-Style Feel', metric: 'edgeSupport', desc: 'Pillow-top innerspring pairing perfect edge support with quick response.' },
-] as { id: string; label: string; metric: string; badge?: string; desc: string }[]).map(config => {
-  const mattress = allMattresses.find(item => item.id === config.id);
-  if (!mattress) throw new Error(`Missing homepage pick: ${config.id}`);
-  const metric = config.metric as keyof typeof METRIC_LABEL;
-  const badge = config.badge ?? `${mattress.scores[metric]}/10 ${METRIC_LABEL[metric]}`;
-  return { ...config, badge, name: mattress.name, score: mattress.scores.overall, href: `/reviews/${mattress.id}/` };
+  { category: 'overall', label: 'Best Overall', metric: 'overall', badge: '#1 Pick' },
+  { category: 'value', label: 'Best Value', metric: 'value' },
+  { category: 'organic', label: 'Best Organic', metric: 'overall' },
+  { category: 'cooling', label: 'Best for Hot Sleepers', metric: 'coolingBreathability' },
+  { category: 'side-sleepers', label: 'Best for Side Sleepers', metric: 'overall' },
+  { category: 'stomach-sleepers', label: 'Best Firm Feel', metric: 'edgeSupport' },
+] as { category: string; label: string; metric: keyof typeof METRIC_LABEL; badge?: string }[]).map(config => {
+  const mattress = winnerOf(config.category);
+  const badge = config.badge ?? `${mattress.scores[config.metric]}/10 ${METRIC_LABEL[config.metric]}`;
+  const desc = `${TYPE_LABEL[mattress.type] ?? mattress.type} with a ${mattress.firmness.replace('-', ' ')} feel (${mattress.firmnessScale}/10) and a recorded ${mattress.trialNights}-night trial.`;
+  return { ...config, badge, desc, name: mattress.name, score: mattress.scores.overall, href: `/reviews/${mattress.id}/` };
+});
+const heroLeaders = ([
+  { category: 'overall', label: 'Overall category leader' },
+  { category: 'organic', label: 'Organic category leader' },
+  { category: 'cooling', label: 'Cooling category leader' },
+] as const).map(({ category, label }) => {
+  const mattress = winnerOf(category);
+  return { label, id: mattress.id, name: mattress.name, image: mattress.image, overall: mattress.scores.overall };
 });
 const heroStats = [
   { value: '59', label: 'Mattress Models Scored' },
@@ -117,7 +132,7 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <div>
-    <Hero client:load stats={heroStats} trustBadgeLabel={TRUST_BADGE_LABEL} />
+    <Hero client:load stats={heroStats} trustBadgeLabel={TRUST_BADGE_LABEL} leaders={heroLeaders} />
 
     <!-- Main Content -->
     <main class="flex-1 w-full flex flex-col relative z-10 bg-background/50">

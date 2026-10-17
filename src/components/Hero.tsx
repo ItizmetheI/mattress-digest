@@ -1,30 +1,18 @@
 import { ArrowRight, BookOpen, Scale, ShieldCheck, CalendarClock, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
-import { allMattresses } from '../data/mattresses';
-
-const leaderConfig = [
-  { id: 'amerisleep-as3', label: 'Overall score leader' },
-  { id: 'plushbeds-signature-bliss', label: 'Organic category leader' },
-  { id: 'nest-bedding-sparrow', label: 'Trial-period leader' },
-];
 
 interface HeroProps {
   stats: { value: string; label: string }[];
   trustBadgeLabel: string;
+  leaders: { label: string; id: string; name: string; image: string; overall: number }[];
 }
 
-export default function Hero({ stats, trustBadgeLabel }: HeroProps) {
+export default function Hero({ stats, trustBadgeLabel, leaders }: HeroProps) {
   const trustChips = [
     { icon: Scale, text: trustBadgeLabel },
     { icon: ShieldCheck, text: 'Editorial scores, not lab measurements' },
     { icon: CalendarClock, text: 'Refreshed July 2026' },
   ];
-
-  const leaders = leaderConfig.map(config => {
-    const mattress = allMattresses.find(item => item.id === config.id);
-    if (!mattress) throw new Error(`Missing homepage leader: ${config.id}`);
-    return { ...config, mattress };
-  });
 
   return (
     <header className="relative border-b border-outline-variant bg-surface pt-16 pb-0 md:pt-24 px-margin-mobile md:px-margin-desktop">
@@ -94,21 +82,21 @@ export default function Hero({ stats, trustBadgeLabel }: HeroProps) {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="grid grid-cols-1 md:grid-cols-3 border-t border-outline-variant"
         >
-          {leaders.map(({ label, mattress }, index) => (
+          {leaders.map(({ label, id, name, image, overall }, index) => (
             <a
-              key={mattress.id}
-              href={`/reviews/${mattress.id}/`}
+              key={id}
+              href={`/reviews/${id}/`}
               className={`group flex items-center gap-4 py-6 px-1 md:px-6 hover:bg-surface-container-low transition-colors ${index > 0 ? 'md:border-l border-outline-variant border-t md:border-t-0' : ''}`}
             >
               <div className="w-14 h-14 bg-white border border-outline-variant flex items-center justify-center overflow-hidden shrink-0">
-                <img src={mattress.image} alt={`${mattress.name} mattress`} className="w-full h-full object-contain" />
+                <img src={image} alt={`${name} mattress`} className="w-full h-full object-contain" />
               </div>
               <div className="min-w-0 flex-1">
                 <p className="text-label-sm text-secondary font-bold uppercase tracking-normal">{label}</p>
-                <p className="text-body-lg text-primary font-bold mt-0.5 truncate group-hover:text-secondary transition-colors">{mattress.name}</p>
+                <p className="text-body-lg text-primary font-bold mt-0.5 truncate group-hover:text-secondary transition-colors">{name}</p>
               </div>
               <div className="text-right shrink-0">
-                <span className="text-headline-md font-headline-md font-bold text-primary">{mattress.scores.overall}</span>
+                <span className="text-headline-md font-headline-md font-bold text-primary">{overall}</span>
                 <span className="block text-xs text-on-surface-variant">Overall</span>
               </div>
             </a>

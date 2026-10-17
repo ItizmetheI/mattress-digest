@@ -199,7 +199,9 @@ for (const mattress of allMattresses) {
   }
 }
 
-assert(BEST_CATEGORIES.value?.winner === 'vaya-hybrid', 'The value-category winner must be Vaya Hybrid.');
+for (const [category, config] of Object.entries(BEST_CATEGORIES)) {
+  assert(config.winner === config.picks[0], `/best/${category}/ winner must be its first ranked pick.`);
+}
 for (const id of ['bear-star-hybrid', 'ghostbed-flex', 'sweetnight-prime', 'nolah-original-hybrid', 'zoma-start']) {
   assert(Boolean(mattressById.get(id)?.availabilityNote), `${id} is missing its archived-model or construction-change notice.`);
 }

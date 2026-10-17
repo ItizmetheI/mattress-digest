@@ -18,8 +18,10 @@ editorial decisions.
   current terms on the official brand or certification source.
 - Do not add a product fact without a public source that can be linked and
   reviewed. Omit unsupported facts instead of adding placeholders.
-- Category pages keep their approved six ranked picks and must also expose the
-  full 59-model score field so every covered brand is visible for comparison.
+- Category pages show six ranked picks derived from the scores by the rules in
+  `SCORE_DATA_SOURCE.md` (`npx tsx scripts/derive-best-picks.ts --check` must pass after any score
+  change) and must also expose the full 59-model score field so every covered brand is visible
+  for comparison.
 
 ## Editorial and claim safety
 

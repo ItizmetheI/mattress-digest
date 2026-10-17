@@ -49,8 +49,45 @@ grep for `/10`, "tie" and "highest" in the file you changed.
 Then update the locked hash in `scripts/verify-content-integrity.ts`
 (`approvedScoreDatasetHash`) and run the full QA in `AGENTS.md`.
 
+## Best-category ranking rules
+
+The six picks on every `/best/[category]/` page are derived from the scores, not hand-picked.
+Run `npx tsx scripts/derive-best-picks.ts` to print them (add `--check` to fail when
+`src/lib/bestCategories.ts` differs). The first pick is the page's winner.
+
+Common rules: archived and kids models are excluded, at most two models per brand, at most
+three from the concentration-guard brands (Amerisleep, Zoma, Vaya, FORM), and a minimum Overall
+of 9.0 (8.8 for memory-foam and the firm-feel categories, which have small pools). Exact ties on
+every sort key break by longer warranty, then lower queen sale price.
+
+| Category | Pool | Sort order |
+|---|---|---|
+| overall | all | Overall, Value, warranty years, fit-category breadth |
+| luxury | Overall 9.0+ and queen sale price $1,500+ | Overall, Value, warranty |
+| cooling | all | Cooling & Breathability, Overall, Value |
+| side-sleepers | firmness 3-5 | softest first, Overall, Motion Transfer |
+| back-pain | firmness 6+ | Overall, Edge Support, Response Time |
+| memory-foam | foam / memory foam | Overall, Motion Transfer, Value |
+| hybrid | hybrid | Overall, Edge Support, Value |
+| organic | GOLS or GOTS certified | Overall, Value, warranty |
+| value | all | Value, Overall, lower queen price |
+| back-sleepers | firmness 6+ | Response Time, Overall, Edge Support |
+| stomach-sleepers | firmness 6+ | firmest first, Overall, Edge Support |
+| combination-sleepers | firmness 4-6 and Response 9+ | Response Time, Motion Transfer, Overall |
+| heavy-sleepers | hybrid/innerspring, Edge 9+, 12 in+ | Edge Support, thickness, warranty, Overall |
+| couples | Motion Transfer 9+ and Edge Support 9+ | Motion + Edge combined, Overall, Value |
+| hip-pain | firmness 3-5 | softest first, Edge Support, Overall |
+| shoulder-pain | firmness 3-5 | softest first, Cooling, Overall |
+| motion-isolation | all | Motion Transfer, Overall, Value |
+| pressure-relief | firmness 3-5 | softest first, Value, Overall |
+
+The homepage "Top picks" and hero leaders read the winners from `bestCategories.ts`, so they
+follow the scores automatically.
+
 ## Spec CSV
 
-`osg-mattress-specs (1).csv` is an empty template (model, slug and a few firmness values only).
-It is not used by the site. Fill it from official brand pages, with a source link per fact,
-before using it.
+`specs/mattress-specs.csv` is the spec sheet template filled from what the site already records
+(type, construction layers, height, queen sale price, trial, warranty, sizes, certifications,
+organic certification, official product URL). These columns are still empty and need official
+brand pages with a source link per fact: `firmness_options`, `price_checked`, `shipping`,
+`returns`, `made_in`, `source_checked`. Archived models are marked in `source_checked`.
